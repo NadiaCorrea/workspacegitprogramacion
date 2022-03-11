@@ -20,14 +20,16 @@ public class Bloc {
 		String result;
 		
 		if (posicion < 0 || posicion > NUMERO_NOTAS_MAXIMA) {
-			throw new BlocException("Posición de nota incorrecta.");
+			throw new BlocException("PosiciÃ³n de nota incorrecta.");
 		} else {
 			result = this.arrayNotas[posicion].getTexto();
 		}
 		return result;
 	}
-
 	
+	public void updateNota(int num, String texto) {
+		
+	}
 	
 	
 	
