@@ -20,14 +20,15 @@ public class Vehiculo {
 		
 		if(fechaSalida != null) {
 			if (fechaSalida.isBefore(this.fechaEntrada)) {
-				throw new VehiculoException ();
-			}else {
+				throw new VehiculoException ("Error. La fecha de salida debe ser posterior a la fecha del sistema.");
+			} else {
 				this.fechaSalida = fechaSalida;
 			}
+		} else {
+			this.fechaSalida = null;
 		}
 		
 	}
-
 
 	public String getMatricula() {
 		return matricula;
@@ -64,8 +65,14 @@ public class Vehiculo {
 	}
 
 
-	public void setFechaSalida(LocalDate fechaSalida) {
-		this.fechaSalida = fechaSalida;
+	public void setFechaSalida(LocalDate fechaSalida) throws VehiculoException {
+		LocalDate fechaActual = LocalDate.now();
+		
+		if (fechaActual.isAfter(fechaSalida)) {
+			throw new VehiculoException("Error. La fecha de salida debe ser posterior a la fecha del sistema.");
+		} else {
+			this.fechaSalida = fechaSalida;
+		}
 	}
 
 
@@ -105,7 +112,7 @@ public class Vehiculo {
 	}
 
 	
-	public int getTotalDays(LocalDate entrada, LocalDate salida) {
+	protected int getTotalDays(LocalDate entrada, LocalDate salida) {
 		int result;
 		result = (int)entrada.until(salida, ChronoUnit.DAYS);
 		return result;

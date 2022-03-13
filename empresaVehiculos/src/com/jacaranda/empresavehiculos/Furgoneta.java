@@ -14,11 +14,28 @@ public class Furgoneta extends Vehiculo{
 			this.pma = pma;			
 		}
 	}
+	
+	public double getPma() {
+		return pma;
+	}
 
+	public void setPma(double pma) throws VehiculoException {
+		if (pma <= 0) {
+			throw new VehiculoException("El pma debes ser un valor positivo mayor que 0.");
+		} else {
+			this.pma = pma;			
+		}
+	}
+
+	public double getPRECIO_PESO() {
+		return PRECIO_PESO;
+	}
+
+	//al precio base se le añade 0,5 euros * PMA (peso máximo autorizado)
 	@Override
 	public double getPrecio() {
 		
-		return super.getPrecio();
+		return super.getPrecio() + (0.5*this.pma);
 	}
 	
 	

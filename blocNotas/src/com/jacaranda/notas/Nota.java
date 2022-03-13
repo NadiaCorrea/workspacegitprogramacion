@@ -32,28 +32,32 @@ public class Nota implements Comparable<Nota> {
 	}
 
 	public LocalDateTime getFechaCreacion() {
-		fechaCreacion = LocalDateTime.now();
 		return fechaCreacion;
 	}
 
 	public LocalDateTime getFechaModificacion() {
-		fechaUltimaModificacion = LocalDateTime.now();
 		return fechaUltimaModificacion;
 	}
 	
 	public boolean isModificado () {
 		boolean result = false;
-		if (this.getFechaCreacion().isBefore(fechaUltimaModificacion));
-		result = true;
+		if (this.getFechaCreacion().isBefore(fechaUltimaModificacion)) {
+			result = true;
+		}
 		return result;
 	}
 	
+	
+//	el isEmpty si está vacio es decir si es igual a "" no te lo va a decir, puedes poner las dos condiciones.
 	public boolean isEmpty() {
 		boolean result = false;
-		if(this.getTexto() == null)
+		if(this.getTexto() == null || this.getTexto().equals("")) {
 			result = true;
+		}
 		return result;
 	}
+	
+//	isCreadoAnterior, isModificadoAnterior debes comprabar que la fecha no es anterior. En compareTo
 	
 	public boolean isCreadoAnterior(Nota otraNota) {// si el que lo llama tiene la fecha de creacion 
 		boolean result = false; 
