@@ -31,7 +31,7 @@ public class Furgoneta extends Vehiculo{
 		return PRECIO_PESO;
 	}
 
-	//al precio base se le añade 0,5 euros * PMA (peso máximo autorizado)
+	//al precio base se le aï¿½ade 0,5 euros * PMA (peso mï¿½ximo autorizado)
 	@Override
 	public double getPrecio() {
 		
@@ -39,7 +39,7 @@ public class Furgoneta extends Vehiculo{
 	}
 	
 	
-	
+	//Te falta el toString
 	
 	
 	

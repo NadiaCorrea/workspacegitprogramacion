@@ -14,8 +14,8 @@ public class Nota implements Comparable<Nota> {
 		this.codigo = codigoSiguiente;
 		codigoSiguiente = codigoSiguiente + 1;
 		this.texto = texto;
-		this.fechaCreacion = getFechaCreacion();
-		this.fechaUltimaModificacion=getFechaModificacion();
+		this.fechaCreacion = LocalDateTime.now();
+		this.fechaUltimaModificacion = null;
 		
 	}
 
@@ -48,7 +48,7 @@ public class Nota implements Comparable<Nota> {
 	}
 	
 	
-//	el isEmpty si está vacio es decir si es igual a "" no te lo va a decir, puedes poner las dos condiciones.
+//	el isEmpty si estï¿½ vacio es decir si es igual a "" no te lo va a decir, puedes poner las dos condiciones.
 	public boolean isEmpty() {
 		boolean result = false;
 		if(this.getTexto() == null || this.getTexto().equals("")) {
@@ -59,17 +59,27 @@ public class Nota implements Comparable<Nota> {
 	
 //	isCreadoAnterior, isModificadoAnterior debes comprabar que la fecha no es anterior. En compareTo
 	
-	public boolean isCreadoAnterior(Nota otraNota) {// si el que lo llama tiene la fecha de creacion 
-		boolean result = false; 
-		 if (this.getFechaCreacion().isBefore(otraNota.getFechaCreacion()))
-			 result = true;
+	public boolean isCreadoAnterior(Nota otraNota) throws NotaException {// si el que lo llama tiene la fecha de creacion 
+		boolean result = false; //hay q comprobar que otraNOta no sea nulo 
+		 
+		if (otraNota == null) {
+			throw new NotaException("Error. No se puede comprobar la fecha. ");
+		} else {
+			if (this.getFechaCreacion().isBefore(otraNota.getFechaCreacion()))
+				 result = true;
+		}
 		return result;
 	}
 	
-	public boolean isModificadoAnterior(Nota otraNota) {
-		boolean result = false; 
-		if(this.getFechaModificacion().isBefore(otraNota.getFechaModificacion()))
-			result = true;
+	public boolean isModificadoAnterior(Nota otraNota) throws NotaException {
+		boolean result = false;  //hay q comprobar que otraNOta no sea nulo
+		
+		if (otraNota == null) {
+			throw new NotaException("Error. No se puede comprobar la fecha. ");
+		} else {
+			if(this.getFechaModificacion().isBefore(otraNota.getFechaModificacion()))
+				result = true;
+		}
 		return result;
 	}
 
@@ -98,8 +108,8 @@ public class Nota implements Comparable<Nota> {
 
 	@Override
 	public int compareTo(Nota other) {
-		//para comparar la fecha de creación y el codigo. Si el resultado es negativo entonces nota iría antes que other 
-		//si es positivo other iría antes que this y si es 0 se verificaría los codigos y el resultado seria la diferencia de los mismos ya sea positiva o negativa  
+		//para comparar la fecha de creaciï¿½n y el codigo. Si el resultado es negativo entonces nota irï¿½a antes que other 
+		//si es positivo other irï¿½a antes que this y si es 0 se verificarï¿½a los codigos y el resultado seria la diferencia de los mismos ya sea positiva o negativa  
 		int result; 
 		
 		if (this.getFechaCreacion().isBefore(other.getFechaCreacion())) {

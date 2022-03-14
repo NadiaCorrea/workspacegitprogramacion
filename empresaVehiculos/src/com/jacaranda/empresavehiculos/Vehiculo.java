@@ -11,22 +11,25 @@ public class Vehiculo {
 	protected LocalDate fechaEntrada;
 	protected LocalDate fechaSalida;
 	
-	
+	//En el constructor le pasas la fecha de salida??? No tiene mucho sentido no?. 
+	//Bueno puedes dejarlo por si quieres cobrar por anticipado. 
+	//Queda mejor si usas el setFechaSalida y no repites código.
 	public Vehiculo(String matricula, String gama, LocalDate fechaSalida) throws VehiculoException {
 		super();
 		this.matricula = matricula;
 		this.gama = GamaEnumerado.valueOf(gama.toUpperCase());
 		this.fechaEntrada = LocalDate.now();
+		this.fechaSalida = setFechaSalida(fechaSalida);
 		
-		if(fechaSalida != null) {
-			if (fechaSalida.isBefore(this.fechaEntrada)) {
-				throw new VehiculoException ("Error. La fecha de salida debe ser posterior a la fecha del sistema.");
-			} else {
-				this.fechaSalida = fechaSalida;
-			}
-		} else {
-			this.fechaSalida = null;
-		}
+//		if(fechaSalida != null) {
+//			if (fechaSalida.isBefore(this.fechaEntrada)) {
+//				throw new VehiculoException ("Error. La fecha de salida debe ser posterior a la fecha del sistema.");
+//			} else {
+//				this.fechaSalida = fechaSalida;
+//			}
+//		} else {
+//			this.fechaSalida = null;
+//		}
 		
 	}
 
@@ -40,12 +43,12 @@ public class Vehiculo {
 	}
 
 
-	public GamaEnumerado getGama() {
+	public GamaEnumerado getGama() {//En getGama dijimos que debe devolver un string. 
 		return gama;
 	}
 
 
-	public void setGama(String gama) {
+	public void setGama(String gama) { //setGama puede lanzar una exception.
 		this.gama = GamaEnumerado.valueOf(gama);
 	}
 
@@ -65,7 +68,7 @@ public class Vehiculo {
 	}
 
 
-	public void setFechaSalida(LocalDate fechaSalida) throws VehiculoException {
+	public LocalDate setFechaSalida(LocalDate fechaSalida) throws VehiculoException {
 		LocalDate fechaActual = LocalDate.now();
 		
 		if (fechaActual.isAfter(fechaSalida)) {
@@ -73,6 +76,7 @@ public class Vehiculo {
 		} else {
 			this.fechaSalida = fechaSalida;
 		}
+		return fechaSalida;
 	}
 
 
