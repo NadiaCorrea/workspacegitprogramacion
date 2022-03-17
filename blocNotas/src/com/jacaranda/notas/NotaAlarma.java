@@ -2,7 +2,7 @@ package com.jacaranda.notas;
 
 import java.time.LocalDateTime;
 
-public class NotaAlarma extends Nota implements Actible{
+public class NotaAlarma extends Nota implements Actible {
 	private static final int MINUTOS_REPETIR_POR_DEFECTO = 5;
 	private LocalDateTime fechaAlarma;
 	private int minutosRepetir;
@@ -12,9 +12,9 @@ public class NotaAlarma extends Nota implements Actible{
 		super(texto);
 	}
 
-	public NotaAlarma(String texto, LocalDateTime fechaAlarma, boolean activado) {
+	public NotaAlarma(String texto, LocalDateTime fechaAlarma, boolean activado) throws NotaAlarmaException {
 		super(texto);
-		this.fechaAlarma = fechaAlarma;
+		setFechaAlarma(fechaAlarma);
 		this.minutosRepetir = MINUTOS_REPETIR_POR_DEFECTO;
 		this.activado = activado;
 	}
@@ -25,14 +25,14 @@ public class NotaAlarma extends Nota implements Actible{
 		this.minutosRepetir = minutosRepetir;
 		this.activado = false;
 	}
-	
+
 	private void setFechaAlarma(LocalDateTime fechaAlarma) throws NotaAlarmaException {
 		if (this.getFechaCreacion().isAfter(fechaAlarma)) {
-			throw new NotaAlarmaException("No se puede crear una alarma anterior a la fecha de creación."); 
-		}else {
+			throw new NotaAlarmaException("No se puede crear una alarma anterior a la fecha de creación.");
+		} else {
 			this.fechaAlarma = fechaAlarma;
 		}
-		
+
 	}
 
 	public static int getMinutosRepetirPorDefecto() {
@@ -43,12 +43,12 @@ public class NotaAlarma extends Nota implements Actible{
 	public void activar() {
 		this.activado = true;
 	}
-	
+
 	@Override
 	public void desactivar() {
 		this.activado = false;
 	}
-	
+
 	public boolean isActivado() {
 		boolean result = this.activado;
 		return result;
@@ -59,5 +59,5 @@ public class NotaAlarma extends Nota implements Actible{
 		return "NotaAlarma [fechaAlarma=" + fechaAlarma + ", minutosRepetir=" + minutosRepetir + ", activado="
 				+ activado + "]";
 	}
-		
+
 }
