@@ -17,9 +17,9 @@ public class LibreriaMain {
 	public static void main(String[] args) {
 		// Realiza un programa principal que pida los datos para crear dos libros,
 		// imprima dichos libros y
-//		utilice la función anterior.
-//		El programa principal también deberá pedir los datos para crear dos libros en papel y dos libros
-//		digitales, los imprima y use los métodos de ver cual es más caro.
+//		utilice la funciï¿½n anterior.
+//		El programa principal tambiï¿½n deberï¿½ pedir los datos para crear dos libros en papel y dos libros
+//		digitales, los imprima y use los mï¿½todos de ver cual es mï¿½s caro.
 
 		try {
 			Libro libro1 = leerLibro();
@@ -42,13 +42,13 @@ public class LibreriaMain {
 		System.out.println(libroDigital2.toString());
 
 		try {
-			System.out.println("¿El primer libro en papel es más caro que el primer libro digital?: "
+			System.out.println("ï¿½El primer libro en papel es mï¿½s caro que el primer libro digital?: "
 					+ libroPapel1.esMasCaro(libroDigital1));
-			System.out.println("¿El primer libro en papel es más caro que el segundo libro digital?: "
+			System.out.println("ï¿½El primer libro en papel es mï¿½s caro que el segundo libro digital?: "
 					+ libroPapel1.esMasCaro(libroDigital2));
-			System.out.println("¿El primer libro digital es más caro que el segundo libro en papel?: "
+			System.out.println("ï¿½El primer libro digital es mï¿½s caro que el segundo libro en papel?: "
 					+ libroDigital1.esMasCaro(libroPapel2));
-			System.out.println("¿El segundo libro digital es más caro que el segundo libro en papel?: "
+			System.out.println("ï¿½El segundo libro digital es mï¿½s caro que el segundo libro en papel?: "
 					+ libroDigital2.esMasCaro(libroPapel2));
 		} catch (PapelException e) {
 			System.out.println(e.getMessage());
@@ -74,10 +74,10 @@ public class LibreriaMain {
 
 	public static Libro leerLibro() {
 
-		String titulo = leerCadena("Introduce el título: ");
+		String titulo = leerCadena("Introduce el tï¿½tulo: ");
 		String autor = leerCadena("Introduce el autor: ");
 		String editorial = leerCadena("Introduce la editorial: ");
-		LocalDate fechaEdicion = leerFecha("Introduce la fecha de edición: ");
+		LocalDate fechaEdicion = leerFecha("Introduce la fecha de ediciï¿½n: ");
 
 		Libro libro = new Libro(titulo, autor, editorial);
 		libro.setFechaEdicion(fechaEdicion);
@@ -105,6 +105,7 @@ public class LibreriaMain {
 		System.out.println(texto);
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		return LocalDate.parse(teclado.nextLine(), formatter);
+
 	}
 
 }
