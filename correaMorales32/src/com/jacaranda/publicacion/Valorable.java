@@ -1,4 +1,4 @@
-package com.jacaranda.correamorales;
+package com.jacaranda.publicacion;
 
 public interface Valorable {
 

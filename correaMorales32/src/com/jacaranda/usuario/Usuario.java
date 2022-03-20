@@ -1,4 +1,4 @@
-package com.jacaranda.correamorales;
+package com.jacaranda.usuario;
 
 import java.util.Objects;
 
@@ -28,7 +28,7 @@ public class Usuario {
 	public boolean checkPass(String passComprobar) {
 		boolean result = false;
 
-		if (this.pass.compareTo(passComprobar) == 0) {
+		if (passComprobar != null && this.pass.compareTo(passComprobar) == 0) {
 			result = true;
 		}
 		return result;

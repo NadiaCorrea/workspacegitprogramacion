@@ -1,22 +1,24 @@
-package com.jacaranda.correamorales;
+package com.jacaranda.publicacion;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
+
+import com.jacaranda.usuario.Usuario;
 
 public abstract class Publicacion implements Comparable<Publicacion>, Valorable {
 
 	protected String texto;
 	private LocalDateTime fechaCreacion;
-	protected Valoraciones valoracion;
+	protected int valoracion;
 	private int codigo;
-	private static int codigoSiguiente;
+	private static int codigoSiguiente = 1;
 	protected Usuario usuario;
 
-	public Publicacion(String texto, Usuario usuario) {
-		this.texto = texto;
+	public Publicacion(String texto, Usuario usuario) throws PublicacionException {
+		this.setTexto(texto);
 		this.fechaCreacion = LocalDateTime.now();
-		getValoracion();
-		this.codigo = 1;
+		this.valoracion = 0;
+		this.codigo = codigoSiguiente;
 		codigoSiguiente = codigoSiguiente + 1;
 		this.usuario = usuario;
 	}
@@ -25,13 +27,13 @@ public abstract class Publicacion implements Comparable<Publicacion>, Valorable 
 		return texto;
 	}
 
-	protected abstract void setTexto(String texto);
+	protected abstract void setTexto(String texto) throws PublicacionException;
 
 	public LocalDateTime getFechaCreacion() {
 		return fechaCreacion;
 	}
 
-	public Valoraciones getValoracion() {
+	public int getValoracion() {
 		return valoracion;
 	}
 
@@ -42,7 +44,7 @@ public abstract class Publicacion implements Comparable<Publicacion>, Valorable 
 	public boolean isAnterior(Publicacion other) {
 		boolean result = false;
 
-		if (this.fechaCreacion.isBefore(other.getFechaCreacion())) {
+		if (other != null && this.fechaCreacion.isBefore(other.getFechaCreacion())) {
 			result = true;
 		}
 		return result;
@@ -55,7 +57,8 @@ public abstract class Publicacion implements Comparable<Publicacion>, Valorable 
 		if (other == null) {
 			result = -1;
 		} else {
-			if (this.getValoracion() == other.getValoracion()) {
+			result = this.getValoracion() - other.getValoracion();
+			if (result == 0) {
 				result = this.getFechaCreacion().compareTo(other.getFechaCreacion());
 			}
 		}
@@ -66,12 +69,25 @@ public abstract class Publicacion implements Comparable<Publicacion>, Valorable 
 	public boolean valorar(String valoracion) {// si la valoracion no es la de los enumerados error
 		boolean result = false;
 
-		if () {
-
+		try {
+			this.valoracion = this.valoracion + Valoraciones.valueOf(valoracion.toUpperCase()).getValoracion();
+			result = true;
+		} catch (Exception e) {
+			System.out.println("La valoración no es correcta.");
+			result = false;
 		}
-		;
 
 		return result;
+	}
+
+	public String getLoginUsuario() {
+		String loginUsuario = "";
+
+		if (this.usuario != null) {
+			loginUsuario = this.usuario.getLogin();
+		}
+
+		return loginUsuario;
 	}
 
 	@Override
@@ -94,8 +110,8 @@ public abstract class Publicacion implements Comparable<Publicacion>, Valorable 
 	@Override
 	public String toString() {
 
-		return "Publicacion: " + this.texto + "\nRealizada por: " + this.usuario.getLogin() + "\nValoraciÃ³n: "
-				+ this.getValoracion() + "\nFecha de publicaciÃ³n: " + this.getFechaCreacion();
+		return "Publicación: " + this.texto + "\nRealizada por: " + this.usuario.getLogin() + "\nValoración: "
+				+ this.getValoracion() + "\nFecha de publicación: " + this.getFechaCreacion();
 	}
 
 }

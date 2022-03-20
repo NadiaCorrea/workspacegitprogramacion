@@ -1,27 +1,27 @@
-package com.jacaranda.correamorales;
+package com.jacaranda.memoryStorage;
 
-public class PublicacionException extends Exception {
+public class MemoryStorageException extends Exception {
 
-	public PublicacionException() {
+	public MemoryStorageException() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public PublicacionException(String message) {
+	public MemoryStorageException(String message) {
 		super(message);
 		// TODO Auto-generated constructor stub
 	}
 
-	public PublicacionException(Throwable cause) {
+	public MemoryStorageException(Throwable cause) {
 		super(cause);
 		// TODO Auto-generated constructor stub
 	}
 
-	public PublicacionException(String message, Throwable cause) {
+	public MemoryStorageException(String message, Throwable cause) {
 		super(message, cause);
 		// TODO Auto-generated constructor stub
 	}
 
-	public PublicacionException(String message, Throwable cause, boolean enableSuppression,
+	public MemoryStorageException(String message, Throwable cause, boolean enableSuppression,
 			boolean writableStackTrace) {
 		super(message, cause, enableSuppression, writableStackTrace);
 		// TODO Auto-generated constructor stub
