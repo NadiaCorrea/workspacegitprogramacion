@@ -10,4 +10,14 @@ public class Utilidades {
 		}
 	}
 
+	public static <P> String toString(P[] array) {
+		StringBuilder resultado = new StringBuilder();
+
+		for (int i = 0; i <= array.length - 1; i = i + 1) {
+			resultado = resultado.append(array[i]);
+		}
+		return resultado.toString();
+
+	}
+
 }
