@@ -14,7 +14,7 @@ public class Utilidades {
 		StringBuilder resultado = new StringBuilder();
 
 		for (int i = 0; i <= array.length - 1; i = i + 1) {
-			resultado = resultado.append(array[i]);
+			resultado.append(array[i] + "\n");
 		}
 		return resultado.toString();
 
