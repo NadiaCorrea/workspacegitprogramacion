@@ -20,6 +20,8 @@ public class MainClaseGenerica {
 		System.out.println("Array Integer origen " + Arrays.toString(array1Int));
 		System.out.println("Array Integer destino " + Arrays.toString(array2Int));
 
+		System.out.println(origen.toString());
+
 	}
 
 }
