@@ -1,6 +1,7 @@
 package com.jacaranda.equipo;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 import com.jacaranda.jugadores.Alumno;
@@ -51,8 +52,43 @@ public class Equipo {
 		} else {
 			listado.remove(alumno);
 		}
+	}
+
+	private boolean delUnAlumno(String nombre) {
+
+		Iterator<Alumno> siguiente = this.listado.iterator();
+		boolean encontrado = false;
+
+		while (siguiente.hasNext() && !encontrado) {
+			Alumno a = siguiente.next();
+			if (a.getNombre().equalsIgnoreCase(nombre)) {
+				this.listado.remove(a);
+				encontrado = true;
+			}
+		}
+		return encontrado;
+	}
+
+	public void delAlumno(String nombre) {
+
+		while (delUnAlumno(nombre) == true)
+			;
 
 	}
+//		Iterator<Alumno> siguiente = this.listado.iterator();
+//		while (siguiente.hasNext()) {
+//			Alumno a = siguiente.next();
+//			if (a.getNombre().equalsIgnoreCase(nombre)) {
+//				this.listado.remove(a);
+//			}
+//		}
+
+//NO se puede usar este ya que cuando borra un objeto luego se queda out of range		
+//		for (Alumno a : this.listado) {
+//			if (a.getNombre().equalsIgnoreCase(nombre)) {
+//				this.listado.remove(a);
+//			}
+//	}
 
 //	Saber si un alumno pertenece al equipo. Recibe como par√°metro el objeto alumno a buscar 
 //	y devuelve null si no lo encuentra y el  objeto alumno si existe. 
@@ -76,34 +112,51 @@ public class Equipo {
 
 	}
 
-	// UniÛn de equipos. El mÈtodo lo llamar· un equipo y
-	// se le pasar· por par·metro el otro equipo con el que se quiere unir.
+	// Uni√≥n de equipos. El m√©todo lo llamar√° un equipo y
+	// se le pasar√° por par√°metro el otro equipo con el que se quiere unir.
 	// Devuelve un equipo formado por los alumnos de ambos equipos.
 
-	public Equipo unionEquipo(Equipo e2) throws EquipoException {
+	public Equipo unionEquipo(Equipo e2) {
 		Equipo result = new Equipo("");
 
+		// los alumnos del equipo que lo llama
 		for (Alumno a : this.listado) {
-			result.addAlumno(a);
+			try {
+				result.addAlumno(a);
+			} catch (EquipoException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 
+		// los alumnos del equipo que recibe como parametro
 		for (Alumno a : e2.listado) {
 			if (result.listado.contains(a) == false) {
-				result.addAlumno(a);
+				try {
+					result.addAlumno(a);
+				} catch (EquipoException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		}
 		return result;
 	}
 
-//	IntersecciÛn de equipos.  Idem al anterior pero 
-//	devuelve un equipo formado por los alumnos que est·n en los dos equipos 
+//	Intersecci√≥n de equipos.  Idem al anterior pero 
+//	devuelve un equipo formado por los alumnos que est√°n en los dos equipos 
 
-	public Equipo interseccionEquipo(Equipo e2) throws EquipoException {
+	public Equipo interseccionEquipo(Equipo e2) {
 		Equipo result = new Equipo("");
 
 		for (Alumno a : this.listado) {
 			if (e2.listado.contains(a) == true) {
-				result.addAlumno(a);
+				try {
+					result.addAlumno(a);
+				} catch (EquipoException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		}
 
