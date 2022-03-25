@@ -41,7 +41,7 @@ public class Pueblo implements Comparable<Pueblo> {
 			throw new PuebloException("La longitud del código no es correcta.");
 		} else {
 			for (int i = 0; i < codigo.length() - 1; i = i + 1) {
-				if (codigo.charAt(i).isDigit()) {
+				if (Character.codigo.chartAt(i).isDigit()) {
 
 				}
 			}

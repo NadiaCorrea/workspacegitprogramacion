@@ -36,9 +36,9 @@ public class ED1T4P {
 /*
  * Distribución de breakpoints: Inicio del bucle, inicio de métodos, en las
  * variable aumento y disminución expresiones aumento, disminuciónm a iterador.
- * En el primer método se aument el iterador con un número random del 0 al 49,
+ * En el primer método se aumenta el iterador con un número random del 0 al 49,
  * mienstras que el segundo método disminuye el iterador con un número aleatorio
  * del 0 al 9 por lo que i irá aumentado y no será menor igual que cero. Para
- * solucionarlo podríamos cambiar la condición den parada del bucle while o
+ * solucionarlo podríamos cambiar la condición de parada del bucle while o
  * aumentar el rango de los números aleatorios del método disminuir.
  */
