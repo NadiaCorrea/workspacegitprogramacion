@@ -11,18 +11,29 @@ public class Pueblo implements Comparable<Pueblo> {
 
 	public Pueblo(String nombre, String codigo) throws PuebloException {
 		super();
-		this.nombre = nombre.toUpperCase();
+		if (nombre == null) {
+			throw new PuebloException("El nombre no puede ser nulo.");
+		} else {
+			this.nombre = nombre.toUpperCase();
+		}
 		setCodigo(codigo);
+		this.numeroHabitantes = 0;
+		this.rentaPerCapita = 0;
+		this.superficie = 0;
 	}
 
 	public Pueblo(String nombre, String codigo, int numeroHabitantes, double rentaPerCapita, double superficie)
 			throws PuebloException {
 		super();
-		this.nombre = nombre.toUpperCase();
+		if (nombre == null) {
+			throw new PuebloException("El nombre no puede ser nulo.");
+		} else {
+			this.nombre = nombre.toUpperCase();
+		}
 		setCodigo(codigo);
-		this.numeroHabitantes = numeroHabitantes;
-		this.rentaPerCapita = rentaPerCapita;
-		this.superficie = superficie;
+		setNumeroHabitantes(numeroHabitantes);
+		setRentaPerCapita(rentaPerCapita);
+		setSuperficie(superficie);
 	}
 
 	public String getNombre() {
@@ -33,22 +44,27 @@ public class Pueblo implements Comparable<Pueblo> {
 		return codigo;
 	}
 
-	// El c√≥digo debe tener una longitud de 5 car√°cteres y deben ser caracteres
-	// num√©ricos. Se deber√° lanzar una exception.
+	// El cÛdigo debe tener una longitud de 5 car·cteres y deben ser caracteres
+	// numÈricos. Se deber· lanzar una exception.
+
 	private void setCodigo(String codigo) throws PuebloException {
 
-		if (codigo.length() < 5) {
-			throw new PuebloException("La longitud del c√≥digo no es correcta.");
+		if (codigo.length() != 5) {
+			throw new PuebloException("La longitud del cÛdigo no es correcta.");
 		} else {
-			for (int i = 0; i < codigo.length() - 1; i = i + 1) {
-				if (Character.codigo.chartAt(i).isDigit()) {
-
+			boolean encontrado = false;
+			for (int i = 0; i < codigo.length() && !encontrado; i = i + 1) {
+				if (!Character.isDigit(codigo.charAt(i))) {
+					encontrado = true;
 				}
 			}
-
+			if (encontrado == false) {
+				this.codigo = codigo;
+			} else {
+				throw new PuebloException("El formato del cÛdigo no es correcto.");
+			}
 		}
 
-		this.codigo = codigo;
 	}
 
 	public int getNumeroHabitantes() {
@@ -64,18 +80,33 @@ public class Pueblo implements Comparable<Pueblo> {
 	}
 
 	// the numero habitantes. Si es negativo lanzar una exception
-	public void setNumeroHabitantes(int numeroHabitantes) {
-		this.numeroHabitantes = numeroHabitantes;
+	public void setNumeroHabitantes(int numeroHabitantes) throws PuebloException {
+
+		if (numeroHabitantes < 0) {
+			throw new PuebloException("El n˙mero de habitantes no puede ser menor que 0.");
+		} else {
+			this.numeroHabitantes = numeroHabitantes;
+		}
+
 	}
 
 	// the renta per capita. Si es negativo lanzar una exception
-	public void setRentaPerCapita(double rentaPerCapita) {
-		this.rentaPerCapita = rentaPerCapita;
+	public void setRentaPerCapita(double rentaPerCapita) throws PuebloException {
+		if (rentaPerCapita < 0) {
+			throw new PuebloException("La renta per capita no puede ser menor que 0.");
+		} else {
+			this.rentaPerCapita = rentaPerCapita;
+		}
 	}
 
 	// Si es negativo lanzar una exception
-	public void setSuperficie(double superficie) {
-		this.superficie = superficie;
+	public void setSuperficie(double superficie) throws PuebloException {
+		if (superficie < 0) {
+			throw new PuebloException("La superficie no puede ser menor que 0.");
+		} else {
+			this.superficie = superficie;
+		}
+
 	}
 
 	@Override
@@ -103,8 +134,8 @@ public class Pueblo implements Comparable<Pueblo> {
 
 	@Override
 	public int compareTo(Pueblo o) {
-		// TODO Auto-generated method stub
-		return 0;
+		// un pueblo es igual al otro si tienen el mismo cÛdigo
+		return this.getCodigo().compareTo(o.getCodigo());
 	}
 
 }
