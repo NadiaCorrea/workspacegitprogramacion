@@ -66,15 +66,15 @@ public abstract class Publicacion implements Comparable<Publicacion>, Valorable 
 	}
 
 	@Override
-	public boolean valorar(String valoracion) {// si la valoracion no es la de los enumerados error
+	public boolean valorar(String valoracion) throws PublicacionException {// si la valoracion no es la de los
+																			// enumerados error
 		boolean result = false;
 
 		try {
 			this.valoracion = this.valoracion + Valoraciones.valueOf(valoracion.toUpperCase()).getValoracion();
 			result = true;
 		} catch (Exception e) {
-			System.out.println("La valoración no es correcta.");
-			result = false;
+			throw new PublicacionException("La valoraciï¿½n no es correcta.");
 		}
 
 		return result;
@@ -110,8 +110,8 @@ public abstract class Publicacion implements Comparable<Publicacion>, Valorable 
 	@Override
 	public String toString() {
 
-		return "Publicación: " + this.texto + "\nRealizada por: " + this.usuario.getLogin() + "\nValoración: "
-				+ this.getValoracion() + "\nFecha de publicación: " + this.getFechaCreacion();
+		return "Publicaciï¿½n: " + this.texto + "\nRealizada por: " + this.usuario.getLogin() + "\nValoraciï¿½n: "
+				+ this.getValoracion() + "\nFecha de publicaciï¿½n: " + this.getFechaCreacion();
 	}
 
 }

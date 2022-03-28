@@ -135,8 +135,16 @@ public class Pueblo implements Comparable<Pueblo> {
 	@Override
 	public int compareTo(Pueblo o) {
 		// un pueblo es igual al otro si tienen el mismo código
+		int result;
 
-		return this.getNombre().compareTo(o.getNombre());
+		if (o == null) {
+			result = -1;
+
+		} else {
+			result = this.getNombre().compareTo(o.getNombre());
+		}
+
+		return result;
 	}
 
 }
