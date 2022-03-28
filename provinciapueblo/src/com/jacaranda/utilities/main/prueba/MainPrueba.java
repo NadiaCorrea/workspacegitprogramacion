@@ -11,10 +11,10 @@ public class MainPrueba {
 
 			Provincia prov1 = new Provincia("Sevilla", "41");
 
-			prov1.addPueblo("Alcalá", "500", 100, 20, 100);
+			prov1.addPueblo("AlcalÃ¡", "500", 100, 20, 100);
 			prov1.addPueblo("dos hermanas", "700", 150, 50, 80);
 			prov1.addPueblo("mairena", "600", 100, 50, 80);
-			// prov1.addPueblo("Alcalá", "300", 150, 30, 0);
+			// prov1.addPueblo("Alcalï¿½", "300", 150, 30, 0);
 
 			System.out.println(prov1.listadoPueblos());
 			System.out.println(prov1.getNumHabitantes());

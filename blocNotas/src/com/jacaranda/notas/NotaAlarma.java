@@ -21,14 +21,21 @@ public class NotaAlarma extends Nota implements Actible {
 
 	public NotaAlarma(String texto, LocalDateTime fechaAlarma, int minutosRepetir) throws NotaAlarmaException {
 		super(texto);
-		setFechaAlarma(fechaAlarma);
-		this.minutosRepetir = minutosRepetir;
-		this.activado = false;
+		if (fechaAlarma.isBefore(this.getFechaCreacion())) {
+			throw new NotaAlarmaException("La fecha alarma no puede ser anterior a la fecha de creación.");
+		} else {
+			setFechaAlarma(fechaAlarma);
+			this.minutosRepetir = minutosRepetir;
+			this.activado = true;
+		}
 	}
 
 	private void setFechaAlarma(LocalDateTime fechaAlarma) throws NotaAlarmaException {
-		if (this.getFechaCreacion().isAfter(fechaAlarma)) {
-			throw new NotaAlarmaException("No se puede crear una alarma anterior a la fecha de creaci�n.");
+
+		if (fechaAlarma == null) {
+			throw new NotaAlarmaException("No se puede crear una alarma sin fecha.");
+		} else if (this.getFechaCreacion().isAfter(fechaAlarma)) {
+			throw new NotaAlarmaException("No se puede crear una alarma anterior a la fecha de creación.");
 		} else {
 			this.fechaAlarma = fechaAlarma;
 		}

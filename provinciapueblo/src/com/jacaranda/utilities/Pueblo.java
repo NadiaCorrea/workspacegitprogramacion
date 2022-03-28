@@ -44,13 +44,13 @@ public class Pueblo implements Comparable<Pueblo> {
 		return codigo;
 	}
 
-	// El código debe tener una longitud de 5 carácteres y deben ser caracteres
-	// numéricos. Se deberá lanzar una exception.
+	// El cï¿½digo debe tener una longitud de 5 carï¿½cteres y deben ser caracteres
+	// numï¿½ricos. Se deberï¿½ lanzar una exception.
 
 	private void setCodigo(String codigo) throws PuebloException {
 
 		if (codigo.length() != 5) {
-			throw new PuebloException("La longitud del código no es correcta.");
+			throw new PuebloException("La longitud del cï¿½digo no es correcta.");
 		} else {
 			boolean encontrado = false;
 			for (int i = 0; i < codigo.length() && !encontrado; i = i + 1) {
@@ -61,7 +61,7 @@ public class Pueblo implements Comparable<Pueblo> {
 			if (encontrado == false) {
 				this.codigo = codigo;
 			} else {
-				throw new PuebloException("El formato del código no es correcto.");
+				throw new PuebloException("El formato del cï¿½digo no es correcto.");
 			}
 		}
 
@@ -83,7 +83,7 @@ public class Pueblo implements Comparable<Pueblo> {
 	public void setNumeroHabitantes(int numeroHabitantes) throws PuebloException {
 
 		if (numeroHabitantes < 0) {
-			throw new PuebloException("El número de habitantes no puede ser menor que 0.");
+			throw new PuebloException("El nï¿½mero de habitantes no puede ser menor que 0.");
 		} else {
 			this.numeroHabitantes = numeroHabitantes;
 		}
@@ -134,8 +134,9 @@ public class Pueblo implements Comparable<Pueblo> {
 
 	@Override
 	public int compareTo(Pueblo o) {
-		// un pueblo es igual al otro si tienen el mismo código
-		return this.getCodigo().compareTo(o.getCodigo());
+		// un pueblo es igual al otro si tienen el mismo cÃ³digo
+
+		return this.getNombre().compareTo(o.getNombre());
 	}
 
 }
