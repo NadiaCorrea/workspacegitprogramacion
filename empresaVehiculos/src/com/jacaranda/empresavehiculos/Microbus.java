@@ -2,8 +2,8 @@ package com.jacaranda.empresavehiculos;
 
 import java.time.LocalDate;
 
-public class Microbus extends Vehiculo{
-	
+public class Microbus extends Vehiculo {
+
 	private int numPlazas;
 
 	public Microbus(String matricula, String gama, LocalDate fechaSalida, int numPlazas) throws VehiculoException {
@@ -27,18 +27,17 @@ public class Microbus extends Vehiculo{
 		}
 	}
 
-	// En caso de alquiler de un microb�s se le a�ade la cantidad de 5 euros por plaza que disponga el microb�s.
+	// En caso de alquiler de un microb�s se le a�ade la cantidad de 5 euros por
+	// plaza que disponga el microb�s.
 	@Override
 	public double getPrecio() {
 		return super.getPrecio() + (5 * this.getNumPlazas());
 	}
-	
-	//Te falta el toString
-	
-	
-	
-	
+
+	// Te falta el toString
+	@Override
+	public String toString() {
+		return "Microbus [numPlazas=" + numPlazas + super.toString() + "]";
+	}
 
 }
-
-
