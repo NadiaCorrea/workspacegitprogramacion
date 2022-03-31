@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Historial {
 
-	List<PaginaWeb> paginas;
+	private List<PaginaWeb> paginas;
 
 	public Historial() {
 		super();
@@ -47,8 +47,11 @@ public class Historial {
 
 		Iterator<PaginaWeb> iterador = paginas.iterator();
 
-		while (iterador.hasNext()) {
+		LocalDate fechaPagina = null;
+
+		while (iterador.hasNext() && (fechaPagina == null || !fechaPagina.isAfter(fecha))) {
 			iPagina = iterador.next();
+			fechaPagina = iPagina.getFechaHora().toLocalDate();
 
 			if (iPagina.getFechaHora().toLocalDate().equals(fecha)) {
 				result.append(iPagina + "\n");

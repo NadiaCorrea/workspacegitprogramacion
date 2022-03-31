@@ -1,27 +1,31 @@
 package com.jacaranda.personas;
 
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Objects;
 
 import com.jacaranda.mensajes.Mensaje;
+import com.jacaranda.mensajes.MensajeException;
 
 public abstract class Persona {
-	private String nombre;
-	private int edad;
-	private String dni;
-	private LinkedList<Mensaje> mensajes;
+	protected String nombre;
+	protected int edad;
+	protected String dni;
+	protected LinkedList<Mensaje> mensajes;
 
-	private Persona(String nombre, int edad, LinkedList<Mensaje> mensajes) throws PersonaException {
+	public Persona(String nombre, String dni, int edad) throws PersonaException {
 		super();
 		setNombre(nombre);
+		this.dni = dni;
 		setEdad(edad);
-		this.mensajes = mensajes;
+		this.mensajes = new LinkedList<>();
 	}
 
-	protected String getNombre() {
+	public String getNombre() {
 		return nombre;
 	}
 
-	public void setNombre(String nombre) throws PersonaException {
+	private void setNombre(String nombre) throws PersonaException {
 		if (nombre == null) {
 			throw new PersonaException("No se puede crear una persona sin nombre.");
 		} else {
@@ -33,7 +37,7 @@ public abstract class Persona {
 		return edad;
 	}
 
-	public void setEdad(int edad) throws PersonaException {
+	private void setEdad(int edad) throws PersonaException {
 		if (edad <= 0) {
 			throw new PersonaException("La edad no puede ser menor o igual a 0.");
 		} else {
@@ -41,16 +45,79 @@ public abstract class Persona {
 		}
 	}
 
+	public String getDni() {
+		return dni;
+	}
+
 	public LinkedList<Mensaje> getMensajes() {
 		return mensajes;
 	}
 
-	public void setMensajes(LinkedList<Mensaje> mensajes) {
-		this.mensajes = mensajes;
+	public void addMensaje(Mensaje nuevoMensaje) throws PersonaException {
+
+		if (nuevoMensaje == null) {
+			throw new PersonaException("No se puede añadir mensaje vacío.");
+		} else {
+			this.mensajes.add(nuevoMensaje);
+		}
 	}
 
-	private void enviarMensaje() {
+	/*
+	 * Un método para poder enviar un mensaje a otra persona. Recibirá como
+	 * parámetro la persona destinataria y el texto del mensaje.
+	 */
+	public void sendMensaje(Persona destinatario, String texto) throws PersonaException {
+		Mensaje newMensaje;
+		if (destinatario == null) {
+			throw new PersonaException("No se puede enviar mensajes a un destinatario vacío.");
+		} else {
+			try {
+				newMensaje = new Mensaje(this, destinatario, texto);
+				destinatario.addMensaje(newMensaje);
+			} catch (MensajeException e) {
+				throw new PersonaException(e.getMessage());
+			}
+		}
+	}
 
+	/*
+	 * Un método para poder leer los mensajes del buzón. Este método devolverá un
+	 * String con todos los mensajes que tiene. Si no tiene mensajes para leer
+	 * saltará el correspondiente mensaje de error.
+	 */
+
+	public String leerMensajes() {
+		StringBuilder result = new StringBuilder();
+		Mensaje iMensaje;
+		Iterator<Mensaje> iterador = mensajes.iterator();
+
+		while (iterador.hasNext()) {
+			iMensaje = iterador.next();
+			result.append(iMensaje.toString() + " ");
+		}
+		return result.toString();
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(dni);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Persona other = (Persona) obj;
+		return Objects.equals(dni, other.dni);
+	}
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", edad=" + edad + ", dni=" + dni + ", mensajes=" + mensajes + "]";
 	}
 
 }
