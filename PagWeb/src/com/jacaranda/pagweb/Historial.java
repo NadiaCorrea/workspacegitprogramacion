@@ -3,10 +3,11 @@ package com.jacaranda.pagweb;
 import java.time.LocalDate;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Historial {
 
-	LinkedList<PaginaWeb> paginas;
+	List<PaginaWeb> paginas;
 
 	public Historial() {
 		super();
