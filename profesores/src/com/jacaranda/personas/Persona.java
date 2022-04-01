@@ -11,14 +11,16 @@ public abstract class Persona {
 	protected String nombre;
 	protected int edad;
 	protected String dni;
-	protected LinkedList<Mensaje> mensajes;
+	protected LinkedList<Mensaje> mensajesRecibido;
+	protected LinkedList<Mensaje> mensajesEnviados;
 
 	public Persona(String nombre, String dni, int edad) throws PersonaException {
 		super();
 		setNombre(nombre);
 		this.dni = dni;
 		setEdad(edad);
-		this.mensajes = new LinkedList<>();
+		this.mensajesRecibido = new LinkedList<>();
+		this.mensajesEnviados = new LinkedList<>();
 	}
 
 	public String getNombre() {
@@ -49,31 +51,40 @@ public abstract class Persona {
 		return dni;
 	}
 
-	public LinkedList<Mensaje> getMensajes() {
-		return mensajes;
+	public LinkedList<Mensaje> getMensajesRecibido() {
+		return mensajesRecibido;
 	}
 
-	public void addMensaje(Mensaje nuevoMensaje) throws PersonaException {
-
-		if (nuevoMensaje == null) {
-			throw new PersonaException("No se puede añadir mensaje vacío.");
-		} else {
-			this.mensajes.add(nuevoMensaje);
-		}
+	public LinkedList<Mensaje> getMensajesEnviados() {
+		return mensajesEnviados;
 	}
+
+//	
+//	public void addMensaje(Mensaje nuevoMensaje) throws PersonaException {
+//
+//		if (nuevoMensaje == null) {
+//			throw new PersonaException("No se puede aï¿½adir mensaje vacï¿½o.");
+//		} else {
+//			this.mensajesRecibido.add(nuevoMensaje);
+//		}
+//	}
 
 	/*
-	 * Un método para poder enviar un mensaje a otra persona. Recibirá como
-	 * parámetro la persona destinataria y el texto del mensaje.
+	 * Un mï¿½todo para poder enviar un mensaje a otra persona. Recibirï¿½ como
+	 * parï¿½metro la persona destinataria y el texto del mensaje. Boolean al enviar
+	 * el mensaje se debe de aÃ±adir a lista de enviados y a lista de recibidos
 	 */
 	public void sendMensaje(Persona destinatario, String texto) throws PersonaException {
 		Mensaje newMensaje;
 		if (destinatario == null) {
-			throw new PersonaException("No se puede enviar mensajes a un destinatario vacío.");
+			throw new PersonaException("No se puede enviar mensajes a un destinatario vacï¿½o.");
 		} else {
 			try {
 				newMensaje = new Mensaje(this, destinatario, texto);
-				destinatario.addMensaje(newMensaje);
+//				destinatario.addMensaje(newMensaje);
+				destinatario.mensajesRecibido.add(newMensaje);
+				this.mensajesEnviados.add(newMensaje);
+//				this.addMensaje(newMensaje);
 			} catch (MensajeException e) {
 				throw new PersonaException(e.getMessage());
 			}
@@ -81,15 +92,29 @@ public abstract class Persona {
 	}
 
 	/*
-	 * Un método para poder leer los mensajes del buzón. Este método devolverá un
+	 * Un mï¿½todo para poder leer los mensajes del buzï¿½n. Este mï¿½todo devolverï¿½ un
 	 * String con todos los mensajes que tiene. Si no tiene mensajes para leer
-	 * saltará el correspondiente mensaje de error.
+	 * saltarï¿½ el correspondiente mensaje de error.
 	 */
 
-	public String leerMensajes() {
+	public String leerMensajesRecibidos() {
 		StringBuilder result = new StringBuilder();
+		result.append("Recibidos: ");
 		Mensaje iMensaje;
-		Iterator<Mensaje> iterador = mensajes.iterator();
+		Iterator<Mensaje> iterador = mensajesRecibido.iterator();
+
+		while (iterador.hasNext()) {
+			iMensaje = iterador.next();
+			result.append(iMensaje.toString() + " ");
+		}
+		return result.toString();
+	}
+
+	public String leerMensajesEnviados() {
+		StringBuilder result = new StringBuilder();
+		result.append("Enviados: ");
+		Mensaje iMensaje;
+		Iterator<Mensaje> iterador = mensajesEnviados.iterator();
 
 		while (iterador.hasNext()) {
 			iMensaje = iterador.next();
@@ -117,7 +142,7 @@ public abstract class Persona {
 
 	@Override
 	public String toString() {
-		return "Persona [nombre=" + nombre + ", edad=" + edad + ", dni=" + dni + ", mensajes=" + mensajes + "]";
+		return "Persona [nombre=" + nombre + ", edad=" + edad + ", dni=" + dni + ", mensajes=" + mensajesRecibido + "]";
 	}
 
 }

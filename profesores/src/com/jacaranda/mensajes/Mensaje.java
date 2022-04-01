@@ -1,10 +1,11 @@
 package com.jacaranda.mensajes;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 import com.jacaranda.personas.Persona;
 
-public class Mensaje {
+public class Mensaje implements Comparable<Mensaje> {
 	private int codigo;
 	private Persona remitente;
 	private Persona destinatario;
@@ -32,7 +33,7 @@ public class Mensaje {
 
 	public void setTexto(String texto) throws MensajeException {
 		if (texto == null || texto == "") {
-			throw new MensajeException("No se puede crear un mensaje con un texto vacío.");
+			throw new MensajeException("No se puede crear un mensaje con un texto vacï¿½o.");
 		} else {
 			this.texto = texto;
 		}
@@ -55,6 +56,29 @@ public class Mensaje {
 		return "Mensaje " + codigo + ": De: " + remitente.getNombre() + " Texto: " + texto + " Fecha y hora: "
 				+ fechaHora;
 
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(codigo);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Mensaje other = (Mensaje) obj;
+		return codigo == other.codigo;
+	}
+
+	@Override
+	public int compareTo(Mensaje o) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
