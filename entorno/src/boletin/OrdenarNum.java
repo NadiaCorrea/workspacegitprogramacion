@@ -8,6 +8,8 @@ public class OrdenarNum {
 		/*
 		 * Realizar un programa que ordene un array de n números enteros. Usar el método
 		 * de ordenación por selección
+		 * 
+		 * VER EXCEL CON LA CORRECCIÓN
 		 */
 		int[] numeros = { 1, 2, 9, 3, 4, 5, 8, 10, 6, 7 };
 		ordenarNum(numeros);
