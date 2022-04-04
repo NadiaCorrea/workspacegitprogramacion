@@ -1,11 +1,12 @@
 package com.jacaranda.mensajes;
 
 import java.time.LocalDateTime;
+import java.util.Comparator;
 import java.util.Objects;
 
 import com.jacaranda.personas.Persona;
 
-public class Mensaje implements Comparable<Mensaje> {
+public class Mensaje implements Comparator<Mensaje> {
 	private int codigo;
 	private Persona remitente;
 	private Persona destinatario;
@@ -76,7 +77,7 @@ public class Mensaje implements Comparable<Mensaje> {
 	}
 
 	@Override
-	public int compareTo(Mensaje o) {
+	public int compare(Mensaje o1, Mensaje o2) {
 		// TODO Auto-generated method stub
 		return 0;
 	}

@@ -7,7 +7,7 @@ import java.util.Objects;
 import com.jacaranda.mensajes.Mensaje;
 import com.jacaranda.mensajes.MensajeException;
 
-public abstract class Persona {
+public abstract class Persona implements Comparable<Persona> {
 	protected String nombre;
 	protected int edad;
 	protected String dni;
@@ -97,30 +97,93 @@ public abstract class Persona {
 	 * saltar� el correspondiente mensaje de error.
 	 */
 
-	public String leerMensajesRecibidos() {
+	public String leerMensajesRecibidos() throws PersonaException {
 		StringBuilder result = new StringBuilder();
-		result.append("Recibidos: ");
-		Mensaje iMensaje;
-		Iterator<Mensaje> iterador = mensajesRecibido.iterator();
 
-		while (iterador.hasNext()) {
-			iMensaje = iterador.next();
-			result.append(iMensaje.toString() + " ");
+		if (mensajesRecibido == null || mensajesRecibido.isEmpty()) {
+			throw new PersonaException("No hay mensajes que mostrar.");
+		} else {
+			result.append("Recibidos: ");
+			Mensaje iMensaje;
+			Iterator<Mensaje> iterador = mensajesRecibido.iterator();
+
+			while (iterador.hasNext()) {
+				iMensaje = iterador.next();
+				result.append(iMensaje.toString() + " ");
+			}
 		}
 		return result.toString();
 	}
 
-	public String leerMensajesEnviados() {
+	public String leerMensajesEnviados() throws PersonaException {
 		StringBuilder result = new StringBuilder();
-		result.append("Enviados: ");
-		Mensaje iMensaje;
-		Iterator<Mensaje> iterador = mensajesEnviados.iterator();
+		if (mensajesEnviados == null || mensajesEnviados.isEmpty()) {
+			throw new PersonaException("No hay mensajes que mostrar.");
+		} else {
+			result.append("Enviados: ");
+			Mensaje iMensaje;
+			Iterator<Mensaje> iterador = mensajesEnviados.iterator();
 
-		while (iterador.hasNext()) {
-			iMensaje = iterador.next();
-			result.append(iMensaje.toString() + " ");
+			while (iterador.hasNext()) {
+				iMensaje = iterador.next();
+				result.append(iMensaje.toString() + " ");
+			}
 		}
 		return result.toString();
+	}
+
+	/*
+	 * Un método para poder borrar un mensaje del buzón. Al método se le pasará el
+	 * número de mensaje que se desea borrar. Si no existe ese número de mensaje
+	 * saltará una excepción.
+	 */
+
+	public void delMensaje(int numMensaje) throws PersonaException {
+
+		Iterator<Mensaje> iterator = mensajesRecibido.iterator();
+		Mensaje iMensaje;
+		boolean encontrado = false;
+
+		while (iterator.hasNext() && !encontrado) {
+			iMensaje = iterator.next();
+
+			if (iMensaje.getCodigo() == numMensaje) {
+				mensajesRecibido.remove(iMensaje);
+				encontrado = true;
+			}
+		}
+		if (encontrado == false) {
+			throw new PersonaException("No existe el mensaje que desea borrar.");
+		}
+	}
+
+	/*
+	 * Un método para poder leer los mensajes del buzón pero ordenado por el nombre
+	 * del remitente alfabéticamente.
+	 */
+
+	/*
+	 * Un método que realice una búsqueda para poder encontrar los mensajes de su
+	 * buzón que contienen una frase Este método devolverá un String con todos los
+	 * mensajes que tienen esa frase o saltará la excepción si no encuentra ningún
+	 * mensaje con esa frase.
+	 */
+
+	public String searchTexto(String cadena) {
+		StringBuilder result = new StringBuilder();
+
+		Iterator<Mensaje> iterator = mensajesRecibido.iterator();
+		Mensaje iMensaje;
+
+		while (iterator.hasNext()) {
+			iMensaje = iterator.next();
+
+			if (iMensaje.getTexto().contains(cadena)) {
+				result.append(iMensaje.toString() + " ");
+			}
+		}
+		return result.toString();
+
 	}
 
 	@Override
