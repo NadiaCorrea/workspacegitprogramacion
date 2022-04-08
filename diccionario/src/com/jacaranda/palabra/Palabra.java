@@ -115,4 +115,6 @@ public class Palabra {
 		return Objects.equals(palabra, other.palabra);
 	}
 
+	// cambios
+
 }
