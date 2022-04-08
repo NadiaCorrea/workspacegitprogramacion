@@ -23,6 +23,7 @@ public class MainDiccionario {
 //			p2.delSignificado("abaco");
 
 			System.out.println("Después de borrar\n" + p2.toString());
+			System.out.println(p2.getInicialPalabra());
 
 		} catch (PalabraException e) {
 			System.out.println(e.getMessage());

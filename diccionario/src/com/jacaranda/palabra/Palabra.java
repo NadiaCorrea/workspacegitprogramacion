@@ -93,6 +93,17 @@ public class Palabra {
 
 	}
 
+	// ver por que letra inicia la palabra
+
+	public char getInicialPalabra() {
+		char letraInicial;
+
+		letraInicial = this.palabra.charAt(0);
+
+		return letraInicial;
+
+	}
+
 	@Override
 	public String toString() {
 		return "Palabra [palabra=" + palabra + ", significados=" + significados + "]";
@@ -114,7 +125,5 @@ public class Palabra {
 		Palabra other = (Palabra) obj;
 		return Objects.equals(palabra, other.palabra);
 	}
-
-	// cambios
 
 }
