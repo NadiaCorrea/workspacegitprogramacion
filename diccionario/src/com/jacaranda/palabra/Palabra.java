@@ -19,7 +19,7 @@ public class Palabra {
 		super();
 		setPalabra(palabra);
 		this.significados = new HashSet<>();
-		if (significado == null || significado == "") {
+		if (significado == null || "".equals(significado)) {
 			throw new PalabraException("El significado no puede ser nulo.");
 		} else {
 			this.significados.add(significado);
@@ -35,7 +35,7 @@ public class Palabra {
 		if (palabra == null || palabra == "") {
 			throw new PalabraException("La palabra no puede ser nula.");
 		} else {
-			this.palabra = palabra;
+			this.palabra = palabra.toLowerCase();
 		}
 	}
 

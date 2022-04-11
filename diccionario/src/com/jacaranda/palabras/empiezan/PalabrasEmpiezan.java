@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Objects;
 
 import com.jacaranda.palabra.Palabra;
+import com.jacaranda.palabra.PalabraException;
 
 public class PalabrasEmpiezan {
 	Character letra;
@@ -25,33 +26,59 @@ public class PalabrasEmpiezan {
 		if (letra == null) {
 			throw new PalabraEmpiezanException("La letra no puede ser nula.");
 		} else {
-			this.letra = letra;
+			this.letra = Character.toUpperCase(letra);
 		}
 
 	}
 
 	// addPalabra
 
-	public void addPalabra(String palabra, String significado) {
+	public void addPalabra(String palabra, String significado) throws PalabraEmpiezanException {
+		Palabra palabraAux = null;
+		int position;
+		Character letraInicial;
 
+		try {
+			palabraAux = new Palabra(palabra, significado);
+			position = this.palabras.indexOf(palabraAux);
+			letraInicial = palabraAux.getInicialPalabra();
+
+			if (!this.getLetra().equals(Character.toUpperCase(letraInicial))) {
+				throw new PalabraEmpiezanException("La palabra no empieza por la letra debida.");
+			} else {
+				if (position < 0) {
+					this.palabras.add(palabraAux);
+				} else {
+					Palabra palabraExistente = this.palabras.get(position);
+					palabraExistente.addSignificado(significado);
+				}
+
+			}
+
+		} catch (PalabraException e) {
+			throw new PalabraEmpiezanException(e.getMessage());
+		}
 	}
 
-//	private int buscarSuSito(Integer nuevo) { 
-//		// TODO Auto-generated method stub 
-//		boolean encontradoPosicion=false; 
-//		int pos=0; Iterator <Integer> it= lista.iterator(); 
-//		Integer elemento; 
-//		while ( it.hasNext() && encontradoPosicion== false) { 
-//			elemento=it.next(); 
-//			if ( nuevo.intValue() < elemento.intValue()) 
-//				encontradoPosicion= true; 
-//			else pos++; 
-//			} 
-//		return pos; } 
-//	}
 	// delPalabra
 
-	public void borraPalabra(String palabra) {
+	public void borrarPalabra(String palabra) throws PalabraEmpiezanException {
+		Palabra palabraAux = null;
+		int position;
+
+		try {
+			palabraAux = new Palabra(palabra);
+			position = this.palabras.indexOf(palabraAux);
+
+			if (position >= 0) {
+				this.palabras.remove(position);
+			} else {
+				throw new PalabraEmpiezanException("La palabra introducida no existe.");
+			}
+
+		} catch (PalabraException e) {
+			throw new PalabraEmpiezanException(e.getMessage());
+		}
 
 	}
 
