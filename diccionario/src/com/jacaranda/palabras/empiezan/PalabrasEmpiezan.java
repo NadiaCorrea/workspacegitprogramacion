@@ -1,13 +1,17 @@
 package com.jacaranda.palabras.empiezan;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 import com.jacaranda.palabra.Palabra;
 import com.jacaranda.palabra.PalabraException;
 
-public class PalabrasEmpiezan {
+public class PalabrasEmpiezan implements Comparable<PalabrasEmpiezan> {
 	Character letra;
 	List<Palabra> palabras;
 
@@ -82,6 +86,49 @@ public class PalabrasEmpiezan {
 
 	}
 
+	// Método para obtener los significados
+
+	public Set<String> obtenerSignificados(String palabra) throws PalabraEmpiezanException {
+		Set<String> resultado = null;
+		int position;
+		try {
+			Palabra palabraAux = new Palabra(palabra);
+			position = this.palabras.indexOf(palabraAux);
+
+			if (position > -1) {
+				resultado = this.palabras.get(position).getSignificados();
+			} else {
+				throw new PalabraEmpiezanException("No se encontrado la palabra.");
+			}
+		} catch (PalabraException e) {
+			throw new PalabraEmpiezanException("Error. " + e.getMessage());
+		}
+
+		return resultado;
+
+	}
+
+	// buscar palabras que empiezan x texto
+
+	public String buscarTexto(String texto) {
+		List<String> listaAux = new ArrayList<>();
+
+		Iterator<Palabra> iterator = palabras.iterator();
+		Palabra iPalabra;
+		while (iterator.hasNext()) {
+			iPalabra = iterator.next();
+
+			if (iPalabra.getPalabra().toLowerCase().startsWith(texto.toLowerCase())) {
+				listaAux.add(iPalabra.getPalabra());
+			}
+
+		}
+		Collections.sort(listaAux);
+
+		return listaAux.toString();
+
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(letra);
@@ -101,7 +148,19 @@ public class PalabrasEmpiezan {
 
 	@Override
 	public String toString() {
-		return "PalabrasEmpiezan [letra=" + letra + ", palabras=" + palabras + "]";
+		return "[Letra=" + letra + ", Palabras=" + palabras + "]";
+	}
+
+	@Override
+	public int compareTo(PalabrasEmpiezan o) {
+		int resultado;
+		if (o == null) {
+			resultado = -1;
+		} else {
+			resultado = this.getLetra().compareTo(o.getLetra());
+		}
+
+		return resultado;
 	}
 
 }

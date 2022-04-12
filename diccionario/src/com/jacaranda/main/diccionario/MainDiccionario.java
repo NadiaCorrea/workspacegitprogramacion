@@ -1,5 +1,7 @@
 package com.jacaranda.main.diccionario;
 
+import com.jacaranda.diccionario.Diccionario;
+import com.jacaranda.diccionario.DiccionarioException;
 import com.jacaranda.palabra.Palabra;
 import com.jacaranda.palabras.empiezan.PalabraEmpiezanException;
 import com.jacaranda.palabras.empiezan.PalabrasEmpiezan;
@@ -12,6 +14,7 @@ public class MainDiccionario {
 		PalabrasEmpiezan letra3;
 		Palabra p1;
 		Palabra p2;
+		Diccionario dic1;
 
 		try {
 
@@ -26,12 +29,36 @@ public class MainDiccionario {
 			letra2.addPalabra("Banco", "asiento");
 			letra2.addPalabra("Banco", "conjunto peces");
 			System.out.println(letra2.toString());
+			System.out.println("esto " + letra2.obtenerSignificados("banco"));
 
 			letra3.addPalabra("Casa", "hogar");
 			letra3.addPalabra("Casa", "inicio");
 			System.out.println(letra3.toString());
+
+			dic1 = new Diccionario();
+
+			dic1.addDiccionario("Dominó", "juego de mesa");
+			dic1.addDiccionario("Añil", "color");
+			dic1.addDiccionario("Aval", "persona");
+			dic1.addDiccionario("Banco", "conjunto peces");
+			dic1.addDiccionario("Banco", "asiento");
+
+			dic1.addDiccionario("Banco", "entidad financiera");
+			dic1.addDiccionario("casa", "hogar");
+
+			dic1.addDiccionario("Casa", "inicio");
+			System.out.println(dic1.toString());
+
+			System.out.println(dic1.buscarPalabra("banco"));
+
+//			dic1.borrarPalabra("añil");
+//			System.out.println("despues de borrar " + dic1.toString());
+
+			System.out.println(dic1.listarDiccionario("a"));
+//			dic1.addDiccionario("casa", "hogar");
+
 //			letra3.addPalabra("Casa", "hogar");
-			letra3.borrarPalabra("Aval");
+//			letra3.borrarPalabra("Aval");
 //			letra3.borrarPalabra("Abaco");
 
 //			p1 = new Palabra("abaco");
@@ -47,18 +74,12 @@ public class MainDiccionario {
 //			System.out.println("DespuÃ©s de borrar\n" + p2.toString());
 //			System.out.println(p2.getInicialPalabra());
 
-		} catch (PalabraEmpiezanException e) {
+		} catch (PalabraEmpiezanException | DiccionarioException e) {
 			System.out.println(e.getMessage());
 		}
 
 	}
 
-	// 1. Añadir palabra. Se solicitará a palabra y su significado. Si la palabra ya
-	// tenía un significado se guardará este nuevo significado con los anteriores 2.
-	// Buscar palabra en diccionario: Se solicitará la palabra y se mostrarán todos
-	// sus significados 3. Borrar una palabra del diccionario: Se solicitará la
-	// palabra y se borrará, con todos sus significados. 4. Listado de palabras que
-	// empiecen por ... Se solicitará una cadena y se mostrará un listado de
-	// palabras ordenado alfabéticamente que comiencen por esa cadena. 5. Salir
+// 1. Añadir palabra 2. Buscar palabra en diccionario 3. Borrar una palabra del diccionario 4. Listado de palabras que empiecen por 5. Salir
 
 }

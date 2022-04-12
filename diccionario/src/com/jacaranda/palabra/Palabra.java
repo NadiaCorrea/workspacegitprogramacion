@@ -106,7 +106,7 @@ public class Palabra {
 
 	@Override
 	public String toString() {
-		return "Palabra [palabra=" + palabra + ", significados=" + significados + "]";
+		return "[" + palabra + ":" + significados + "]";
 	}
 
 	@Override
