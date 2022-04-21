@@ -4,20 +4,20 @@ import java.util.Objects;
 
 public class Modulo {
 	private String nombre;
-	private String codigo;
-	private static int codigoSiguiente;
+	private int codigo;
+	private static int codigoSiguiente = 1;
 	private int numHorasSemanales;
 	private int creditos;
-	
+
 	public Modulo(String nombre, int numHorasSemanales, int creditos) {
 		super();
 		this.nombre = nombre;
 		this.numHorasSemanales = numHorasSemanales;
 		this.creditos = creditos;
 		setCodigo(codigoSiguiente);
-		
-	}
+		codigoSiguiente += 1;
 
+	}
 
 	public int getNumHorasSemanales() {
 		return numHorasSemanales;
@@ -39,11 +39,11 @@ public class Modulo {
 		return nombre;
 	}
 
-	public String getCodigo() {
+	public int getCodigo() {
 		return codigo;
 	}
 
-	public void setCodigo(String codigo) {
+	private void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
 
@@ -69,8 +69,5 @@ public class Modulo {
 		return "Modulos [nombre=" + nombre + ", codigo=" + codigo + ", numHorasSemanales=" + numHorasSemanales
 				+ ", creditos=" + creditos + "]";
 	}
-	
-	
-	
 
 }
