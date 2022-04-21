@@ -68,6 +68,12 @@ public class DiccionarioVersionDos {
 
 	// método que busque en el map una cadena. Usar un iterator
 
+	public boolean buscarCadena(String cadena) {
+		boolean resultado = false;
+		return resultado;
+
+	}
+
 	@Override
 	public String toString() {
 		return "DiccionarioVersionDos [entradas=" + entradas + "]";
