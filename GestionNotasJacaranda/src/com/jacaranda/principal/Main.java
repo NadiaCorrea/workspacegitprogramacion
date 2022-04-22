@@ -1,5 +1,11 @@
 package com.jacaranda.principal;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -18,6 +24,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		int opc;
+		// debe ser una ruta relativa NO se debe poner desde C en windows
+		// folder\\alumnos.txt
+		leerFichero("folder//alumnos.txt");
+		leerFichero("folder//modulos.txt");
+		leerFichero("folder//notas.txt");
 
 		do {
 			muestraMenu();
@@ -25,12 +36,34 @@ public class Main {
 
 			switch (opc) {
 			case 1:
-
+				System.out.println("Introduce el nombre: ");
+				String nombre = teclado.nextLine();
+				System.out.println("Introduce el DNI: ");
+				String dni = teclado.nextLine();
+				System.out.println("Introduce el correo: ");
+				String correo = teclado.nextLine();
+				listaAlumnos.add(new Alumnado(nombre, dni, correo));
 				break;
+
 			case 2:
-
+				System.out.println("Introduce el nombre del módulo: ");
+				String modulo = teclado.nextLine();
+				System.out.println("Introduce el número de horas semanales: ");
+				int numHoras = Integer.parseInt(teclado.nextLine());
+				System.out.println("Introduce el número de créditos: ");
+				int creditos = Integer.parseInt(teclado.nextLine());
+				listaModulos.add(new Modulo(modulo, numHoras, creditos));
 				break;
+
 			case 3:
+
+				// Nota(double nota, LocalDate fecha, Alumnado alumno, Modulo modulo) Para crear
+				// una nota necesito
+				/*
+				 * 1.Debo buscar el módulo en la lista de modulos y lo copio 2. Debo buscar el
+				 * alumno en la lista de alumnos y lo copio 3. crear nota 4. Si no existe -
+				 * añadirla a lista si existe - error
+				 */
 
 				break;
 			case 4:
@@ -43,17 +76,105 @@ public class Main {
 					System.out.println(alu);
 				}
 				break;
+			case 6:
+				// escribir los datos que hay en memoria en el fichero correspondiente
+				escribirEnAlumnos("folder//alumnos.txt");
+				escribirEnModulos("folder//modulos.txt");
+				escribirEnNotas("folder//notas.txt");
+				break;
 			default:
 				System.out.println("OPción no permitida");
 				break;
 			}
-		} while (opc != 5);
+		} while (opc != 6);
 
 	}
 
 	public static void muestraMenu() {
 		System.out.println("1. Alta alumnado \n" + "2. Alta modulo\n" + "3. Registrar nota\n"
-				+ "4. Listar notas de todos los alumnos\n" + "5. salir");
+				+ "4. Listar notas de todos los alumnos\n" + "5. Listar todos los alumnos\n" + "6. salir");
+	}
+
+	private static void leerFichero(String nombreFichero) {
+		String linea;
+		try {
+			FileReader flujoLectura = new FileReader(nombreFichero);
+			BufferedReader filtroLectura = new BufferedReader(flujoLectura);
+
+			linea = filtroLectura.readLine();
+			while (linea != null) {
+//				System.out.println(linea);
+// proceso la linea que voy a leer
+
+				String[] campos = linea.split(",");
+				Alumnado alu = new Alumnado(campos[0], campos[1], campos[2]);
+				listaAlumnos.add(alu);
+
+//				leo otra linea 
+				linea = filtroLectura.readLine();
+			}
+
+			filtroLectura.close();
+			flujoLectura.close();
+		} catch (FileNotFoundException e) {
+			System.out.println("No existe el fichero " + nombreFichero);
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+	private static void escribirEnAlumnos(String nombre) {
+		String cadena;
+		try {
+			FileWriter flujoEscritura = new FileWriter(nombre);
+			PrintWriter filtroEscritura = new PrintWriter(flujoEscritura);
+			// proceso en fichero
+
+			for (Alumnado alu : listaAlumnos) {
+
+				filtroEscritura.println(alu.escribeFichero());
+			}
+
+			// fin del proceso
+			filtroEscritura.close();
+			flujoEscritura.close();
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+	private static void escribirEnNotas(String string) {
+		// TODO Auto-generated method stub
+
+	}
+
+	private static void escribirEnModulos(String nombre) {
+		String cadena;
+		try {
+			FileWriter flujoEscritura = new FileWriter(nombre);
+			PrintWriter filtroEscritura = new PrintWriter(flujoEscritura);
+
+			for (Modulo asignatura : listaModulos) {
+				filtroEscritura.println(asignatura.getInfoModulo());
+			}
+
+			filtroEscritura.close();
+			flujoEscritura.close();
+
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+	private static Modulo buscarModulo(String asignatura) {
+		Modulo resultado = null;
+		Modulo ibuscar = new Modulo(asignatura, 0, 0);
+
+		if (listaModulos.contains(ibuscar)) {
+			resultado = new Modulo(ibuscar.getNombre(), ibuscar.getNumHorasSemanales(), ibuscar.getCreditos());
+		}
+		return resultado;
 	}
 
 }

@@ -15,7 +15,6 @@ public class Modulo {
 		this.numHorasSemanales = numHorasSemanales;
 		this.creditos = creditos;
 		setCodigo(codigoSiguiente);
-		codigoSiguiente += 1;
 
 	}
 
@@ -43,8 +42,11 @@ public class Modulo {
 		return codigo;
 	}
 
-	private void setCodigo(int codigo) {
-		this.codigo = codigo;
+	private int setCodigo(int codigo) {
+		this.codigo = codigoSiguiente;
+		this.codigoSiguiente += 1;
+		return this.codigo;
+
 	}
 
 	@Override
@@ -70,4 +72,8 @@ public class Modulo {
 				+ ", creditos=" + creditos + "]";
 	}
 
+	public String getInfoModulo() {
+		return this.codigo + ", " + this.nombre + ", " + this.numHorasSemanales + ", " + this.creditos;
+
+	}
 }
