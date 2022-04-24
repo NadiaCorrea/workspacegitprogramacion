@@ -9,9 +9,9 @@ public class Nota {
 	private Alumnado alumno;
 	private Modulo modulo;
 
-	public Nota(double nota, LocalDate fecha, Alumnado alumno, Modulo modulo) {
+	public Nota(double nota, LocalDate fecha, Alumnado alumno, Modulo modulo) throws NotaException {
 		super();
-		this.nota = nota;
+		setNota(nota);
 		this.fecha = fecha;
 		this.alumno = alumno;
 		this.modulo = modulo;
@@ -21,8 +21,13 @@ public class Nota {
 		return nota;
 	}
 
-	public void setNota(double nota) {
-		this.nota = nota;
+	public void setNota(double nota) throws NotaException {
+		if (nota < 0 || nota > 10) {
+			throw new NotaException("El rango de las notas es de 0 a 10.");
+		} else {
+			this.nota = nota;
+		}
+
 	}
 
 	public LocalDate getFecha() {
@@ -44,6 +49,11 @@ public class Nota {
 	@Override
 	public String toString() {
 		return "Nota [nota=" + nota + ", fecha=" + fecha + ", alumno=" + alumno + ", modulo=" + modulo + "]";
+	}
+
+	public String getInfoNota() {
+		return this.nota + ", " + this.fecha + ", " + this.alumno + ", " + this.modulo;
+
 	}
 
 	@Override

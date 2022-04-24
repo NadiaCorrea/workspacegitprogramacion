@@ -6,14 +6,18 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Scanner;
 
 import com.jacaranda.gestion.Alumnado;
 import com.jacaranda.gestion.Modulo;
 import com.jacaranda.gestion.Nota;
+import com.jacaranda.gestion.NotaException;
 
 public class Main {
 
@@ -43,6 +47,7 @@ public class Main {
 				System.out.println("Introduce el correo: ");
 				String correo = teclado.nextLine();
 				listaAlumnos.add(new Alumnado(nombre, dni, correo));
+				escribirEnAlumnos("folder//alumnos.txt");
 				break;
 
 			case 2:
@@ -53,18 +58,49 @@ public class Main {
 				System.out.println("Introduce el n√∫mero de cr√©ditos: ");
 				int creditos = Integer.parseInt(teclado.nextLine());
 				listaModulos.add(new Modulo(modulo, numHoras, creditos));
+				escribirEnModulos("folder//modulos.txt");
 				break;
 
 			case 3:
+				System.out.println("Introduce el nombre del m√≥dulo: ");
+				String moduloABuscar = teclado.nextLine();
+
+				System.out.println("Introduce el DNI: ");
+				String dniABuscar = teclado.nextLine();
+
+				System.out.println("Introduce la fecha dd/mm/aaaa: ");
+				DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+				LocalDate fechaCorrecta = LocalDate.parse(teclado.nextLine(), formatter);
+
+				System.out.println("Introduce la nota: ");
+				double nota1 = Double.parseDouble(teclado.nextLine());
 
 				// Nota(double nota, LocalDate fecha, Alumnado alumno, Modulo modulo) Para crear
 				// una nota necesito
 				/*
-				 * 1.Debo buscar el m√≥dulo en la lista de modulos y lo copio 2. Debo buscar el
-				 * alumno en la lista de alumnos y lo copio 3. crear nota 4. Si no existe -
-				 * a√±adirla a lista si existe - error
+				 * 1.Debo buscar el mÛdulo en la lista de modulos y lo copio 2. Debo buscar el
+				 * alumno en la lista de alumnos y lo copio 3. crear nota 4. Si no existeÒadirla
+				 * a lista si existe - error
 				 */
 
+				try {
+					Modulo nuevoModulo = buscarModulo(moduloABuscar);
+					Alumnado nuevoAlumno = buscarAlumnado(dniABuscar);
+
+					if (nuevoAlumno != null && nuevoModulo != null) {
+						Nota nuevaNota = new Nota(nota1, fechaCorrecta, nuevoAlumno, nuevoModulo);
+						if (listaNotas.contains(nuevaNota)) {
+							throw new NotaException("La nota ya existe.");
+						} else {
+							listaNotas.add(nuevaNota);
+						}
+					} else {
+						throw new NotaException("No se pudo crear la nota porque el mÛdulo o el alumno no existe.");
+					}
+				} catch (NotaException e) {
+					System.out.println(e.getMessage());
+				}
+				escribirEnNotas("folder//notas.txt");
 				break;
 			case 4:
 				for (Nota nota : listaNotas) {
@@ -124,7 +160,7 @@ public class Main {
 	}
 
 	private static void escribirEnAlumnos(String nombre) {
-		String cadena;
+
 		try {
 			FileWriter flujoEscritura = new FileWriter(nombre);
 			PrintWriter filtroEscritura = new PrintWriter(flujoEscritura);
@@ -143,13 +179,27 @@ public class Main {
 		}
 	}
 
-	private static void escribirEnNotas(String string) {
-		// TODO Auto-generated method stub
+	private static void escribirEnNotas(String nombre) {
+
+		try {
+			FileWriter flujoEscritura = new FileWriter(nombre);
+			PrintWriter filtroEscritura = new PrintWriter(flujoEscritura);
+
+			for (Nota nota : listaNotas) {
+				filtroEscritura.println(nota.getInfoNota());
+			}
+
+			filtroEscritura.close();
+			flujoEscritura.close();
+
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
 
 	}
 
 	private static void escribirEnModulos(String nombre) {
-		String cadena;
+
 		try {
 			FileWriter flujoEscritura = new FileWriter(nombre);
 			PrintWriter filtroEscritura = new PrintWriter(flujoEscritura);
@@ -174,6 +224,24 @@ public class Main {
 		if (listaModulos.contains(ibuscar)) {
 			resultado = new Modulo(ibuscar.getNombre(), ibuscar.getNumHorasSemanales(), ibuscar.getCreditos());
 		}
+		return resultado;
+	}
+
+	private static Alumnado buscarAlumnado(String dniABuscar) {
+		Alumnado resultado = null;
+		boolean encontrado = false;
+		Alumnado iAlumno;
+		Iterator<Alumnado> iterator = listaAlumnos.iterator();
+
+		while (iterator.hasNext() && !encontrado) {
+			iAlumno = iterator.next();
+
+			if (iAlumno.getDni().equalsIgnoreCase(dniABuscar)) {
+				resultado = new Alumnado(iAlumno.getNombre(), iAlumno.getDni(), iAlumno.getCorreo());
+				encontrado = true;
+			}
+		}
+
 		return resultado;
 	}
 
