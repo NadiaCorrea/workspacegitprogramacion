@@ -2,6 +2,7 @@ package com.jacaranda.versiondosdiccionario;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class DiccionarioVersionDos {
 
@@ -68,9 +69,21 @@ public class DiccionarioVersionDos {
 
 	// método que busque en el map una cadena. Usar un iterator
 
-	public boolean buscarCadena(String cadena) {
-		boolean resultado = false;
-		return resultado;
+	public String buscarCadena(String cadena) {
+		StringBuilder resultado = new StringBuilder();
+		String iEntrada;
+
+		Iterator<String> iterator = entradas.keySet().iterator();
+
+		while (iterator.hasNext()) {
+			iEntrada = iterator.next();
+
+			if (iEntrada.toUpperCase().startsWith(cadena.toUpperCase())) {
+				resultado.append(iEntrada + "\n" + );
+			}
+		}
+
+		return resultado.toString();
 
 	}
 

@@ -18,6 +18,9 @@ public class Main {
 		d1.borrarSignificadoEntrada("hola", "sig1");
 		System.out.println(d1.toString());
 
+		System.out.println("busqueda de cadena");
+		System.out.println(d1.buscarCadena("ho"));
+
 	}
 
 }

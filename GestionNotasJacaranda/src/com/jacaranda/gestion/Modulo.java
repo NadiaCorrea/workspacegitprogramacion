@@ -73,7 +73,7 @@ public class Modulo {
 	}
 
 	public String getInfoModulo() {
-		return this.codigo + ", " + this.nombre + ", " + this.numHorasSemanales + ", " + this.creditos;
+		return this.codigo + "," + this.nombre + "," + this.numHorasSemanales + "," + this.creditos;
 
 	}
 }

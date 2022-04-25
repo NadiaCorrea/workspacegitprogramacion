@@ -41,7 +41,7 @@ public class Alumnado {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(dni, nombre);
+		return Objects.hash(dni);
 	}
 
 	@Override
@@ -53,11 +53,11 @@ public class Alumnado {
 		if (getClass() != obj.getClass())
 			return false;
 		Alumnado other = (Alumnado) obj;
-		return Objects.equals(dni, other.dni) && Objects.equals(nombre, other.nombre);
+		return Objects.equals(dni, other.dni);
 	}
 
 	public String escribeFichero() {
-		return this.nombre + ", " + this.dni + ", " + this.correo;
+		return this.nombre + "," + this.dni + "," + this.correo;
 
 	}
 

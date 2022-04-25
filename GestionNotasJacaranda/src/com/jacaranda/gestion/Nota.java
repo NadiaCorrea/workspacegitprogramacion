@@ -52,7 +52,7 @@ public class Nota {
 	}
 
 	public String getInfoNota() {
-		return this.nota + ", " + this.fecha + ", " + this.alumno + ", " + this.modulo;
+		return this.alumno.getDni() + "," + this.modulo.getNombre() + "," + this.fecha + "," + this.nota;
 
 	}
 

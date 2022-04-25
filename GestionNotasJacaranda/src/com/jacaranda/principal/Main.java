@@ -30,9 +30,9 @@ public class Main {
 		int opc;
 		// debe ser una ruta relativa NO se debe poner desde C en windows
 		// folder\\alumnos.txt
-		leerFichero("folder//alumnos.txt");
-		leerFichero("folder//modulos.txt");
-		leerFichero("folder//notas.txt");
+		leerFicheroAlumnos("folder//alumnos.txt");
+		leerFicheroModulos("folder//modulos.txt");
+		leerFicheroNotas("folder//notas.txt");
 
 		do {
 			muestraMenu();
@@ -47,7 +47,6 @@ public class Main {
 				System.out.println("Introduce el correo: ");
 				String correo = teclado.nextLine();
 				listaAlumnos.add(new Alumnado(nombre, dni, correo));
-				escribirEnAlumnos("folder//alumnos.txt");
 				break;
 
 			case 2:
@@ -58,7 +57,7 @@ public class Main {
 				System.out.println("Introduce el nÃºmero de crÃ©ditos: ");
 				int creditos = Integer.parseInt(teclado.nextLine());
 				listaModulos.add(new Modulo(modulo, numHoras, creditos));
-				escribirEnModulos("folder//modulos.txt");
+
 				break;
 
 			case 3:
@@ -78,8 +77,8 @@ public class Main {
 				// Nota(double nota, LocalDate fecha, Alumnado alumno, Modulo modulo) Para crear
 				// una nota necesito
 				/*
-				 * 1.Debo buscar el módulo en la lista de modulos y lo copio 2. Debo buscar el
-				 * alumno en la lista de alumnos y lo copio 3. crear nota 4. Si no existeñadirla
+				 * 1.Debo buscar el mï¿½dulo en la lista de modulos y lo copio 2. Debo buscar el
+				 * alumno en la lista de alumnos y lo copio 3. crear nota 4. Si no existeï¿½adirla
 				 * a lista si existe - error
 				 */
 
@@ -95,12 +94,12 @@ public class Main {
 							listaNotas.add(nuevaNota);
 						}
 					} else {
-						throw new NotaException("No se pudo crear la nota porque el módulo o el alumno no existe.");
+						throw new NotaException("No se pudo crear la nota porque el mï¿½dulo o el alumno no existe.");
 					}
 				} catch (NotaException e) {
 					System.out.println(e.getMessage());
 				}
-				escribirEnNotas("folder//notas.txt");
+
 				break;
 			case 4:
 				for (Nota nota : listaNotas) {
@@ -126,12 +125,22 @@ public class Main {
 
 	}
 
+	private static void leerFicheroNotas(String string) {
+		// TODO Auto-generated method stub
+
+	}
+
+	private static void leerFicheroModulos(String string) {
+		// TODO Auto-generated method stub
+
+	}
+
 	public static void muestraMenu() {
 		System.out.println("1. Alta alumnado \n" + "2. Alta modulo\n" + "3. Registrar nota\n"
 				+ "4. Listar notas de todos los alumnos\n" + "5. Listar todos los alumnos\n" + "6. salir");
 	}
 
-	private static void leerFichero(String nombreFichero) {
+	private static void leerFicheroAlumnos(String nombreFichero) {
 		String linea;
 		try {
 			FileReader flujoLectura = new FileReader(nombreFichero);
