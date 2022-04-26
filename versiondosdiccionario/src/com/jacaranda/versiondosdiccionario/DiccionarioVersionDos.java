@@ -79,7 +79,7 @@ public class DiccionarioVersionDos {
 			iEntrada = iterator.next();
 
 			if (iEntrada.toUpperCase().startsWith(cadena.toUpperCase())) {
-				resultado.append(iEntrada + "\n" + );
+				resultado.append(iEntrada + "=" + this.entradas.get(iEntrada));
 			}
 		}
 

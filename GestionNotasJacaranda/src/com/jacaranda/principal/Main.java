@@ -57,7 +57,6 @@ public class Main {
 				System.out.println("Introduce el número de créditos: ");
 				int creditos = Integer.parseInt(teclado.nextLine());
 				listaModulos.add(new Modulo(modulo, numHoras, creditos));
-
 				break;
 
 			case 3:
@@ -94,7 +93,7 @@ public class Main {
 							listaNotas.add(nuevaNota);
 						}
 					} else {
-						throw new NotaException("No se pudo crear la nota porque el m�dulo o el alumno no existe.");
+						throw new NotaException("No se pudo crear la nota porque el módulo o el alumno no existe.");
 					}
 				} catch (NotaException e) {
 					System.out.println(e.getMessage());
@@ -118,21 +117,65 @@ public class Main {
 				escribirEnNotas("folder//notas.txt");
 				break;
 			default:
-				System.out.println("OPción no permitida");
+				System.out.println("Opción no permitida");
 				break;
 			}
 		} while (opc != 6);
 
 	}
 
-	private static void leerFicheroNotas(String string) {
-		// TODO Auto-generated method stub
+	private static void leerFicheroNotas(String fichero) {
+		String linea;
 
+		try {
+
+			FileReader flujoLectura = new FileReader(fichero);
+			BufferedReader filtroLectura = new BufferedReader(flujoLectura);
+
+			linea = filtroLectura.readLine();
+			while (linea != null) {
+
+				String[] campos = linea.split(",");
+				Nota nota = new Nota(Double.parseDouble(campos[0]), LocalDate.parse(campos[1]),
+						buscarAlumnado(campos[2]), buscarModulo(campos[3]));
+				listaNotas.add(nota);
+
+				linea = filtroLectura.readLine();
+			}
+		} catch (FileNotFoundException e) {
+			System.out.println("No existe el fichero " + fichero);
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		} catch (NumberFormatException e) {
+			System.out.println(e.getMessage());
+		} catch (NotaException e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
-	private static void leerFicheroModulos(String string) {
-		// TODO Auto-generated method stub
+	private static void leerFicheroModulos(String fichero) {
+		String linea;
 
+		try {
+			FileReader lectura = new FileReader(fichero);
+			BufferedReader filtroLectura = new BufferedReader(lectura);
+
+			linea = filtroLectura.readLine();
+			while (linea != null) {
+				String[] campos = linea.split(",");
+				Modulo modulo = new Modulo(campos[0], Integer.parseInt(campos[1]), Integer.parseInt(campos[2]));
+				listaModulos.add(modulo);
+
+				linea = filtroLectura.readLine();
+			}
+			filtroLectura.close();
+			lectura.close();
+
+		} catch (FileNotFoundException e) {
+			System.out.println("No existe el fichero " + fichero);
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 	public static void muestraMenu() {
@@ -148,17 +191,15 @@ public class Main {
 
 			linea = filtroLectura.readLine();
 			while (linea != null) {
-//				System.out.println(linea);
-// proceso la linea que voy a leer
-
+				// proceso la linea que voy a leer
 				String[] campos = linea.split(",");
 				Alumnado alu = new Alumnado(campos[0], campos[1], campos[2]);
 				listaAlumnos.add(alu);
 
-//				leo otra linea 
+				// leo otra linea
 				linea = filtroLectura.readLine();
 			}
-
+			// cierro el fichero
 			filtroLectura.close();
 			flujoLectura.close();
 		} catch (FileNotFoundException e) {
@@ -227,14 +268,32 @@ public class Main {
 	}
 
 	private static Modulo buscarModulo(String asignatura) {
+		boolean encontrado = false;
 		Modulo resultado = null;
-		Modulo ibuscar = new Modulo(asignatura, 0, 0);
 
-		if (listaModulos.contains(ibuscar)) {
-			resultado = new Modulo(ibuscar.getNombre(), ibuscar.getNumHorasSemanales(), ibuscar.getCreditos());
+		Iterator<Modulo> iterator = listaModulos.iterator();
+		Modulo iModulo;
+
+		while (iterator.hasNext() && !encontrado) {
+			iModulo = iterator.next();
+			if (iModulo.getNombre().equalsIgnoreCase(asignatura)) {
+				resultado = iModulo;
+				encontrado = true;
+			}
 		}
+
 		return resultado;
 	}
+
+//	private static Modulo buscarModulo(String asignatura) {
+//		Modulo resultado = null;
+//		Modulo ibuscar = new Modulo(asignatura, 0, 0);
+//
+//		if (listaModulos.contains(ibuscar)) {
+//			resultado = new Modulo(ibuscar.getNombre(), ibuscar.getNumHorasSemanales(), ibuscar.getCreditos());
+//		}
+//		return resultado;
+//	}
 
 	private static Alumnado buscarAlumnado(String dniABuscar) {
 		Alumnado resultado = null;
@@ -246,7 +305,7 @@ public class Main {
 			iAlumno = iterator.next();
 
 			if (iAlumno.getDni().equalsIgnoreCase(dniABuscar)) {
-				resultado = new Alumnado(iAlumno.getNombre(), iAlumno.getDni(), iAlumno.getCorreo());
+				resultado = iAlumno;
 				encontrado = true;
 			}
 		}
