@@ -3,8 +3,8 @@ package com.jaracaranda.combinacion;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-//La clase Combinacion, que almacenará una colección para los números y una
-//colección para las dos estrellas. 
+//La clase Combinacion, que almacenarÃ¡ una colecciÃ³n para los nÃºmeros y una
+//colecciÃ³n para las dos estrellas. 
 import java.util.Objects;
 
 public class Combinacion {
@@ -12,7 +12,7 @@ public class Combinacion {
 							// elementos
 	List<Integer> estrellas;
 
-	/* Un constructor que reciba los 5 números y las dos estrellas. */
+	/* Un constructor que reciba los 5 nÃºmeros y las dos estrellas. */
 
 	public Combinacion(int num1, int num2, int num3, int num4, int num5, int est1, int est2)
 			throws CombinacionException {
@@ -38,7 +38,7 @@ public class Combinacion {
 			this.numeros.add(num4);
 			this.numeros.add(num5);
 		} else {
-			throw new CombinacionException("La combinación debe ser de números del 1 al 50.");
+			throw new CombinacionException("La combinaciÃ³n debe ser de nÃºmeros del 1 al 50.");
 		}
 
 	}
@@ -55,13 +55,13 @@ public class Combinacion {
 			this.estrellas.add(est1);
 			this.estrellas.add(est2);
 		} else {
-			throw new CombinacionException("Las estrellas deben ser números del 1 al 12.");
+			throw new CombinacionException("Las estrellas deben ser nÃºmeros del 1 al 12.");
 		}
 	}
 
 	/*
-	 * Un método que devuelva una cadena con los 5 números con el formato
-	 * “2-12-17-28-46”
+	 * Un mÃ©todo que devuelva una cadena con los 5 nÃºmeros con el formato
+	 * â€œ2-12-17-28-46â€�
 	 */
 	public String numerosToString() {
 
@@ -79,8 +79,8 @@ public class Combinacion {
 	}
 
 	/*
-	 * ○ Un método que devuelva una cadena con las dos estrellas con el formato
-	 * “6-10”
+	 * â—‹ Un mÃ©todo que devuelva una cadena con las dos estrellas con el formato
+	 * â€œ6-10â€�
 	 */
 
 	public String estrellasToString() {
@@ -98,19 +98,19 @@ public class Combinacion {
 	}
 
 	/*
-	 * ○ Un método que devuelva una cadena con los números y las estrellas con el
-	 * formato “2-12-17-28-46 Estrellas: 6-10”
+	 * â—‹ Un mÃ©todo que devuelva una cadena con los nÃºmeros y las estrellas con
+	 * el formato â€œ2-12-17-28-46 Estrellas: 6-10â€�
 	 */
 	@Override
 	public String toString() {
-		return "Combinación: " + numerosToString() + " Estrellas: " + estrellasToString();
+		return "CombinaciÃ³n: " + numerosToString() + " Estrellas: " + estrellasToString();
 	}
 
 	/*
-	 * ○ Dos combinaciones serán iguales si tienen la misma colección de números y
-	 * de estrellas. Para subir Nota: dos combinaciones serán iguales si tienen el
-	 * mismo número en la colección de números y los mismos números en las estrellas
-	 * independientemente del orden.
+	 * â—‹ Dos combinaciones serÃ¡n iguales si tienen la misma colecciÃ³n de
+	 * nÃºmeros y de estrellas. Para subir Nota: dos combinaciones serÃ¡n iguales si
+	 * tienen el mismo nÃºmero en la colecciÃ³n de nÃºmeros y los mismos nÃºmeros en
+	 * las estrellas independientemente del orden.
 	 */
 
 	@Override
@@ -131,8 +131,35 @@ public class Combinacion {
 	}
 
 	/*
-	 * ○ Un método comprobar aciertos que reciba un objeto Combinación y devuelva un
-	 * número que será el número de aciertos de esa combinación.
+	 * â—‹ Un mÃ©todo comprobar aciertos que reciba un objeto CombinaciÃ³n y
+	 * devuelva un nÃºmero que serÃ¡ el nÃºmero de aciertos de esa combinaciÃ³n.
 	 */
 
+	public int comprobarAciertos(Combinacion combi) {
+		int result = 0;
+		List<Integer> auxNum = combi.getNumeros();
+		List<Integer> auxEst = combi.getEstrellas();
+
+		// Buscar numeros
+		Iterator<Integer> iterator = auxNum.iterator();
+		int iNum;
+		while (iterator.hasNext()) {
+			iNum = iterator.next();
+			if (this.numeros.contains(iNum)) {
+				result += 1;
+			}
+		}
+
+		// Buscar estrellas
+		Iterator<Integer> iterator2 = auxEst.iterator();
+		int iEst;
+		while (iterator2.hasNext()) {
+			iEst = iterator2.next();
+			if (this.estrellas.contains(iEst)) {
+				result += 1;
+			}
+		}
+
+		return result;
+	}
 }
