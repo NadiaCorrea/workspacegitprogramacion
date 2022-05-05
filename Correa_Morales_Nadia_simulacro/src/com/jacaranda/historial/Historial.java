@@ -23,9 +23,9 @@ public class Historial {
 	}
 
 	/*
-	 * ○ El método addSorteo que reciba una fecha y una combinación y lo añada
-	 * al mapa. Si ya estaba registrada una combinación para esa fecha deberá
-	 * devolver false y true en el caso contrario.
+	 * ○ El método addSorteo que reciba una fecha y una combinación y lo añada al
+	 * mapa. Si ya estaba registrada una combinación para esa fecha deberá devolver
+	 * false y true en el caso contrario.
 	 */
 
 	public boolean addSorteo(LocalDate fecha, Combinacion combinacion) {
@@ -54,8 +54,8 @@ public class Historial {
 	}
 
 	/*
-	 * ○ Un método que permita borrar la información guardada para una
-	 * determinada fecha.
+	 * ○ Un método que permita borrar la información guardada para una determinada
+	 * fecha.
 	 */
 
 	public boolean borrarSorteo(LocalDate fecha) {
@@ -69,11 +69,10 @@ public class Historial {
 	}
 
 	/*
-	 * ○ Un método para comprobar el número de aciertos en una fecha
-	 * determinada. Recibirá una fecha y una combinación y devolverá el número
-	 * de aciertos de la combinación que recibe como parámetro en la combinación
-	 * que está almacenada en esa fecha. Si no hay combinación para esa fecha
-	 * devolverá un -1.
+	 * ○ Un método para comprobar el número de aciertos en una fecha determinada.
+	 * Recibirá una fecha y una combinación y devolverá el número de aciertos de la
+	 * combinación que recibe como parámetro en la combinación que está almacenada
+	 * en esa fecha. Si no hay combinación para esa fecha devolverá un -1.
 	 */
 
 	public int comprobarAciertos(LocalDate fecha, Combinacion combinacion) {
@@ -91,8 +90,8 @@ public class Historial {
 	}
 
 	/*
-	 * ○ Un método que devuelva un String con todas las fechas y los resultados
-	 * de las fechas por orden ascendente.
+	 * ○ Un método que devuelva un String con todas las fechas y los resultados de
+	 * las fechas por orden ascendente.
 	 */
 
 	public String ordenarAscendente() {
@@ -113,14 +112,15 @@ public class Historial {
 	}
 
 	/*
-	 * ○ Un método que devuelva un String con todas las fechas y los resultados
-	 * de las fechas por orden descente.
+	 * ○ Un método que devuelva un String con todas las fechas y los resultados de
+	 * las fechas por orden descente.
 	 */
 
 	/*
 	 * ○ Un método que devuelva un String con los sorteos realizados en un
-	 * determinado mes, deberá aparecer la fecha, dos puntos y el resultado
-	 * (números y estrellas), un salto de línea y el siguiente resultado.Deberá
-	 * recibir un número que representa el mes.
+	 * determinado mes, deberá aparecer la fecha, dos puntos y el resultado (números
+	 * y estrellas), un salto de línea y el siguiente resultado.Deberá recibir un
+	 * número que representa el mes.
 	 */
+
 }

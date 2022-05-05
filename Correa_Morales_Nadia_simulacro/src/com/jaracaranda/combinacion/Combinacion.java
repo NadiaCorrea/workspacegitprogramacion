@@ -8,9 +8,12 @@ import java.util.List;
 import java.util.Objects;
 
 public class Combinacion {
-	List<Integer> numeros; // He usado un array list ya que no se necesitaba mantener un orden de los
-							// elementos
-	List<Integer> estrellas;
+
+	// falta lo de private
+	private List<Integer> numeros; // He usado un array list ya que no se necesitaba mantener un orden de los
+	// elementos
+	private List<Integer> estrellas;// tenía q haber sido un hashset ya que no importa ni el orden nii hay elementos
+									// repetidos
 
 	/* Un constructor que reciba los 5 nÃºmeros y las dos estrellas. */
 
@@ -103,7 +106,7 @@ public class Combinacion {
 	 */
 	@Override
 	public String toString() {
-		return "CombinaciÃ³n: " + numerosToString() + " Estrellas: " + estrellasToString();
+		return "Combinación: " + numerosToString() + " Estrellas: " + estrellasToString();
 	}
 
 	/*
@@ -135,6 +138,7 @@ public class Combinacion {
 	 * devuelva un nÃºmero que serÃ¡ el nÃºmero de aciertos de esa combinaciÃ³n.
 	 */
 
+	// arraylist se utiliza el get o e indexof
 	public int comprobarAciertos(Combinacion combi) {
 		int result = 0;
 		List<Integer> auxNum = combi.getNumeros();
