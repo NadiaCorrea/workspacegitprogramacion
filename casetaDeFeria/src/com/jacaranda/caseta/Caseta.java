@@ -1,4 +1,4 @@
-package com.jacaranda.main.feria;
+package com.jacaranda.caseta;
 
 import java.util.Objects;
 
@@ -11,10 +11,14 @@ public class Caseta {
 	private String clase;
 	private String entidad;
 	private int id;
-	private int id_calle;
+	private int idCalle;
+
+	public Caseta() {
+
+	}
 
 	public Caseta(String titulo, String calle, int numero, int modulo, String clase, String entidad, int id,
-			int id_calle) {
+			int idCalle) {
 		super();
 		this.titulo = titulo;
 		this.calle = calle;
@@ -23,7 +27,39 @@ public class Caseta {
 		this.clase = clase;
 		this.entidad = entidad;
 		this.id = id;
-		this.id_calle = id_calle;
+		this.idCalle = idCalle;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public void setCalle(String calle) {
+		this.calle = calle;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public void setModulo(int modulo) {
+		this.modulo = modulo;
+	}
+
+	public void setClase(String clase) {
+		this.clase = clase;
+	}
+
+	public void setEntidad(String entidad) {
+		this.entidad = entidad;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setIdCalle(int idCalle) {
+		this.idCalle = idCalle;
 	}
 
 	public String getTitulo() {
@@ -54,8 +90,8 @@ public class Caseta {
 		return id;
 	}
 
-	public int getId_calle() {
-		return id_calle;
+	public int getIdCalle() {
+		return idCalle;
 	}
 
 	@Override
@@ -78,7 +114,7 @@ public class Caseta {
 	@Override
 	public String toString() {
 		return "Caseta [titulo=" + titulo + ", calle=" + calle + ", numero=" + numero + ", modulo=" + modulo
-				+ ", clase=" + clase + ", entidad=" + entidad + ", id=" + id + ", id_calle=" + id_calle + "]";
+				+ ", clase=" + clase + ", entidad=" + entidad + ", id=" + id + ", idCalle=" + idCalle + "]";
 	}
 
 }

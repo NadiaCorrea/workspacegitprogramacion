@@ -1,57 +1,68 @@
 package com.jacaranda.main.feria;
 
-import java.io.File;
+import java.util.Scanner;
+import java.util.Set;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-
-import org.w3c.dom.Document;
+import com.jacaranda.caseta.Caseta;
+import com.jacaranda.caseta.CasetaManager;
 
 public class MainFeria {
+	public static Scanner teclado = new Scanner(System.in);
 
 	public static void main(String[] args) {
 
-		File archivo = new File("folderFeria//casetasferia.xml");
+		CasetaManager feria = new CasetaManager();
+		int opc;
 
-		try {
+		do {
+			menu();
+			opc = Integer.parseInt(teclado.nextLine());
 
-			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(archivo);
+			switch (opc) {
+			case 1:
+				System.out.println("Introduce el nombre de la calle: ");
+				String calle = teclado.nextLine();
 
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
+				System.out.println(feria.mostrarCasetasPorCalle(calle));
 
-		/*
-		 * El Ayuntamiento de Sevilla nos piden que hagamos una aplicación para
-		 * gestionar las casetas de la Feria de Sevilla. Para ello nos entregan un
-		 * fichero XLM en el que tienen todos los datos disponibles. Nos piden que
-		 * carguemos esos datos en memoria. Nos piden que realicemos un menú con las
-		 * siguientes opciones:
-		 * 
-		 * 1. Mostrar todas las casetas existentes en una calle.
-		 * 
-		 * 2. Mostrar todas las casetas de tipo familiar.
-		 * 
-		 * 3. Mostrar todas las casetas de tipo Distrito
-		 * 
-		 * 4. Mostrar todas las casetas que no sean ni familiares ni distritos.
-		 * 
-		 * 5. Mostrar para cada una de las calles del recinto ferial el número de
-		 * casetas de tipo familiar que existen.
-		 * 
-		 * 6. Mostrar para cada una de las calles del recinto ferial el número de
-		 * casetas de tipo Distrito que existen.
-		 * 
-		 * 7. Eliminar una caseta.
-		 * 
-		 * 8. Salir.
-		 */
+				break;
+			case 2:
+				Set<Caseta> familiar = feria.mostrarCasetasFamiliar();
+				System.out.println(familiar.size());
+				break;
+			case 3:
+				System.out.println(feria.mostrarCasetasDistrito());
+				break;
+			case 4:
+				System.out.println(feria.mostrarCasetasOtras());
+				break;
+			case 5:
+				System.out.println(feria.mostrarCallesFamiliar());
+				break;
+			case 6:
+				System.out.println(feria.mostrarCallesDistrito());
+				break;
+			case 7:
+				System.out.println("Introduce el título de la caseta: ");
+				String titulo = teclado.nextLine();
+				boolean resultado = feria.eliminarCaseta(titulo);
+				if (resultado) {
+					System.out.println("Caseta eliminada.");
+				} else {
+					System.out.println("No se ha encontrado la caseta.");
+				}
+				break;
+			case 8:
+				System.out.println("¡Adiós!");
+				break;
+			default:
+				break;
+			}
+		} while (opc != 8);
 
 	}
 
-	public void menu() {
+	public static void menu() {
 		System.out.println("1. Mostrar todas las casetas existentes en una calle.\n"
 				+ "2. Mostrar todas las casetas de tipo familiar.\n"
 				+ "3. Mostrar todas las casetas de tipo Distrito\n "
