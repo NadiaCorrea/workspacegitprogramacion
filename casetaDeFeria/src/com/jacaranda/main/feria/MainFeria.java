@@ -1,5 +1,7 @@
 package com.jacaranda.main.feria;
 
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -28,19 +30,23 @@ public class MainFeria {
 				break;
 			case 2:
 				Set<Caseta> familiar = feria.mostrarCasetasFamiliar();
-				System.out.println(familiar.size());
+				System.out.println(imprimirListado(familiar));
 				break;
 			case 3:
-				System.out.println(feria.mostrarCasetasDistrito());
+				Set<Caseta> distrito = feria.mostrarCasetasDistrito();
+				System.out.println(imprimirListado(distrito));
 				break;
 			case 4:
-				System.out.println(feria.mostrarCasetasOtras());
+				Set<Caseta> otras = feria.mostrarCasetasOtras();
+				System.out.println(imprimirListado(otras));
 				break;
 			case 5:
-				System.out.println(feria.mostrarCallesFamiliar());
+				Map<String, Integer> callesFamiliar = feria.mostrarCallesFamiliar();
+				System.out.println(imprimirMap(callesFamiliar));
 				break;
 			case 6:
-				System.out.println(feria.mostrarCallesDistrito());
+				Map<String, Integer> callesDistrito = feria.mostrarCallesDistrito();
+				System.out.println(imprimirMap(callesDistrito));
 				break;
 			case 7:
 				System.out.println("Introduce el título de la caseta: ");
@@ -63,12 +69,34 @@ public class MainFeria {
 	}
 
 	public static void menu() {
-		System.out.println("1. Mostrar todas las casetas existentes en una calle.\n"
-				+ "2. Mostrar todas las casetas de tipo familiar.\n"
-				+ "3. Mostrar todas las casetas de tipo Distrito\n "
-				+ "4. Mostrar todas las casetas que no sean ni familiares ni distritos.\n "
-				+ "5. Mostrar para cada una de las calles del recinto ferial el número de casetas de tipo familiar que existen.\n "
-				+ "6. Mostrar para cada una de las calles del recinto ferial el número de casetas de tipo Distrito que existen.\n "
-				+ "7. Eliminar una caseta.\n" + "8. Salir.");
+		System.out.println("1. Mostrar todas las casetas existentes en una calle\n"
+				+ "2. Mostrar todas las casetas de tipo familiar\n" + "3. Mostrar todas las casetas de tipo Distrito\n "
+				+ "4. Mostrar todas las casetas que no sean ni familiares ni distritos\n "
+				+ "5. Mostrar para cada una de las calles del recinto ferial el número de casetas de tipo familiar que existen\n "
+				+ "6. Mostrar para cada una de las calles del recinto ferial el número de casetas de tipo Distrito que existen\n "
+				+ "7. Eliminar una caseta\n" + "8. Salir.");
+	}
+
+	public static String imprimirListado(Set<Caseta> casetas) {
+		StringBuilder result = new StringBuilder();
+
+		Iterator<Caseta> iterador = casetas.iterator();
+		Caseta iCaseta;
+
+		while (iterador.hasNext()) {
+			iCaseta = iterador.next();
+			result.append(iCaseta + "\n");
+		}
+		return result.toString();
+	}
+
+	public static String imprimirMap(Map<String, Integer> mapa) {
+		StringBuilder result = new StringBuilder();
+		for (String clave : mapa.keySet()) {
+			int valor = mapa.get(clave);
+			result.append("Calle: " + clave + ", número de casetas: " + valor + "\n");
+
+		}
+		return result.toString();
 	}
 }
