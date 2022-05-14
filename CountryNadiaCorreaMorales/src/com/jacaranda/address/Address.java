@@ -16,11 +16,11 @@ public class Address {
 		this.address = address;
 	}
 
-	public int getId() {
+	public int getAddressId() {
 		return addressId;
 	}
 
-	private void setId(int id) {
+	private void setAddressId(int id) {
 		this.addressId = id;
 	}
 

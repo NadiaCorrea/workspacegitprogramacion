@@ -1,26 +1,39 @@
 package com.jacaranda.city;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Objects;
 
-public class City {
+import com.jacaranda.address.Address;
+
+public class City implements Comparable<City> {
 	private int cityId;
 	private String city;
 	private int numDir;
-	private Map<Integer, String> addresses;
+	private List<Address> addresses;
 
 	public City() {
 		super();
-		this.addresses = new HashMap<>();
+		this.addresses = new LinkedList<>();
+		this.numDir = 0;
 	}
 
-	public City(int cityId, String city, int numDir, Map<Integer, String> addresses) {
+	public City(int cityId, String city) {
+		super();
+		this.cityId = cityId;
+		this.city = city;
+		this.addresses = new LinkedList<>();
+		this.numDir = 0;
+	}
+
+	public City(int cityId, String city, int numDir, List<Address> addresses) {
 		super();
 		this.cityId = cityId;
 		this.city = city;
 		this.numDir = numDir;
 		this.addresses = addresses;
+		this.numDir = 0;
 	}
 
 	public int getCityId() {
@@ -47,12 +60,23 @@ public class City {
 		this.numDir = numDir;
 	}
 
-	public Map<Integer, String> getAddresses() {
+	private List<Address> getAddresses() {
 		return addresses;
 	}
 
-	private void setAddresses(Map<Integer, String> addresses) {
+	private void setAddresses(List<Address> addresses) {
 		this.addresses = addresses;
+	}
+
+	public boolean addAddress(Address address) {
+		boolean result = false;
+
+		if (!this.addresses.contains(address)) {
+			this.addresses.add(address);
+			this.numDir = this.numDir + 1;
+		}
+
+		return result;
 	}
 
 	@Override
@@ -74,7 +98,38 @@ public class City {
 
 	@Override
 	public String toString() {
-		return "City [cityId=" + cityId + ", city=" + city + ", numDir=" + numDir + ", addresses=" + addresses + "]";
+
+		StringBuilder result = new StringBuilder();
+
+		result.append("City: Id=" + cityId + ", city=" + city + ", numDir=" + numDir + "\n");
+
+		Iterator<Address> iterador = addresses.iterator();
+		Address iAddress;
+		while (iterador.hasNext()) {
+			iAddress = iterador.next();
+
+			result.append(iAddress.toString() + "\n");
+
+		}
+
+		return result.toString();
+	}
+
+	@Override
+	public int compareTo(City o) {
+		// Si hay dos ciudades con el mismo numero de direcciones nombre deberán
+		// aparecer ordenadas alfabéticamente.
+		int result;
+		if (o == null) {
+			result = -1;
+		} else {
+			result = this.numDir - o.getNumDir();
+
+			if (result == 0) {
+				result = this.city.compareTo(o.getCity());
+			}
+		}
+		return result;
 	}
 
 }
