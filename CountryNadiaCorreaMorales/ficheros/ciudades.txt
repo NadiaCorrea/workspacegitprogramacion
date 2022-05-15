@@ -1,0 +1,1676 @@
+City: Id=1, city=A Corua La Corua, numDir=1
+Address [id=56, address=939 Probolinggo Loop]
+
+City: Id=2, city=Abha, numDir=1
+Address [id=105, address=733 Mandaluyong Place]
+
+City: Id=3, city=Abu Dhabi, numDir=1
+Address [id=457, address=535 Ahmadnagar Manor]
+
+City: Id=4, city=Acua, numDir=0
+
+City: Id=5, city=Adana, numDir=1
+Address [id=332, address=663 Baha Blanca Parkway]
+
+City: Id=6, city=Addis Abeba, numDir=1
+Address [id=397, address=614 Pak Kret Street]
+
+City: Id=7, city=Aden, numDir=1
+Address [id=214, address=751 Lima Loop]
+
+City: Id=8, city=Adoni, numDir=1
+Address [id=372, address=230 Urawa Drive]
+
+City: Id=9, city=Ahmadnagar, numDir=1
+Address [id=302, address=922 Vila Velha Loop]
+
+City: Id=10, city=Akishima, numDir=0
+
+City: Id=11, city=Akron, numDir=0
+
+City: Id=12, city=al-Ayn, numDir=1
+Address [id=102, address=669 Firozabad Loop]
+
+City: Id=13, city=al-Hawiya, numDir=1
+Address [id=74, address=1124 Buenaventura Drive]
+
+City: Id=14, city=al-Manama, numDir=0
+
+City: Id=15, city=al-Qadarif, numDir=1
+Address [id=400, address=1152 Citrus Heights Manor]
+
+City: Id=16, city=al-Qatif, numDir=1
+Address [id=422, address=289 Santo Andr Manor]
+
+City: Id=17, city=Alessandria, numDir=1
+Address [id=37, address=127 Purnea Purnia Manor]
+
+City: Id=18, city=Allappuzha Alleppey, numDir=1
+Address [id=179, address=431 Xiangtan Avenue]
+
+City: Id=19, city=Allende, numDir=1
+Address [id=419, address=397 Sunnyvale Avenue]
+
+City: Id=20, city=Almirante Brown, numDir=1
+Address [id=364, address=1623 Kingstown Drive]
+
+City: Id=21, city=Alvorada, numDir=0
+
+City: Id=22, city=Ambattur, numDir=1
+Address [id=229, address=1014 Loja Manor]
+
+City: Id=23, city=Amersfoort, numDir=1
+Address [id=420, address=992 Klerksdorp Loop]
+
+City: Id=24, city=Amroha, numDir=0
+
+City: Id=25, city=Angra dos Reis, numDir=1
+Address [id=312, address=1354 Siegen Street]
+
+City: Id=26, city=Anpolis, numDir=1
+Address [id=233, address=356 Olomouc Manor]
+
+City: Id=27, city=Antofagasta, numDir=1
+Address [id=49, address=1718 Valencia Street]
+
+City: Id=28, city=Aparecida de Goinia, numDir=1
+Address [id=220, address=1201 Qomsheh Manor]
+
+City: Id=29, city=Apeldoorn, numDir=1
+Address [id=141, address=1749 Daxian Place]
+
+City: Id=30, city=Araatuba, numDir=1
+Address [id=81, address=1692 Ede Loop]
+
+City: Id=31, city=Arak, numDir=1
+Address [id=40, address=334 Munger Monghyr Lane]
+
+City: Id=32, city=Arecibo, numDir=1
+Address [id=365, address=1009 Zanzibar Lane]
+
+City: Id=33, city=Arlington, numDir=1
+Address [id=310, address=913 Coacalco de Berriozbal Loop]
+
+City: Id=34, city=Ashdod, numDir=1
+Address [id=106, address=659 Vaduz Drive]
+
+City: Id=35, city=Ashgabat, numDir=1
+Address [id=204, address=387 Mwene-Ditu Drive]
+
+City: Id=36, city=Ashqelon, numDir=0
+
+City: Id=37, city=Asuncin, numDir=1
+Address [id=230, address=201 Effon-Alaiye Way]
+
+City: Id=38, city=Athenai, numDir=1
+Address [id=7, address=692 Joliet Street]
+
+City: Id=39, city=Atinsk, numDir=1
+Address [id=402, address=616 Hagonoy Avenue]
+
+City: Id=40, city=Atlixco, numDir=1
+Address [id=88, address=125 Citt del Vaticano Boulevard]
+
+City: Id=41, city=Augusta-Richmond County, numDir=1
+Address [id=100, address=1308 Arecibo Way]
+
+City: Id=42, city=Aurora, numDir=1
+Address [id=335, address=587 Benguela Manor]
+
+City: Id=43, city=Avellaneda, numDir=0
+
+City: Id=44, city=Bag, numDir=1
+Address [id=403, address=1190 0 Place]
+
+City: Id=45, city=Baha Blanca, numDir=1
+Address [id=327, address=1427 A Corua La Corua Place]
+
+City: Id=46, city=Baicheng, numDir=0
+
+City: Id=47, city=Baiyin, numDir=0
+
+City: Id=48, city=Baku, numDir=1
+Address [id=338, address=431 Szkesfehrvr Avenue]
+
+City: Id=49, city=Balaiha, numDir=1
+Address [id=59, address=1697 Kowloon and New Kowloon Loop]
+
+City: Id=50, city=Balikesir, numDir=1
+Address [id=371, address=1912 Emeishan Drive]
+
+City: Id=51, city=Balurghat, numDir=1
+Address [id=212, address=624 Oshawa Boulevard]
+
+City: Id=52, city=Bamenda, numDir=1
+Address [id=357, address=1641 Changhwa Place]
+
+City: Id=53, city=Bandar Seri Begawan, numDir=1
+Address [id=95, address=1370 Le Mans Avenue]
+
+City: Id=54, city=Banjul, numDir=0
+
+City: Id=55, city=Barcelona, numDir=0
+
+City: Id=56, city=Basel, numDir=1
+Address [id=65, address=915 Ponce Place]
+
+City: Id=57, city=Bat Yam, numDir=1
+Address [id=320, address=1542 Lubumbashi Boulevard]
+
+City: Id=58, city=Batman, numDir=1
+Address [id=176, address=29 Pyongyang Loop]
+
+City: Id=59, city=Batna, numDir=1
+Address [id=446, address=1924 Shimonoseki Drive]
+
+City: Id=60, city=Battambang, numDir=0
+
+City: Id=61, city=Baybay, numDir=1
+Address [id=75, address=492 Cam Ranh Street]
+
+City: Id=62, city=Bayugan, numDir=1
+Address [id=192, address=1166 Changhwa Street]
+
+City: Id=63, city=Bchar, numDir=1
+Address [id=73, address=1031 Daugavpils Parkway]
+
+City: Id=64, city=Beira, numDir=1
+Address [id=262, address=771 Yaound Manor]
+
+City: Id=65, city=Bellevue, numDir=1
+Address [id=216, address=660 Jedda Boulevard]
+
+City: Id=66, city=Belm, numDir=1
+Address [id=367, address=1163 London Parkway]
+
+City: Id=67, city=Benguela, numDir=0
+
+City: Id=68, city=Beni-Mellal, numDir=0
+
+City: Id=69, city=Benin City, numDir=1
+Address [id=289, address=1279 Udine Parkway]
+
+City: Id=70, city=Bergamo, numDir=1
+Address [id=444, address=231 Kaliningrad Place]
+
+City: Id=71, city=Berhampore Baharampur, numDir=1
+Address [id=418, address=126 Acua Parkway]
+
+City: Id=72, city=Bern, numDir=1
+Address [id=159, address=185 Novi Sad Place]
+
+City: Id=73, city=Bhavnagar, numDir=1
+Address [id=384, address=97 Mogiljov Lane]
+
+City: Id=74, city=Bhilwara, numDir=1
+Address [id=213, address=43 Dadu Avenue]
+
+City: Id=75, city=Bhimavaram, numDir=0
+
+City: Id=76, city=Bhopal, numDir=1
+Address [id=19, address=419 Iligan Lane]
+
+City: Id=77, city=Bhusawal, numDir=1
+Address [id=206, address=642 Nador Drive]
+
+City: Id=78, city=Bijapur, numDir=1
+Address [id=473, address=1257 Guadalajara Street]
+
+City: Id=79, city=Bilbays, numDir=0
+
+City: Id=80, city=Binzhou, numDir=0
+
+City: Id=81, city=Birgunj, numDir=1
+Address [id=326, address=470 Boksburg Street]
+
+City: Id=82, city=Bislig, numDir=1
+Address [id=98, address=152 Kitwe Parkway]
+
+City: Id=83, city=Blumenau, numDir=1
+Address [id=210, address=1304 s-Hertogenbosch Way]
+
+City: Id=84, city=Boa Vista, numDir=1
+Address [id=347, address=1293 Nam Dinh Way]
+
+City: Id=85, city=Boksburg, numDir=1
+Address [id=129, address=569 Baicheng Lane]
+
+City: Id=86, city=Botosani, numDir=1
+Address [id=234, address=1256 Bislig Boulevard]
+
+City: Id=87, city=Botshabelo, numDir=1
+Address [id=136, address=898 Belm Manor]
+
+City: Id=88, city=Bradford, numDir=1
+Address [id=89, address=1557 Ktahya Boulevard]
+
+City: Id=89, city=Braslia, numDir=1
+Address [id=330, address=981 Kumbakonam Place]
+
+City: Id=90, city=Bratislava, numDir=1
+Address [id=362, address=482 Kowloon and New Kowloon Manor]
+
+City: Id=91, city=Brescia, numDir=1
+Address [id=314, address=1224 Huejutla de Reyes Boulevard]
+
+City: Id=92, city=Brest, numDir=1
+Address [id=407, address=1346 Mysore Drive]
+
+City: Id=93, city=Brindisi, numDir=0
+
+City: Id=94, city=Brockton, numDir=1
+Address [id=153, address=782 Mosul Street]
+
+City: Id=95, city=Bucuresti, numDir=0
+
+City: Id=96, city=Buenaventura, numDir=1
+Address [id=239, address=98 Stara Zagora Boulevard]
+
+City: Id=97, city=Bydgoszcz, numDir=1
+Address [id=323, address=1769 Iwaki Lane]
+
+City: Id=98, city=Cabuyao, numDir=1
+Address [id=376, address=1061 Ede Avenue]
+
+City: Id=99, city=Callao, numDir=1
+Address [id=309, address=827 Yuncheng Drive]
+
+City: Id=100, city=Cam Ranh, numDir=0
+
+City: Id=101, city=Cape Coral, numDir=0
+
+City: Id=102, city=Caracas, numDir=1
+Address [id=115, address=1378 Alvorada Avenue]
+
+City: Id=103, city=Carmen, numDir=0
+
+City: Id=104, city=Cavite, numDir=1
+Address [id=393, address=717 Changzhou Lane]
+
+City: Id=105, city=Cayenne, numDir=1
+Address [id=69, address=698 Otsu Street]
+
+City: Id=106, city=Celaya, numDir=0
+
+City: Id=107, city=Chandrapur, numDir=1
+Address [id=171, address=1540 Wroclaw Drive]
+
+City: Id=108, city=Changhwa, numDir=1
+Address [id=79, address=1551 Rampur Lane]
+
+City: Id=109, city=Changzhou, numDir=1
+Address [id=201, address=817 Bradford Loop]
+
+City: Id=110, city=Chapra, numDir=0
+
+City: Id=111, city=Charlotte Amalie, numDir=1
+Address [id=411, address=264 Bhimavaram Manor]
+
+City: Id=112, city=Chatsworth, numDir=0
+
+City: Id=113, city=Cheju, numDir=1
+Address [id=92, address=1942 Ciparay Parkway]
+
+City: Id=114, city=Chiayi, numDir=1
+Address [id=77, address=1947 Poos de Caldas Boulevard]
+
+City: Id=115, city=Chisinau, numDir=1
+Address [id=42, address=269 Cam Ranh Parkway]
+
+City: Id=116, city=Chungho, numDir=0
+
+City: Id=117, city=Cianjur, numDir=1
+Address [id=416, address=1445 Carmen Parkway]
+
+City: Id=118, city=Ciomas, numDir=1
+Address [id=243, address=47 Syktyvkar Lane]
+
+City: Id=119, city=Ciparay, numDir=1
+Address [id=333, address=1860 Taguig Loop]
+
+City: Id=120, city=Citrus Heights, numDir=1
+Address [id=18, address=770 Bydgoszcz Avenue]
+
+City: Id=121, city=Citt del Vaticano, numDir=1
+Address [id=30, address=18 Duisburg Boulevard]
+
+City: Id=122, city=Ciudad del Este, numDir=1
+Address [id=209, address=1679 Antofagasta Street]
+
+City: Id=123, city=Clarksville, numDir=1
+Address [id=144, address=1666 Beni-Mellal Place]
+
+City: Id=124, city=Coacalco de Berriozbal, numDir=1
+Address [id=251, address=1473 Changhwa Parkway]
+
+City: Id=125, city=Coatzacoalcos, numDir=0
+
+City: Id=126, city=Compton, numDir=1
+Address [id=186, address=533 al-Ayn Boulevard]
+
+City: Id=127, city=Coquimbo, numDir=0
+
+City: Id=128, city=Crdoba, numDir=1
+Address [id=28, address=96 Tafuna Way]
+
+City: Id=129, city=Cuauhtmoc, numDir=1
+Address [id=472, address=1447 Chatsworth Place]
+
+City: Id=130, city=Cuautla, numDir=1
+Address [id=328, address=479 San Felipe del Progreso Avenue]
+
+City: Id=131, city=Cuernavaca, numDir=0
+
+City: Id=132, city=Cuman, numDir=1
+Address [id=117, address=1079 Tel Aviv-Jaffa Boulevard]
+
+City: Id=133, city=Czestochowa, numDir=0
+
+City: Id=134, city=Dadu, numDir=1
+Address [id=421, address=966 Arecibo Loop]
+
+City: Id=135, city=Dallas, numDir=1
+Address [id=405, address=530 Lausanne Lane]
+
+City: Id=136, city=Datong, numDir=1
+Address [id=265, address=1158 Mandi Bahauddin Parkway]
+
+City: Id=137, city=Daugavpils, numDir=1
+Address [id=352, address=1673 Tangail Drive]
+
+City: Id=138, city=Davao, numDir=1
+Address [id=31, address=217 Botshabelo Place]
+
+City: Id=139, city=Daxian, numDir=1
+Address [id=68, address=1966 Amroha Avenue]
+
+City: Id=140, city=Dayton, numDir=1
+Address [id=299, address=32 Pudukkottai Lane]
+
+City: Id=141, city=Deba Habe, numDir=1
+Address [id=414, address=1936 Lapu-Lapu Parkway]
+
+City: Id=142, city=Denizli, numDir=0
+
+City: Id=143, city=Dhaka, numDir=1
+Address [id=337, address=1838 Tabriz Lane]
+
+City: Id=144, city=Dhule Dhulia, numDir=1
+Address [id=445, address=495 Bhimavaram Lane]
+
+City: Id=145, city=Dongying, numDir=1
+Address [id=471, address=1322 Mosul Parkway]
+
+City: Id=146, city=Donostia-San Sebastin, numDir=1
+Address [id=298, address=44 Najafabad Way]
+
+City: Id=147, city=Dos Quebradas, numDir=1
+Address [id=124, address=241 Mosul Lane]
+
+City: Id=148, city=Duisburg, numDir=1
+Address [id=118, address=442 Rae Bareli Place]
+
+City: Id=149, city=Dundee, numDir=1
+Address [id=146, address=483 Ljubertsy Parkway]
+
+City: Id=150, city=Dzerzinsk, numDir=1
+Address [id=435, address=740 Udaipur Lane]
+
+City: Id=151, city=Ede, numDir=1
+Address [id=346, address=1217 Konotop Avenue]
+
+City: Id=152, city=Effon-Alaiye, numDir=1
+Address [id=291, address=1155 Liaocheng Place]
+
+City: Id=153, city=El Alto, numDir=1
+Address [id=460, address=659 Gatineau Boulevard]
+
+City: Id=154, city=El Fuerte, numDir=1
+Address [id=456, address=814 Simferopol Loop]
+
+City: Id=155, city=El Monte, numDir=1
+Address [id=425, address=1866 al-Qatif Avenue]
+
+City: Id=156, city=Elista, numDir=1
+Address [id=21, address=270 Toulon Boulevard]
+
+City: Id=157, city=Emeishan, numDir=1
+Address [id=394, address=753 Ilorin Avenue]
+
+City: Id=158, city=Emmen, numDir=0
+
+City: Id=159, city=Enshi, numDir=1
+Address [id=114, address=804 Elista Drive]
+
+City: Id=160, city=Erlangen, numDir=1
+Address [id=453, address=319 Springs Loop]
+
+City: Id=161, city=Escobar, numDir=1
+Address [id=450, address=203 Tambaram Street]
+
+City: Id=162, city=Esfahan, numDir=1
+Address [id=14, address=1531 Sal Drive]
+
+City: Id=163, city=Eskisehir, numDir=0
+
+City: Id=164, city=Etawah, numDir=1
+Address [id=125, address=211 Chiayi Drive]
+
+City: Id=165, city=Ezeiza, numDir=0
+
+City: Id=166, city=Ezhou, numDir=1
+Address [id=318, address=1774 Yaound Place]
+
+City: Id=167, city=Faaa, numDir=1
+Address [id=47, address=1447 Imus Way]
+
+City: Id=168, city=Fengshan, numDir=0
+
+City: Id=169, city=Firozabad, numDir=1
+Address [id=196, address=9 San Miguel de Tucumn Manor]
+
+City: Id=170, city=Florencia, numDir=1
+Address [id=465, address=734 Tanshui Avenue]
+
+City: Id=171, city=Fontana, numDir=1
+Address [id=55, address=1135 Izumisano Parkway]
+
+City: Id=172, city=Fukuyama, numDir=1
+Address [id=145, address=928 Jaffna Loop]
+
+City: Id=173, city=Funafuti, numDir=1
+Address [id=109, address=454 Nakhon Sawan Boulevard]
+
+City: Id=174, city=Fuyu, numDir=1
+Address [id=215, address=1333 Haldia Street]
+
+City: Id=175, city=Fuzhou, numDir=1
+Address [id=286, address=1308 Sumy Loop]
+
+City: Id=176, city=Gandhinagar, numDir=1
+Address [id=121, address=1967 Sincelejo Place]
+
+City: Id=177, city=Garden Grove, numDir=0
+
+City: Id=178, city=Garland, numDir=0
+
+City: Id=179, city=Gatineau, numDir=0
+
+City: Id=180, city=Gaziantep, numDir=0
+
+City: Id=181, city=Gijn, numDir=1
+Address [id=399, address=331 Bydgoszcz Parkway]
+
+City: Id=182, city=Gingoog, numDir=1
+Address [id=466, address=118 Jaffna Loop]
+
+City: Id=183, city=Goinia, numDir=1
+Address [id=96, address=984 Effon-Alaiye Avenue]
+
+City: Id=184, city=Gorontalo, numDir=1
+Address [id=207, address=1688 Nador Lane]
+
+City: Id=185, city=Grand Prairie, numDir=1
+Address [id=122, address=333 Goinia Way]
+
+City: Id=186, city=Graz, numDir=1
+Address [id=177, address=1010 Klerksdorp Way]
+
+City: Id=187, city=Greensboro, numDir=1
+Address [id=162, address=369 Papeete Way]
+
+City: Id=188, city=Guadalajara, numDir=1
+Address [id=369, address=817 Laredo Avenue]
+
+City: Id=189, city=Guaruj, numDir=1
+Address [id=432, address=259 Ipoh Drive]
+
+City: Id=190, city=guas Lindas de Gois, numDir=1
+Address [id=134, address=758 Junan Lane]
+
+City: Id=191, city=Gulbarga, numDir=1
+Address [id=375, address=1049 Matamoros Parkway]
+
+City: Id=192, city=Hagonoy, numDir=1
+Address [id=260, address=127 Iwakuni Boulevard]
+
+City: Id=193, city=Haining, numDir=0
+
+City: Id=194, city=Haiphong, numDir=1
+Address [id=203, address=1149 A Corua La Corua Boulevard]
+
+City: Id=195, city=Haldia, numDir=1
+Address [id=190, address=435 0 Way]
+
+City: Id=196, city=Halifax, numDir=1
+Address [id=468, address=1844 Usak Avenue]
+
+City: Id=197, city=Halisahar, numDir=1
+Address [id=264, address=1027 Banjul Place]
+
+City: Id=198, city=Halle/Saale, numDir=1
+Address [id=255, address=1966 Tonghae Street]
+
+City: Id=199, city=Hami, numDir=1
+Address [id=169, address=154 Tallahassee Loop]
+
+City: Id=200, city=Hamilton, numDir=1
+Address [id=12, address=478 Joliet Way]
+
+City: Id=201, city=Hanoi, numDir=1
+Address [id=345, address=68 Ponce Parkway]
+
+City: Id=202, city=Hidalgo, numDir=1
+Address [id=154, address=781 Shimonoseki Drive]
+
+City: Id=203, city=Higashiosaka, numDir=1
+Address [id=269, address=446 Kirovo-Tepetsk Lane]
+
+City: Id=204, city=Hino, numDir=1
+Address [id=198, address=345 Oshawa Boulevard]
+
+City: Id=205, city=Hiroshima, numDir=1
+Address [id=304, address=1635 Kuwana Boulevard]
+
+City: Id=206, city=Hodeida, numDir=1
+Address [id=475, address=434 Ourense Orense Manor]
+
+City: Id=207, city=Hohhot, numDir=1
+Address [id=142, address=1587 Sullana Lane]
+
+City: Id=208, city=Hoshiarpur, numDir=1
+Address [id=417, address=791 Salinas Street]
+
+City: Id=209, city=Hsichuh, numDir=1
+Address [id=353, address=381 Kabul Way]
+
+City: Id=210, city=Huaian, numDir=1
+Address [id=389, address=500 Lincoln Parkway]
+
+City: Id=211, city=Hubli-Dharwad, numDir=1
+Address [id=140, address=788 Atinsk Street]
+
+City: Id=212, city=Huejutla de Reyes, numDir=0
+
+City: Id=213, city=Huixquilucan, numDir=1
+Address [id=112, address=1002 Ahmadnagar Manor]
+
+City: Id=214, city=Hunuco, numDir=0
+
+City: Id=215, city=Ibirit, numDir=1
+Address [id=315, address=543 Bergamo Avenue]
+
+City: Id=216, city=Idfu, numDir=1
+Address [id=237, address=1736 Cavite Place]
+
+City: Id=217, city=Ife, numDir=1
+Address [id=84, address=1888 Kabul Drive]
+
+City: Id=218, city=Ikerre, numDir=1
+Address [id=202, address=955 Bamenda Way]
+
+City: Id=219, city=Iligan, numDir=0
+
+City: Id=220, city=Ilorin, numDir=1
+Address [id=107, address=1177 Jelets Way]
+
+City: Id=221, city=Imus, numDir=1
+Address [id=354, address=953 Hodeida Street]
+
+City: Id=222, city=Inegl, numDir=1
+Address [id=283, address=457 Tongliao Loop]
+
+City: Id=223, city=Ipoh, numDir=1
+Address [id=175, address=316 Uruapan Street]
+
+City: Id=224, city=Isesaki, numDir=0
+
+City: Id=225, city=Ivanovo, numDir=1
+Address [id=110, address=1867 San Juan Bautista Tuxtepec Avenue]
+
+City: Id=226, city=Iwaki, numDir=1
+Address [id=244, address=1148 Saarbrcken Parkway]
+
+City: Id=227, city=Iwakuni, numDir=1
+Address [id=58, address=1964 Allappuzha Alleppey Street]
+
+City: Id=228, city=Iwatsuki, numDir=1
+Address [id=401, address=168 Cianjur Manor]
+
+City: Id=229, city=Izumisano, numDir=1
+Address [id=396, address=767 Pyongyang Drive]
+
+City: Id=230, city=Jaffna, numDir=1
+Address [id=413, address=692 Amroha Drive]
+
+City: Id=231, city=Jaipur, numDir=1
+Address [id=64, address=81 Hodeida Way]
+
+City: Id=232, city=Jakarta, numDir=1
+Address [id=157, address=456 Escobar Way]
+
+City: Id=233, city=Jalib al-Shuyukh, numDir=1
+Address [id=238, address=346 Skikda Parkway]
+
+City: Id=234, city=Jamalpur, numDir=1
+Address [id=334, address=1816 Bydgoszcz Loop]
+
+City: Id=235, city=Jaroslavl, numDir=1
+Address [id=226, address=810 Palghat Palakkad Boulevard]
+
+City: Id=236, city=Jastrzebie-Zdrj, numDir=1
+Address [id=132, address=1050 Garden Grove Avenue]
+
+City: Id=237, city=Jedda, numDir=1
+Address [id=53, address=725 Isesaki Place]
+
+City: Id=238, city=Jelets, numDir=1
+Address [id=104, address=1913 Kamakura Place]
+
+City: Id=239, city=Jhansi, numDir=1
+Address [id=36, address=176 Mandaluyong Place]
+
+City: Id=240, city=Jinchang, numDir=1
+Address [id=172, address=475 Atinsk Way]
+
+City: Id=241, city=Jining, numDir=0
+
+City: Id=242, city=Jinzhou, numDir=0
+
+City: Id=243, city=Jodhpur, numDir=1
+Address [id=228, address=60 Poos de Caldas Street]
+
+City: Id=244, city=Johannesburg, numDir=1
+Address [id=476, address=270 Tambaram Parkway]
+
+City: Id=245, city=Joliet, numDir=0
+
+City: Id=246, city=Jos Azueta, numDir=0
+
+City: Id=247, city=Juazeiro do Norte, numDir=1
+Address [id=51, address=686 Garland Manor]
+
+City: Id=248, city=Juiz de Fora, numDir=0
+
+City: Id=249, city=Junan, numDir=1
+Address [id=440, address=722 Bradford Lane]
+
+City: Id=250, city=Jurez, numDir=1
+Address [id=374, address=433 Florencia Street]
+
+City: Id=251, city=Kabul, numDir=1
+Address [id=222, address=1168 Najafabad Parkway]
+
+City: Id=252, city=Kaduna, numDir=1
+Address [id=22, address=320 Brest Avenue]
+
+City: Id=253, city=Kakamigahara, numDir=1
+Address [id=167, address=1287 Xiangfan Boulevard]
+
+City: Id=254, city=Kaliningrad, numDir=1
+Address [id=306, address=1883 Maikop Lane]
+
+City: Id=255, city=Kalisz, numDir=1
+Address [id=275, address=906 Goinia Way]
+
+City: Id=256, city=Kamakura, numDir=1
+Address [id=83, address=586 Tete Way]
+
+City: Id=257, city=Kamarhati, numDir=1
+Address [id=35, address=33 Gorontalo Way]
+
+City: Id=258, city=Kamjanets-Podilskyi, numDir=1
+Address [id=391, address=1793 Meixian Place]
+
+City: Id=259, city=Kamyin, numDir=0
+
+City: Id=260, city=Kanazawa, numDir=0
+
+City: Id=261, city=Kanchrapara, numDir=0
+
+City: Id=262, city=Kansas City, numDir=1
+Address [id=313, address=1191 Sungai Petani Boulevard]
+
+City: Id=263, city=Karnal, numDir=1
+Address [id=279, address=1884 Shikarpur Avenue]
+
+City: Id=264, city=Katihar, numDir=1
+Address [id=424, address=1948 Bayugan Parkway]
+
+City: Id=265, city=Kermanshah, numDir=1
+Address [id=382, address=220 Hidalgo Drive]
+
+City: Id=266, city=Kilis, numDir=1
+Address [id=147, address=374 Bat Yam Boulevard]
+
+City: Id=267, city=Kimberley, numDir=1
+Address [id=23, address=1417 Lancaster Avenue]
+
+City: Id=268, city=Kimchon, numDir=1
+Address [id=103, address=588 Vila Velha Manor]
+
+City: Id=269, city=Kingstown, numDir=1
+Address [id=331, address=1016 Iwakuni Street]
+
+City: Id=270, city=Kirovo-Tepetsk, numDir=1
+Address [id=183, address=1089 Iwatsuki Avenue]
+
+City: Id=271, city=Kisumu, numDir=1
+Address [id=197, address=447 Surakarta Loop]
+
+City: Id=272, city=Kitwe, numDir=1
+Address [id=443, address=1836 Korla Parkway]
+
+City: Id=273, city=Klerksdorp, numDir=1
+Address [id=113, address=682 Junan Way]
+
+City: Id=274, city=Kolpino, numDir=1
+Address [id=300, address=661 Chisinau Lane]
+
+City: Id=275, city=Konotop, numDir=0
+
+City: Id=276, city=Koriyama, numDir=1
+Address [id=406, address=454 Patiala Lane]
+
+City: Id=277, city=Korla, numDir=1
+Address [id=288, address=226 Halifax Street]
+
+City: Id=278, city=Korolev, numDir=1
+Address [id=398, address=954 Lapu-Lapu Way]
+
+City: Id=279, city=Kowloon and New Kowloon, numDir=1
+Address [id=294, address=1912 Allende Manor]
+
+City: Id=280, city=Kragujevac, numDir=1
+Address [id=11, address=900 Santiago de Compostela Parkway]
+
+City: Id=281, city=Ktahya, numDir=1
+Address [id=128, address=848 Tafuna Manor]
+
+City: Id=282, city=Kuching, numDir=1
+Address [id=62, address=1114 Liepaja Street]
+
+City: Id=283, city=Kumbakonam, numDir=1
+Address [id=276, address=1675 Xiangfan Manor]
+
+City: Id=284, city=Kurashiki, numDir=1
+Address [id=38, address=61 Tama Street]
+
+City: Id=285, city=Kurgan, numDir=1
+Address [id=381, address=1618 Olomouc Manor]
+
+City: Id=286, city=Kursk, numDir=1
+Address [id=316, address=746 Joliet Lane]
+
+City: Id=287, city=Kuwana, numDir=0
+
+City: Id=288, city=La Paz, numDir=0
+
+City: Id=289, city=La Plata, numDir=1
+Address [id=93, address=1926 El Alto Avenue]
+
+City: Id=290, city=La Romana, numDir=1
+Address [id=442, address=1245 Ibirit Way]
+
+City: Id=291, city=Laiwu, numDir=1
+Address [id=155, address=1560 Jelets Boulevard]
+
+City: Id=292, city=Lancaster, numDir=1
+Address [id=116, address=793 Cam Ranh Avenue]
+
+City: Id=293, city=Laohekou, numDir=1
+Address [id=427, address=1557 Cape Coral Parkway]
+
+City: Id=294, city=Lapu-Lapu, numDir=1
+Address [id=248, address=582 Papeete Loop]
+
+City: Id=295, city=Laredo, numDir=1
+Address [id=10, address=1795 Santiago de Compostela Way]
+
+City: Id=296, city=Lausanne, numDir=0
+
+City: Id=297, city=Le Mans, numDir=1
+Address [id=166, address=1740 Le Mans Loop]
+
+City: Id=298, city=Lengshuijiang, numDir=1
+Address [id=272, address=1762 Paarl Parkway]
+
+City: Id=299, city=Leshan, numDir=0
+
+City: Id=300, city=Lethbridge, numDir=2
+Address [id=1, address=47 MySakila Drive]
+Address [id=3, address=23 Workhaven Lane]
+
+City: Id=301, city=Lhokseumawe, numDir=0
+
+City: Id=302, city=Liaocheng, numDir=1
+Address [id=133, address=1854 Tieli Street]
+
+City: Id=303, city=Liepaja, numDir=1
+Address [id=27, address=1780 Hino Boulevard]
+
+City: Id=304, city=Lilongwe, numDir=1
+Address [id=170, address=710 San Felipe del Progreso Avenue]
+
+City: Id=305, city=Lima, numDir=1
+Address [id=126, address=1175 Tanauan Way]
+
+City: Id=306, city=Lincoln, numDir=1
+Address [id=67, address=1214 Hanoi Way]
+
+City: Id=307, city=Linz, numDir=1
+Address [id=163, address=1440 Compton Place]
+
+City: Id=308, city=Lipetsk, numDir=1
+Address [id=48, address=1998 Halifax Drive]
+
+City: Id=309, city=Livorno, numDir=0
+
+City: Id=310, city=Ljubertsy, numDir=1
+Address [id=164, address=1623 Baha Blanca Manor]
+
+City: Id=311, city=Loja, numDir=0
+
+City: Id=312, city=London, numDir=1
+Address [id=256, address=1497 Yuzhou Drive]
+
+City: Id=313, city=London, numDir=0
+
+City: Id=314, city=Lublin, numDir=0
+
+City: Id=315, city=Lubumbashi, numDir=1
+Address [id=392, address=514 Ife Way]
+
+City: Id=316, city=Lungtan, numDir=1
+Address [id=34, address=1668 Anpolis Street]
+
+City: Id=317, city=Luzinia, numDir=1
+Address [id=187, address=1839 Szkesfehrvr Parkway]
+
+City: Id=318, city=Madiun, numDir=0
+
+City: Id=319, city=Mahajanga, numDir=1
+Address [id=85, address=320 Baiyin Parkway]
+
+City: Id=320, city=Maikop, numDir=1
+Address [id=351, address=1157 Nyeri Loop]
+
+City: Id=321, city=Malm, numDir=1
+Address [id=70, address=1150 Kimchon Manor]
+
+City: Id=322, city=Manchester, numDir=1
+Address [id=387, address=401 Sucre Boulevard]
+
+City: Id=323, city=Mandaluyong, numDir=1
+Address [id=268, address=1831 Nam Dinh Loop]
+
+City: Id=324, city=Mandi Bahauddin, numDir=1
+Address [id=227, address=1820 Maring Parkway]
+
+City: Id=325, city=Mannheim, numDir=1
+Address [id=200, address=1074 Binzhou Manor]
+
+City: Id=326, city=Maracabo, numDir=1
+Address [id=458, address=138 Caracas Boulevard]
+
+City: Id=327, city=Mardan, numDir=1
+Address [id=24, address=1688 Okara Way]
+
+City: Id=328, city=Maring, numDir=1
+Address [id=250, address=829 Grand Prairie Way]
+
+City: Id=329, city=Masqat, numDir=1
+Address [id=13, address=613 Korolev Drive]
+
+City: Id=330, city=Matamoros, numDir=1
+Address [id=181, address=146 Johannesburg Way]
+
+City: Id=331, city=Matsue, numDir=1
+Address [id=360, address=619 Hunuco Avenue]
+
+City: Id=332, city=Meixian, numDir=1
+Address [id=94, address=1952 Chatsworth Drive]
+
+City: Id=333, city=Memphis, numDir=1
+Address [id=185, address=682 Garden Grove Place]
+
+City: Id=334, city=Merlo, numDir=1
+Address [id=111, address=1532 Dzerzinsk Way]
+
+City: Id=335, city=Mexicali, numDir=1
+Address [id=348, address=785 Vaduz Street]
+
+City: Id=336, city=Miraj, numDir=1
+Address [id=321, address=651 Pathankot Loop]
+
+City: Id=337, city=Mit Ghamr, numDir=0
+
+City: Id=338, city=Miyakonojo, numDir=1
+Address [id=258, address=752 Ondo Loop]
+
+City: Id=339, city=Mogiljov, numDir=0
+
+City: Id=340, city=Molodetno, numDir=1
+Address [id=148, address=1027 Songkhla Manor]
+
+City: Id=341, city=Monclova, numDir=0
+
+City: Id=342, city=Monywa, numDir=1
+Address [id=261, address=51 Laredo Avenue]
+
+City: Id=343, city=Moscow, numDir=1
+Address [id=50, address=46 Pjatigorsk Lane]
+
+City: Id=344, city=Mosul, numDir=0
+
+City: Id=345, city=Mukateve, numDir=1
+Address [id=135, address=1752 So Leopoldo Parkway]
+
+City: Id=346, city=Munger Monghyr, numDir=1
+Address [id=32, address=1425 Shikarpur Manor]
+
+City: Id=347, city=Mwanza, numDir=0
+
+City: Id=348, city=Mwene-Ditu, numDir=1
+Address [id=380, address=1519 Santiago de los Caballeros Loop]
+
+City: Id=349, city=Myingyan, numDir=1
+Address [id=8, address=1566 Inegl Manor]
+
+City: Id=350, city=Mysore, numDir=1
+Address [id=63, address=1213 Ranchi Parkway]
+
+City: Id=351, city=Naala-Porto, numDir=1
+Address [id=438, address=596 Huixquilucan Place]
+
+City: Id=352, city=Nabereznyje Telny, numDir=1
+Address [id=452, address=207 Cuernavaca Loop]
+
+City: Id=353, city=Nador, numDir=1
+Address [id=44, address=671 Graz Street]
+
+City: Id=354, city=Nagaon, numDir=1
+Address [id=156, address=1963 Moscow Place]
+
+City: Id=355, city=Nagareyama, numDir=1
+Address [id=57, address=17 Kabul Boulevard]
+
+City: Id=356, city=Najafabad, numDir=1
+Address [id=373, address=1922 Miraj Way]
+
+City: Id=357, city=Naju, numDir=1
+Address [id=241, address=647 A Corua La Corua Street]
+
+City: Id=358, city=Nakhon Sawan, numDir=1
+Address [id=395, address=1337 Mit Ghamr Avenue]
+
+City: Id=359, city=Nam Dinh, numDir=1
+Address [id=477, address=1786 Salinas Place]
+
+City: Id=360, city=Namibe, numDir=1
+Address [id=388, address=368 Hunuco Boulevard]
+
+City: Id=361, city=Nantou, numDir=1
+Address [id=9, address=53 Idfu Parkway]
+
+City: Id=362, city=Nanyang, numDir=1
+Address [id=41, address=1440 Fukuyama Loop]
+
+City: Id=363, city=NDjamna, numDir=0
+
+City: Id=364, city=Newcastle, numDir=1
+Address [id=437, address=1766 Almirante Brown Street]
+
+City: Id=365, city=Nezahualcyotl, numDir=1
+Address [id=119, address=1107 Nakhon Sawan Avenue]
+
+City: Id=366, city=Nha Trang, numDir=0
+
+City: Id=367, city=Niznekamsk, numDir=1
+Address [id=52, address=909 Garland Manor]
+
+City: Id=368, city=Novi Sad, numDir=0
+
+City: Id=369, city=Novoterkassk, numDir=1
+Address [id=195, address=1077 San Felipe de Puerto Plata Place]
+
+City: Id=370, city=Nukualofa, numDir=1
+Address [id=349, address=1516 Escobar Drive]
+
+City: Id=371, city=Nuuk, numDir=1
+Address [id=211, address=850 Salala Loop]
+
+City: Id=372, city=Nyeri, numDir=1
+Address [id=368, address=1658 Jastrzebie-Zdrj Loop]
+
+City: Id=373, city=Ocumare del Tuy, numDir=1
+Address [id=178, address=1848 Salala Boulevard]
+
+City: Id=374, city=Ogbomosho, numDir=1
+Address [id=282, address=556 Baybay Manor]
+
+City: Id=375, city=Okara, numDir=1
+Address [id=404, address=734 Bchar Place]
+
+City: Id=376, city=Okayama, numDir=0
+
+City: Id=377, city=Okinawa, numDir=1
+Address [id=370, address=1565 Tangail Manor]
+
+City: Id=378, city=Olomouc, numDir=1
+Address [id=270, address=682 Halisahar Place]
+
+City: Id=379, city=Omdurman, numDir=1
+Address [id=54, address=115 Hidalgo Parkway]
+
+City: Id=380, city=Omiya, numDir=1
+Address [id=409, address=1266 Laredo Parkway]
+
+City: Id=381, city=Ondo, numDir=1
+Address [id=160, address=1367 Yantai Manor]
+
+City: Id=382, city=Onomichi, numDir=1
+Address [id=342, address=124 al-Manama Way]
+
+City: Id=383, city=Oshawa, numDir=1
+Address [id=193, address=891 Novi Sad Manor]
+
+City: Id=384, city=Osmaniye, numDir=1
+Address [id=17, address=270 Amroha Parkway]
+
+City: Id=385, city=ostka, numDir=0
+
+City: Id=386, city=Otsu, numDir=1
+Address [id=290, address=1336 Benin City Drive]
+
+City: Id=387, city=Oulu, numDir=1
+Address [id=303, address=898 Jining Lane]
+
+City: Id=388, city=Ourense Orense, numDir=1
+Address [id=474, address=1469 Plock Lane]
+
+City: Id=389, city=Owo, numDir=1
+Address [id=285, address=1006 Santa Brbara dOeste Manor]
+
+City: Id=390, city=Oyo, numDir=1
+Address [id=254, address=786 Stara Zagora Way]
+
+City: Id=391, city=Ozamis, numDir=1
+Address [id=439, address=1351 Aparecida de Goinia Parkway]
+
+City: Id=392, city=Paarl, numDir=1
+Address [id=343, address=1443 Mardan Street]
+
+City: Id=393, city=Pachuca de Soto, numDir=1
+Address [id=358, address=1698 Southport Loop]
+
+City: Id=394, city=Pak Kret, numDir=1
+Address [id=46, address=1632 Bislig Avenue]
+
+City: Id=395, city=Palghat Palakkad, numDir=1
+Address [id=273, address=1519 Ilorin Place]
+
+City: Id=396, city=Pangkal Pinang, numDir=0
+
+City: Id=397, city=Papeete, numDir=1
+Address [id=60, address=1668 Saint Louis Place]
+
+City: Id=398, city=Parbhani, numDir=1
+Address [id=305, address=41 El Alto Parkway]
+
+City: Id=399, city=Pathankot, numDir=1
+Address [id=99, address=1697 Tanauan Lane]
+
+City: Id=400, city=Patiala, numDir=1
+Address [id=301, address=951 Stara Zagora Manor]
+
+City: Id=401, city=Patras, numDir=0
+
+City: Id=402, city=Pavlodar, numDir=1
+Address [id=80, address=602 Paarl Street]
+
+City: Id=403, city=Pemalang, numDir=1
+Address [id=120, address=544 Malm Parkway]
+
+City: Id=404, city=Peoria, numDir=1
+Address [id=280, address=1980 Kamjanets-Podilskyi Street]
+
+City: Id=405, city=Pereira, numDir=1
+Address [id=184, address=1410 Benin City Parkway]
+
+City: Id=406, city=Phnom Penh, numDir=1
+Address [id=232, address=754 Valencia Place]
+
+City: Id=407, city=Pingxiang, numDir=1
+Address [id=173, address=1294 Firozabad Drive]
+
+City: Id=408, city=Pjatigorsk, numDir=0
+
+City: Id=409, city=Plock, numDir=0
+
+City: Id=410, city=Po, numDir=1
+Address [id=130, address=1666 Qomsheh Drive]
+
+City: Id=411, city=Ponce, numDir=1
+Address [id=287, address=1405 Chisinau Place]
+
+City: Id=412, city=Pontianak, numDir=0
+
+City: Id=413, city=Poos de Caldas, numDir=1
+Address [id=259, address=1338 Zalantun Lane]
+
+City: Id=414, city=Portoviejo, numDir=1
+Address [id=267, address=816 Cayenne Parkway]
+
+City: Id=415, city=Probolinggo, numDir=1
+Address [id=377, address=154 Oshawa Manor]
+
+City: Id=416, city=Pudukkottai, numDir=1
+Address [id=426, address=1661 Abha Drive]
+
+City: Id=417, city=Pune, numDir=1
+Address [id=139, address=943 Johannesburg Avenue]
+
+City: Id=418, city=Purnea Purnia, numDir=1
+Address [id=431, address=1596 Acua Parkway]
+
+City: Id=419, city=Purwakarta, numDir=0
+
+City: Id=420, city=Pyongyang, numDir=1
+Address [id=161, address=1386 Nakhon Sawan Boulevard]
+
+City: Id=421, city=Qalyub, numDir=1
+Address [id=138, address=765 Southampton Drive]
+
+City: Id=422, city=Qinhuangdao, numDir=1
+Address [id=246, address=1246 Boksburg Parkway]
+
+City: Id=423, city=Qomsheh, numDir=1
+Address [id=464, address=76 Kermanshah Manor]
+
+City: Id=424, city=Quilmes, numDir=0
+
+City: Id=425, city=Rae Bareli, numDir=1
+Address [id=82, address=936 Salzburg Lane]
+
+City: Id=426, city=Rajkot, numDir=0
+
+City: Id=427, city=Rampur, numDir=1
+Address [id=341, address=1920 Weifang Avenue]
+
+City: Id=428, city=Rancagua, numDir=1
+Address [id=469, address=1872 Toulon Loop]
+
+City: Id=429, city=Ranchi, numDir=1
+Address [id=363, address=604 Bern Place]
+
+City: Id=430, city=Richmond Hill, numDir=1
+Address [id=415, address=432 Garden Grove Street]
+
+City: Id=431, city=Rio Claro, numDir=1
+Address [id=78, address=1206 Dos Quebradas Place]
+
+City: Id=432, city=Rizhao, numDir=0
+
+City: Id=433, city=Roanoke, numDir=1
+Address [id=296, address=1936 Cuman Avenue]
+
+City: Id=434, city=Robamba, numDir=0
+
+City: Id=435, city=Rockford, numDir=1
+Address [id=462, address=1485 Bratislava Place]
+
+City: Id=436, city=Ruse, numDir=0
+
+City: Id=437, city=Rustenburg, numDir=1
+Address [id=412, address=1639 Saarbrcken Drive]
+
+City: Id=438, city=s-Hertogenbosch, numDir=1
+Address [id=188, address=741 Ambattur Manor]
+
+City: Id=439, city=Saarbrcken, numDir=1
+Address [id=231, address=430 Alessandria Loop]
+
+City: Id=440, city=Sagamihara, numDir=1
+Address [id=15, address=1542 Tarlac Parkway]
+
+City: Id=441, city=Saint Louis, numDir=1
+Address [id=66, address=1717 Guadalajara Lane]
+
+City: Id=442, city=Saint-Denis, numDir=1
+Address [id=152, address=1952 Pune Lane]
+
+City: Id=443, city=Sal, numDir=1
+Address [id=26, address=28 Charlotte Amalie Street]
+
+City: Id=444, city=Salala, numDir=0
+
+City: Id=445, city=Salamanca, numDir=1
+Address [id=278, address=144 South Hill Loop]
+
+City: Id=446, city=Salinas, numDir=1
+Address [id=274, address=920 Kumbakonam Loop]
+
+City: Id=447, city=Salzburg, numDir=1
+Address [id=271, address=1587 Loja Manor]
+
+City: Id=448, city=Sambhal, numDir=1
+Address [id=221, address=866 Shivapuri Manor]
+
+City: Id=449, city=San Bernardino, numDir=1
+Address [id=6, address=1121 Loja Avenue]
+
+City: Id=450, city=San Felipe de Puerto Plata, numDir=1
+Address [id=423, address=437 Chungho Drive]
+
+City: Id=451, city=San Felipe del Progreso, numDir=1
+Address [id=324, address=1145 Vilnius Manor]
+
+City: Id=452, city=San Juan Bautista Tuxtepec, numDir=1
+Address [id=430, address=355 Vitria de Santo Anto Way]
+
+City: Id=453, city=San Lorenzo, numDir=1
+Address [id=350, address=1628 Nagareyama Lane]
+
+City: Id=454, city=San Miguel de Tucumn, numDir=1
+Address [id=247, address=1483 Pathankot Street]
+
+City: Id=455, city=Sanaa, numDir=1
+Address [id=308, address=687 Alessandria Parkway]
+
+City: Id=456, city=Santa Brbara dOeste, numDir=1
+Address [id=182, address=1891 Rizhao Boulevard]
+
+City: Id=457, city=Santa F, numDir=1
+Address [id=336, address=430 Kumbakonam Drive]
+
+City: Id=458, city=Santa Rosa, numDir=0
+
+City: Id=459, city=Santiago de Compostela, numDir=0
+
+City: Id=460, city=Santiago de los Caballeros, numDir=1
+Address [id=263, address=532 Toulon Street]
+
+City: Id=461, city=Santo Andr, numDir=1
+Address [id=359, address=519 Nyeri Manor]
+
+City: Id=462, city=Sanya, numDir=0
+
+City: Id=463, city=Sasebo, numDir=1
+Address [id=5, address=1913 Hanoi Way]
+
+City: Id=464, city=Satna, numDir=1
+Address [id=361, address=45 Aparecida de Goinia Place]
+
+City: Id=465, city=Sawhaj, numDir=1
+Address [id=428, address=1727 Matamoros Place]
+
+City: Id=466, city=Serpuhov, numDir=0
+
+City: Id=467, city=Shahr-e Kord, numDir=1
+Address [id=189, address=927 Barcelona Street]
+
+City: Id=468, city=Shanwei, numDir=1
+Address [id=429, address=1269 Botosani Manor]
+
+City: Id=469, city=Shaoguan, numDir=0
+
+City: Id=470, city=Sharja, numDir=1
+Address [id=297, address=1192 Tongliao Street]
+
+City: Id=471, city=Shenzhen, numDir=1
+Address [id=383, address=686 Donostia-San Sebastin Lane]
+
+City: Id=472, city=Shikarpur, numDir=1
+Address [id=29, address=934 San Felipe de Puerto Plata Street]
+
+City: Id=473, city=Shimoga, numDir=1
+Address [id=242, address=1964 Gijn Manor]
+
+City: Id=474, city=Shimonoseki, numDir=1
+Address [id=33, address=786 Aurora Avenue]
+
+City: Id=475, city=Shivapuri, numDir=1
+Address [id=72, address=57 Arlington Manor]
+
+City: Id=476, city=Shubra al-Khayma, numDir=1
+Address [id=123, address=1987 Coacalco de Berriozbal Loop]
+
+City: Id=477, city=Siegen, numDir=1
+Address [id=199, address=1792 Valle de la Pascua Place]
+
+City: Id=478, city=Siliguri Shiliguri, numDir=0
+
+City: Id=479, city=Simferopol, numDir=1
+Address [id=86, address=927 Baha Blanca Parkway]
+
+City: Id=480, city=Sincelejo, numDir=1
+Address [id=91, address=1740 Portoviejo Avenue]
+
+City: Id=481, city=Sirjan, numDir=1
+Address [id=454, address=956 Nam Dinh Manor]
+
+City: Id=482, city=Sivas, numDir=0
+
+City: Id=483, city=Skikda, numDir=1
+Address [id=180, address=757 Rustenburg Avenue]
+
+City: Id=484, city=Smolensk, numDir=1
+Address [id=131, address=801 Hagonoy Drive]
+
+City: Id=485, city=So Bernardo do Campo, numDir=0
+
+City: Id=486, city=So Leopoldo, numDir=1
+Address [id=448, address=614 Denizli Parkway]
+
+City: Id=487, city=Sogamoso, numDir=0
+
+City: Id=488, city=Sokoto, numDir=0
+
+City: Id=489, city=Songkhla, numDir=1
+Address [id=90, address=870 Ashqelon Loop]
+
+City: Id=490, city=Sorocaba, numDir=1
+Address [id=319, address=1957 Yantai Lane]
+
+City: Id=491, city=Soshanguve, numDir=1
+Address [id=149, address=999 Sanaa Loop]
+
+City: Id=492, city=Sousse, numDir=1
+Address [id=340, address=507 Smolensk Loop]
+
+City: Id=493, city=South Hill, numDir=1
+Address [id=386, address=1368 Maracabo Boulevard]
+
+City: Id=494, city=Southampton, numDir=0
+
+City: Id=495, city=Southend-on-Sea, numDir=1
+Address [id=20, address=360 Toulouse Parkway]
+
+City: Id=496, city=Southport, numDir=0
+
+City: Id=497, city=Springs, numDir=1
+Address [id=87, address=929 Tallahassee Loop]
+
+City: Id=498, city=Stara Zagora, numDir=1
+Address [id=219, address=1229 Valencia Parkway]
+
+City: Id=499, city=Sterling Heights, numDir=1
+Address [id=150, address=879 Newcastle Way]
+
+City: Id=500, city=Stockport, numDir=0
+
+City: Id=501, city=Sucre, numDir=1
+Address [id=436, address=287 Cuautla Boulevard]
+
+City: Id=502, city=Suihua, numDir=0
+
+City: Id=503, city=Sullana, numDir=0
+
+City: Id=504, city=Sultanbeyli, numDir=0
+
+City: Id=505, city=Sumqayit, numDir=1
+Address [id=339, address=503 Sogamoso Loop]
+
+City: Id=506, city=Sumy, numDir=1
+Address [id=191, address=140 Chiayi Parkway]
+
+City: Id=507, city=Sungai Petani, numDir=1
+Address [id=311, address=715 So Bernardo do Campo Lane]
+
+City: Id=508, city=Sunnyvale, numDir=1
+Address [id=218, address=226 Brest Manor]
+
+City: Id=509, city=Surakarta, numDir=1
+Address [id=455, address=1947 Paarl Way]
+
+City: Id=510, city=Syktyvkar, numDir=1
+Address [id=433, address=1823 Hoshiarpur Lane]
+
+City: Id=511, city=Syrakusa, numDir=1
+Address [id=225, address=1926 Gingoog Street]
+
+City: Id=512, city=Szkesfehrvr, numDir=0
+
+City: Id=513, city=Tabora, numDir=1
+Address [id=194, address=605 Rio Claro Parkway]
+
+City: Id=514, city=Tabriz, numDir=1
+Address [id=284, address=600 Bradford Street]
+
+City: Id=515, city=Tabuk, numDir=1
+Address [id=317, address=780 Kimberley Way]
+
+City: Id=516, city=Tafuna, numDir=1
+Address [id=325, address=1892 Nabereznyje Telny Lane]
+
+City: Id=517, city=Taguig, numDir=1
+Address [id=76, address=89 Allappuzha Alleppey Manor]
+
+City: Id=518, city=Taizz, numDir=1
+Address [id=217, address=1001 Miyakonojo Lane]
+
+City: Id=519, city=Talavera, numDir=0
+
+City: Id=520, city=Tallahassee, numDir=1
+Address [id=252, address=1309 Weifang Street]
+
+City: Id=521, city=Tama, numDir=1
+Address [id=390, address=102 Chapra Drive]
+
+City: Id=522, city=Tambaram, numDir=1
+Address [id=292, address=1993 Tabuk Lane]
+
+City: Id=523, city=Tanauan, numDir=1
+Address [id=378, address=1191 Tandil Drive]
+
+City: Id=524, city=Tandil, numDir=1
+Address [id=410, address=88 Nagaon Manor]
+
+City: Id=525, city=Tangail, numDir=1
+Address [id=25, address=262 A Corua La Corua Parkway]
+
+City: Id=526, city=Tanshui, numDir=0
+
+City: Id=527, city=Tanza, numDir=1
+Address [id=240, address=1479 Rustenburg Boulevard]
+
+City: Id=528, city=Tarlac, numDir=0
+
+City: Id=529, city=Tarsus, numDir=1
+Address [id=168, address=842 Salzburg Lane]
+
+City: Id=530, city=Tartu, numDir=1
+Address [id=449, address=1289 Belm Boulevard]
+
+City: Id=531, city=Teboksary, numDir=1
+Address [id=355, address=469 Nakhon Sawan Street]
+
+City: Id=532, city=Tegal, numDir=1
+Address [id=463, address=935 Aden Boulevard]
+
+City: Id=533, city=Tel Aviv-Jaffa, numDir=1
+Address [id=165, address=97 Shimoga Avenue]
+
+City: Id=534, city=Tete, numDir=1
+Address [id=101, address=1599 Plock Drive]
+
+City: Id=535, city=Tianjin, numDir=1
+Address [id=253, address=1760 Oshawa Manor]
+
+City: Id=536, city=Tiefa, numDir=1
+Address [id=307, address=1908 Gaziantep Place]
+
+City: Id=537, city=Tieli, numDir=0
+
+City: Id=538, city=Tokat, numDir=0
+
+City: Id=539, city=Tonghae, numDir=0
+
+City: Id=540, city=Tongliao, numDir=1
+Address [id=447, address=105 Dzerzinsk Manor]
+
+City: Id=541, city=Torren, numDir=1
+Address [id=137, address=261 Saint Louis Way]
+
+City: Id=542, city=Touliu, numDir=1
+Address [id=143, address=1029 Dzerzinsk Manor]
+
+City: Id=543, city=Toulon, numDir=1
+Address [id=108, address=1386 Yangor Avenue]
+
+City: Id=544, city=Toulouse, numDir=1
+Address [id=39, address=391 Callao Drive]
+
+City: Id=545, city=Trshavn, numDir=1
+Address [id=322, address=1359 Zhoushan Parkway]
+
+City: Id=546, city=Tsaotun, numDir=0
+
+City: Id=547, city=Tsuyama, numDir=1
+Address [id=434, address=1404 Taguig Drive]
+
+City: Id=548, city=Tuguegarao, numDir=1
+Address [id=266, address=862 Xintai Lane]
+
+City: Id=549, city=Tychy, numDir=1
+Address [id=385, address=1642 Charlotte Amalie Drive]
+
+City: Id=550, city=Udaipur, numDir=1
+Address [id=174, address=1877 Ezhou Lane]
+
+City: Id=551, city=Udine, numDir=0
+
+City: Id=552, city=Ueda, numDir=0
+
+City: Id=553, city=Uijongbu, numDir=1
+Address [id=249, address=300 Junan Street]
+
+City: Id=554, city=Uluberia, numDir=1
+Address [id=451, address=1704 Tambaram Manor]
+
+City: Id=555, city=Urawa, numDir=1
+Address [id=151, address=1337 Lincoln Parkway]
+
+City: Id=556, city=Uruapan, numDir=1
+Address [id=459, address=251 Florencia Drive]
+
+City: Id=557, city=Usak, numDir=1
+Address [id=208, address=1215 Pyongyang Parkway]
+
+City: Id=558, city=Usolje-Sibirskoje, numDir=1
+Address [id=467, address=1621 Tongliao Avenue]
+
+City: Id=559, city=Uttarpara-Kotrung, numDir=1
+Address [id=235, address=954 Kimchon Place]
+
+City: Id=560, city=Vaduz, numDir=1
+Address [id=61, address=943 Tokat Street]
+
+City: Id=561, city=Valencia, numDir=0
+
+City: Id=562, city=Valle de la Pascua, numDir=1
+Address [id=295, address=544 Tarsus Boulevard]
+
+City: Id=563, city=Valle de Santiago, numDir=1
+Address [id=293, address=86 Higashiosaka Lane]
+
+City: Id=564, city=Valparai, numDir=1
+Address [id=408, address=990 Etawah Loop]
+
+City: Id=565, city=Vancouver, numDir=1
+Address [id=441, address=983 Santa F Way]
+
+City: Id=566, city=Varanasi Benares, numDir=1
+Address [id=127, address=117 Boa Vista Way]
+
+City: Id=567, city=Vicente Lpez, numDir=1
+Address [id=223, address=1244 Allappuzha Alleppey Place]
+
+City: Id=568, city=Vijayawada, numDir=0
+
+City: Id=569, city=Vila Velha, numDir=1
+Address [id=43, address=306 Antofagasta Place]
+
+City: Id=570, city=Vilnius, numDir=0
+
+City: Id=571, city=Vinh, numDir=0
+
+City: Id=572, city=Vitria de Santo Anto, numDir=1
+Address [id=379, address=1133 Rizhao Avenue]
+
+City: Id=573, city=Warren, numDir=1
+Address [id=281, address=1944 Bamenda Way]
+
+City: Id=574, city=Weifang, numDir=0
+
+City: Id=575, city=Witten, numDir=1
+Address [id=205, address=68 Molodetno Manor]
+
+City: Id=576, city=Woodridge, numDir=2
+Address [id=2, address=28 MySQL Boulevard]
+Address [id=4, address=1411 Lillydale Drive]
+
+City: Id=577, city=Wroclaw, numDir=0
+
+City: Id=578, city=Xiangfan, numDir=1
+Address [id=245, address=1103 Bilbays Parkway]
+
+City: Id=579, city=Xiangtan, numDir=1
+Address [id=71, address=1586 Guaruj Place]
+
+City: Id=580, city=Xintai, numDir=0
+
+City: Id=581, city=Xinxiang, numDir=1
+Address [id=344, address=1909 Benguela Lane]
+
+City: Id=582, city=Yamuna Nagar, numDir=1
+Address [id=16, address=808 Bhopal Manor]
+
+City: Id=583, city=Yangor, numDir=0
+
+City: Id=584, city=Yantai, numDir=1
+Address [id=277, address=85 San Felipe de Puerto Plata Drive]
+
+City: Id=585, city=Yaound, numDir=1
+Address [id=366, address=114 Jalib al-Shuyukh Manor]
+
+City: Id=586, city=Yerevan, numDir=1
+Address [id=45, address=42 Brindisi Place]
+
+City: Id=587, city=Yinchuan, numDir=0
+
+City: Id=588, city=Yingkou, numDir=0
+
+City: Id=589, city=York, numDir=0
+
+City: Id=590, city=Yuncheng, numDir=1
+Address [id=158, address=798 Cianjur Avenue]
+
+City: Id=591, city=Yuzhou, numDir=1
+Address [id=329, address=867 Benin City Avenue]
+
+City: Id=592, city=Zalantun, numDir=1
+Address [id=97, address=832 Nakhon Sawan Manor]
+
+City: Id=593, city=Zanzibar, numDir=1
+Address [id=224, address=1842 Luzinia Boulevard]
+
+City: Id=594, city=Zaoyang, numDir=0
+
+City: Id=595, city=Zapopan, numDir=1
+Address [id=470, address=1088 Ibirit Place]
+
+City: Id=596, city=Zaria, numDir=1
+Address [id=236, address=885 Yingkou Manor]
+
+City: Id=597, city=Zeleznogorsk, numDir=1
+Address [id=356, address=1378 Beira Loop]
+
+City: Id=598, city=Zhezqazghan, numDir=0
+
+City: Id=599, city=Zhoushan, numDir=0
+
+City: Id=600, city=Ziguinchor, numDir=1
+Address [id=461, address=1889 Valparai Way]
+

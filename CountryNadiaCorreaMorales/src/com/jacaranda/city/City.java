@@ -123,7 +123,7 @@ public class City implements Comparable<City> {
 		if (o == null) {
 			result = -1;
 		} else {
-			result = this.numDir - o.getNumDir();
+			result = o.getNumDir() - this.numDir;
 
 			if (result == 0) {
 				result = this.city.compareTo(o.getCity());

@@ -1,5 +1,6 @@
 package com.jacaranda.country;
 
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -48,8 +49,10 @@ public class Country {
 		this.country = country;
 	}
 
-	private List<City> getCities() {
-		return cities;
+	public List<City> getCities() {
+		List<City> copia = new LinkedList<>(this.cities);
+		Collections.sort(copia);
+		return copia;
 	}
 
 	private void setCities(List<City> cities) {

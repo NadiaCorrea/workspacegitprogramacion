@@ -3,7 +3,9 @@ package com.jacaranda.main;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -27,6 +29,9 @@ public class CountryMain {
 		leerFicheroCity("ficheros/city.txt");
 		leerFicheroAddress("ficheros/address2.txt");
 		System.out.println(imprimir(paises));
+
+		escribirPaisesEnFichero("ficheros/paises.txt");
+		escribirCiudadesEnFichero("ficheros/ciudades.txt");
 	}
 
 	private static void leerFicheroCountry(String nombreFichero) {
@@ -169,6 +174,76 @@ public class CountryMain {
 
 		return result.toString();
 
+	}
+	/*
+	 * El programa debe crear un nuevo fichero en donde aparezca el id y el nombre
+	 * de cada país, junto con el número de ciudades que hay en ese país y el númeo
+	 * de direcciones que hay, de forma que en cada pais se muestren primero las
+	 * ciudades con más direcciones. Si hay dos ciudades con el mismo numero de
+	 * direcciones nombre deberán aparecer ordenadas alfabéticamente. El programa
+	 * también deberá crear otro fichero con los datos de las ciudades y a
+	 * continuación las direcciones correspondientes.
+	 */
+
+	private static void escribirPaisesEnFichero(String nombre) {
+		String cadena;
+		try {
+			FileWriter flujoEscritura = new FileWriter(nombre);
+			PrintWriter filtroEscritura = new PrintWriter(flujoEscritura);
+
+			Iterator<Country> iterador = paises.iterator();
+			Country iPais;
+
+			while (iterador.hasNext()) {
+				iPais = iterador.next();
+				StringBuilder result = new StringBuilder();
+
+				Iterator<City> ite = iPais.getCities().iterator();
+				City iCity;
+				int totalDirecciones = 0;
+				while (ite.hasNext()) {
+					iCity = ite.next();
+					totalDirecciones = totalDirecciones + iCity.getNumDir();
+					result.append("ciudad: " + iCity.getCity() + " - total direcciones: " + iCity.getNumDir() + "\n");
+				}
+
+				cadena = "País: " + iPais.getCountryId() + ", " + iPais.getCountry() + ", número de ciudades "
+						+ iPais.getCities().size() + ", número de direcciones " + totalDirecciones + "\n"
+						+ result.toString();
+				filtroEscritura.println(cadena);
+			}
+
+			filtroEscritura.close();
+			flujoEscritura.close();
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+	/*
+	 * El programa también deberá crear otro fichero con los datos de las ciudades y
+	 * a continuación las direcciones correspondientes.
+	 */
+
+	private static void escribirCiudadesEnFichero(String nombre) {
+
+		try {
+			FileWriter flujoEscritura = new FileWriter(nombre);
+			PrintWriter filtroEscritura = new PrintWriter(flujoEscritura);
+
+			Iterator<City> iterador = ciudades.iterator();
+			City iCity;
+
+			while (iterador.hasNext()) {
+				iCity = iterador.next();
+				filtroEscritura.println(iCity.toString());
+			}
+
+			filtroEscritura.close();
+			flujoEscritura.close();
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 }

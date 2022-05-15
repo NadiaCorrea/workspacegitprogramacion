@@ -1,0 +1,818 @@
+País: 1, Afghanistan, número de ciudades 1, número de direcciones 1
+ciudad: Kabul - total direcciones: 1
+
+País: 2, Algeria, número de ciudades 3, número de direcciones 3
+ciudad: Batna - total direcciones: 1
+ciudad: Bchar - total direcciones: 1
+ciudad: Skikda - total direcciones: 1
+
+País: 3, American Samoa, número de ciudades 1, número de direcciones 1
+ciudad: Tafuna - total direcciones: 1
+
+País: 4, Angola, número de ciudades 2, número de direcciones 1
+ciudad: Namibe - total direcciones: 1
+ciudad: Benguela - total direcciones: 0
+
+País: 5, Anguilla, número de ciudades 1, número de direcciones 1
+ciudad: South Hill - total direcciones: 1
+
+País: 6, Argentina, número de ciudades 13, número de direcciones 10
+ciudad: Almirante Brown - total direcciones: 1
+ciudad: Baha Blanca - total direcciones: 1
+ciudad: Crdoba - total direcciones: 1
+ciudad: Escobar - total direcciones: 1
+ciudad: La Plata - total direcciones: 1
+ciudad: Merlo - total direcciones: 1
+ciudad: San Miguel de Tucumn - total direcciones: 1
+ciudad: Santa F - total direcciones: 1
+ciudad: Tandil - total direcciones: 1
+ciudad: Vicente Lpez - total direcciones: 1
+ciudad: Avellaneda - total direcciones: 0
+ciudad: Ezeiza - total direcciones: 0
+ciudad: Quilmes - total direcciones: 0
+
+País: 7, Armenia, número de ciudades 1, número de direcciones 1
+ciudad: Yerevan - total direcciones: 1
+
+País: 8, Australia, número de ciudades 1, número de direcciones 2
+ciudad: Woodridge - total direcciones: 2
+
+País: 9, Austria, número de ciudades 3, número de direcciones 3
+ciudad: Graz - total direcciones: 1
+ciudad: Linz - total direcciones: 1
+ciudad: Salzburg - total direcciones: 1
+
+País: 10, Azerbaijan, número de ciudades 2, número de direcciones 2
+ciudad: Baku - total direcciones: 1
+ciudad: Sumqayit - total direcciones: 1
+
+País: 11, Bahrain, número de ciudades 1, número de direcciones 0
+ciudad: al-Manama - total direcciones: 0
+
+País: 12, Bangladesh, número de ciudades 3, número de direcciones 3
+ciudad: Dhaka - total direcciones: 1
+ciudad: Jamalpur - total direcciones: 1
+ciudad: Tangail - total direcciones: 1
+
+País: 13, Belarus, número de ciudades 2, número de direcciones 1
+ciudad: Molodetno - total direcciones: 1
+ciudad: Mogiljov - total direcciones: 0
+
+País: 14, Bolivia, número de ciudades 2, número de direcciones 2
+ciudad: El Alto - total direcciones: 1
+ciudad: Sucre - total direcciones: 1
+
+País: 15, Brazil, número de ciudades 28, número de direcciones 25
+ciudad: Angra dos Reis - total direcciones: 1
+ciudad: Anpolis - total direcciones: 1
+ciudad: Aparecida de Goinia - total direcciones: 1
+ciudad: Araatuba - total direcciones: 1
+ciudad: Bag - total direcciones: 1
+ciudad: Belm - total direcciones: 1
+ciudad: Blumenau - total direcciones: 1
+ciudad: Boa Vista - total direcciones: 1
+ciudad: Braslia - total direcciones: 1
+ciudad: Goinia - total direcciones: 1
+ciudad: Guaruj - total direcciones: 1
+ciudad: Ibirit - total direcciones: 1
+ciudad: Juazeiro do Norte - total direcciones: 1
+ciudad: Luzinia - total direcciones: 1
+ciudad: Maring - total direcciones: 1
+ciudad: Po - total direcciones: 1
+ciudad: Poos de Caldas - total direcciones: 1
+ciudad: Rio Claro - total direcciones: 1
+ciudad: Santa Brbara dOeste - total direcciones: 1
+ciudad: Santo Andr - total direcciones: 1
+ciudad: So Leopoldo - total direcciones: 1
+ciudad: Sorocaba - total direcciones: 1
+ciudad: Vila Velha - total direcciones: 1
+ciudad: Vitria de Santo Anto - total direcciones: 1
+ciudad: guas Lindas de Gois - total direcciones: 1
+ciudad: Alvorada - total direcciones: 0
+ciudad: Juiz de Fora - total direcciones: 0
+ciudad: So Bernardo do Campo - total direcciones: 0
+
+País: 16, Brunei, número de ciudades 1, número de direcciones 1
+ciudad: Bandar Seri Begawan - total direcciones: 1
+
+País: 17, Bulgaria, número de ciudades 2, número de direcciones 1
+ciudad: Stara Zagora - total direcciones: 1
+ciudad: Ruse - total direcciones: 0
+
+País: 18, Cambodia, número de ciudades 2, número de direcciones 1
+ciudad: Phnom Penh - total direcciones: 1
+ciudad: Battambang - total direcciones: 0
+
+País: 19, Cameroon, número de ciudades 2, número de direcciones 2
+ciudad: Bamenda - total direcciones: 1
+ciudad: Yaound - total direcciones: 1
+
+País: 20, Canada, número de ciudades 7, número de direcciones 6
+ciudad: Lethbridge - total direcciones: 2
+ciudad: Halifax - total direcciones: 1
+ciudad: Oshawa - total direcciones: 1
+ciudad: Richmond Hill - total direcciones: 1
+ciudad: Vancouver - total direcciones: 1
+ciudad: Gatineau - total direcciones: 0
+ciudad: London - total direcciones: 0
+
+País: 21, Chad, número de ciudades 1, número de direcciones 0
+ciudad: NDjamna - total direcciones: 0
+
+País: 22, Chile, número de ciudades 3, número de direcciones 2
+ciudad: Antofagasta - total direcciones: 1
+ciudad: Rancagua - total direcciones: 1
+ciudad: Coquimbo - total direcciones: 0
+
+País: 23, China, número de ciudades 53, número de direcciones 35
+ciudad: Changzhou - total direcciones: 1
+ciudad: Datong - total direcciones: 1
+ciudad: Daxian - total direcciones: 1
+ciudad: Dongying - total direcciones: 1
+ciudad: Emeishan - total direcciones: 1
+ciudad: Enshi - total direcciones: 1
+ciudad: Ezhou - total direcciones: 1
+ciudad: Fuyu - total direcciones: 1
+ciudad: Fuzhou - total direcciones: 1
+ciudad: Hami - total direcciones: 1
+ciudad: Hohhot - total direcciones: 1
+ciudad: Huaian - total direcciones: 1
+ciudad: Jinchang - total direcciones: 1
+ciudad: Junan - total direcciones: 1
+ciudad: Korla - total direcciones: 1
+ciudad: Laiwu - total direcciones: 1
+ciudad: Laohekou - total direcciones: 1
+ciudad: Lengshuijiang - total direcciones: 1
+ciudad: Liaocheng - total direcciones: 1
+ciudad: Meixian - total direcciones: 1
+ciudad: Nanyang - total direcciones: 1
+ciudad: Pingxiang - total direcciones: 1
+ciudad: Qinhuangdao - total direcciones: 1
+ciudad: Shanwei - total direcciones: 1
+ciudad: Shenzhen - total direcciones: 1
+ciudad: Tianjin - total direcciones: 1
+ciudad: Tiefa - total direcciones: 1
+ciudad: Tongliao - total direcciones: 1
+ciudad: Xiangfan - total direcciones: 1
+ciudad: Xiangtan - total direcciones: 1
+ciudad: Xinxiang - total direcciones: 1
+ciudad: Yantai - total direcciones: 1
+ciudad: Yuncheng - total direcciones: 1
+ciudad: Yuzhou - total direcciones: 1
+ciudad: Zalantun - total direcciones: 1
+ciudad: Baicheng - total direcciones: 0
+ciudad: Baiyin - total direcciones: 0
+ciudad: Binzhou - total direcciones: 0
+ciudad: Haining - total direcciones: 0
+ciudad: Jining - total direcciones: 0
+ciudad: Jinzhou - total direcciones: 0
+ciudad: Leshan - total direcciones: 0
+ciudad: Rizhao - total direcciones: 0
+ciudad: Sanya - total direcciones: 0
+ciudad: Shaoguan - total direcciones: 0
+ciudad: Suihua - total direcciones: 0
+ciudad: Tieli - total direcciones: 0
+ciudad: Weifang - total direcciones: 0
+ciudad: Xintai - total direcciones: 0
+ciudad: Yinchuan - total direcciones: 0
+ciudad: Yingkou - total direcciones: 0
+ciudad: Zaoyang - total direcciones: 0
+ciudad: Zhoushan - total direcciones: 0
+
+País: 24, Colombia, número de ciudades 6, número de direcciones 5
+ciudad: Buenaventura - total direcciones: 1
+ciudad: Dos Quebradas - total direcciones: 1
+ciudad: Florencia - total direcciones: 1
+ciudad: Pereira - total direcciones: 1
+ciudad: Sincelejo - total direcciones: 1
+ciudad: Sogamoso - total direcciones: 0
+
+País: 25, Congo, número de ciudades 2, número de direcciones 2
+ciudad: Lubumbashi - total direcciones: 1
+ciudad: Mwene-Ditu - total direcciones: 1
+
+País: 26, Czech Republic, número de ciudades 1, número de direcciones 1
+ciudad: Olomouc - total direcciones: 1
+
+País: 27, Dominican Republic, número de ciudades 3, número de direcciones 3
+ciudad: La Romana - total direcciones: 1
+ciudad: San Felipe de Puerto Plata - total direcciones: 1
+ciudad: Santiago de los Caballeros - total direcciones: 1
+
+País: 28, Ecuador, número de ciudades 3, número de direcciones 1
+ciudad: Portoviejo - total direcciones: 1
+ciudad: Loja - total direcciones: 0
+ciudad: Robamba - total direcciones: 0
+
+País: 29, Egypt, número de ciudades 6, número de direcciones 4
+ciudad: Idfu - total direcciones: 1
+ciudad: Qalyub - total direcciones: 1
+ciudad: Sawhaj - total direcciones: 1
+ciudad: Shubra al-Khayma - total direcciones: 1
+ciudad: Bilbays - total direcciones: 0
+ciudad: Mit Ghamr - total direcciones: 0
+
+País: 30, Estonia, número de ciudades 1, número de direcciones 1
+ciudad: Tartu - total direcciones: 1
+
+País: 31, Ethiopia, número de ciudades 1, número de direcciones 1
+ciudad: Addis Abeba - total direcciones: 1
+
+País: 32, Faroe Islands, número de ciudades 1, número de direcciones 1
+ciudad: Trshavn - total direcciones: 1
+
+País: 33, Finland, número de ciudades 1, número de direcciones 1
+ciudad: Oulu - total direcciones: 1
+
+País: 34, France, número de ciudades 4, número de direcciones 4
+ciudad: Brest - total direcciones: 1
+ciudad: Le Mans - total direcciones: 1
+ciudad: Toulon - total direcciones: 1
+ciudad: Toulouse - total direcciones: 1
+
+País: 35, French Guiana, número de ciudades 1, número de direcciones 1
+ciudad: Cayenne - total direcciones: 1
+
+País: 36, French Polynesia, número de ciudades 2, número de direcciones 2
+ciudad: Faaa - total direcciones: 1
+ciudad: Papeete - total direcciones: 1
+
+País: 37, Gambia, número de ciudades 1, número de direcciones 0
+ciudad: Banjul - total direcciones: 0
+
+País: 38, Germany, número de ciudades 7, número de direcciones 7
+ciudad: Duisburg - total direcciones: 1
+ciudad: Erlangen - total direcciones: 1
+ciudad: Halle/Saale - total direcciones: 1
+ciudad: Mannheim - total direcciones: 1
+ciudad: Saarbrcken - total direcciones: 1
+ciudad: Siegen - total direcciones: 1
+ciudad: Witten - total direcciones: 1
+
+País: 39, Greece, número de ciudades 2, número de direcciones 1
+ciudad: Athenai - total direcciones: 1
+ciudad: Patras - total direcciones: 0
+
+País: 40, Greenland, número de ciudades 1, número de direcciones 1
+ciudad: Nuuk - total direcciones: 1
+
+País: 41, Holy See Vatican City State, número de ciudades 1, número de direcciones 1
+ciudad: Citt del Vaticano - total direcciones: 1
+
+País: 42, Hong Kong, número de ciudades 1, número de direcciones 1
+ciudad: Kowloon and New Kowloon - total direcciones: 1
+
+País: 43, Hungary, número de ciudades 1, número de direcciones 0
+ciudad: Szkesfehrvr - total direcciones: 0
+
+País: 44, India, número de ciudades 60, número de direcciones 53
+ciudad: Adoni - total direcciones: 1
+ciudad: Ahmadnagar - total direcciones: 1
+ciudad: Allappuzha Alleppey - total direcciones: 1
+ciudad: Ambattur - total direcciones: 1
+ciudad: Balurghat - total direcciones: 1
+ciudad: Berhampore Baharampur - total direcciones: 1
+ciudad: Bhavnagar - total direcciones: 1
+ciudad: Bhilwara - total direcciones: 1
+ciudad: Bhopal - total direcciones: 1
+ciudad: Bhusawal - total direcciones: 1
+ciudad: Bijapur - total direcciones: 1
+ciudad: Chandrapur - total direcciones: 1
+ciudad: Dhule Dhulia - total direcciones: 1
+ciudad: Etawah - total direcciones: 1
+ciudad: Firozabad - total direcciones: 1
+ciudad: Gandhinagar - total direcciones: 1
+ciudad: Gulbarga - total direcciones: 1
+ciudad: Haldia - total direcciones: 1
+ciudad: Halisahar - total direcciones: 1
+ciudad: Hoshiarpur - total direcciones: 1
+ciudad: Hubli-Dharwad - total direcciones: 1
+ciudad: Jaipur - total direcciones: 1
+ciudad: Jhansi - total direcciones: 1
+ciudad: Jodhpur - total direcciones: 1
+ciudad: Kamarhati - total direcciones: 1
+ciudad: Karnal - total direcciones: 1
+ciudad: Katihar - total direcciones: 1
+ciudad: Kumbakonam - total direcciones: 1
+ciudad: Miraj - total direcciones: 1
+ciudad: Munger Monghyr - total direcciones: 1
+ciudad: Mysore - total direcciones: 1
+ciudad: Nagaon - total direcciones: 1
+ciudad: Palghat Palakkad - total direcciones: 1
+ciudad: Parbhani - total direcciones: 1
+ciudad: Pathankot - total direcciones: 1
+ciudad: Patiala - total direcciones: 1
+ciudad: Pudukkottai - total direcciones: 1
+ciudad: Pune - total direcciones: 1
+ciudad: Purnea Purnia - total direcciones: 1
+ciudad: Rae Bareli - total direcciones: 1
+ciudad: Rampur - total direcciones: 1
+ciudad: Ranchi - total direcciones: 1
+ciudad: Sambhal - total direcciones: 1
+ciudad: Satna - total direcciones: 1
+ciudad: Shimoga - total direcciones: 1
+ciudad: Shivapuri - total direcciones: 1
+ciudad: Tambaram - total direcciones: 1
+ciudad: Udaipur - total direcciones: 1
+ciudad: Uluberia - total direcciones: 1
+ciudad: Uttarpara-Kotrung - total direcciones: 1
+ciudad: Valparai - total direcciones: 1
+ciudad: Varanasi Benares - total direcciones: 1
+ciudad: Yamuna Nagar - total direcciones: 1
+ciudad: Amroha - total direcciones: 0
+ciudad: Bhimavaram - total direcciones: 0
+ciudad: Chapra - total direcciones: 0
+ciudad: Kanchrapara - total direcciones: 0
+ciudad: Rajkot - total direcciones: 0
+ciudad: Siliguri Shiliguri - total direcciones: 0
+ciudad: Vijayawada - total direcciones: 0
+
+País: 45, Indonesia, número de ciudades 14, número de direcciones 9
+ciudad: Cianjur - total direcciones: 1
+ciudad: Ciomas - total direcciones: 1
+ciudad: Ciparay - total direcciones: 1
+ciudad: Gorontalo - total direcciones: 1
+ciudad: Jakarta - total direcciones: 1
+ciudad: Pemalang - total direcciones: 1
+ciudad: Probolinggo - total direcciones: 1
+ciudad: Surakarta - total direcciones: 1
+ciudad: Tegal - total direcciones: 1
+ciudad: Lhokseumawe - total direcciones: 0
+ciudad: Madiun - total direcciones: 0
+ciudad: Pangkal Pinang - total direcciones: 0
+ciudad: Pontianak - total direcciones: 0
+ciudad: Purwakarta - total direcciones: 0
+
+País: 46, Iran, número de ciudades 8, número de direcciones 8
+ciudad: Arak - total direcciones: 1
+ciudad: Esfahan - total direcciones: 1
+ciudad: Kermanshah - total direcciones: 1
+ciudad: Najafabad - total direcciones: 1
+ciudad: Qomsheh - total direcciones: 1
+ciudad: Shahr-e Kord - total direcciones: 1
+ciudad: Sirjan - total direcciones: 1
+ciudad: Tabriz - total direcciones: 1
+
+País: 47, Iraq, número de ciudades 1, número de direcciones 0
+ciudad: Mosul - total direcciones: 0
+
+País: 48, Israel, número de ciudades 4, número de direcciones 3
+ciudad: Ashdod - total direcciones: 1
+ciudad: Bat Yam - total direcciones: 1
+ciudad: Tel Aviv-Jaffa - total direcciones: 1
+ciudad: Ashqelon - total direcciones: 0
+
+País: 49, Italy, número de ciudades 7, número de direcciones 4
+ciudad: Alessandria - total direcciones: 1
+ciudad: Bergamo - total direcciones: 1
+ciudad: Brescia - total direcciones: 1
+ciudad: Syrakusa - total direcciones: 1
+ciudad: Brindisi - total direcciones: 0
+ciudad: Livorno - total direcciones: 0
+ciudad: Udine - total direcciones: 0
+
+País: 50, Japan, número de ciudades 31, número de direcciones 25
+ciudad: Fukuyama - total direcciones: 1
+ciudad: Higashiosaka - total direcciones: 1
+ciudad: Hino - total direcciones: 1
+ciudad: Hiroshima - total direcciones: 1
+ciudad: Iwaki - total direcciones: 1
+ciudad: Iwakuni - total direcciones: 1
+ciudad: Iwatsuki - total direcciones: 1
+ciudad: Izumisano - total direcciones: 1
+ciudad: Kakamigahara - total direcciones: 1
+ciudad: Kamakura - total direcciones: 1
+ciudad: Koriyama - total direcciones: 1
+ciudad: Kurashiki - total direcciones: 1
+ciudad: Matsue - total direcciones: 1
+ciudad: Miyakonojo - total direcciones: 1
+ciudad: Nagareyama - total direcciones: 1
+ciudad: Okinawa - total direcciones: 1
+ciudad: Omiya - total direcciones: 1
+ciudad: Onomichi - total direcciones: 1
+ciudad: Otsu - total direcciones: 1
+ciudad: Sagamihara - total direcciones: 1
+ciudad: Sasebo - total direcciones: 1
+ciudad: Shimonoseki - total direcciones: 1
+ciudad: Tama - total direcciones: 1
+ciudad: Tsuyama - total direcciones: 1
+ciudad: Urawa - total direcciones: 1
+ciudad: Akishima - total direcciones: 0
+ciudad: Isesaki - total direcciones: 0
+ciudad: Kanazawa - total direcciones: 0
+ciudad: Kuwana - total direcciones: 0
+ciudad: Okayama - total direcciones: 0
+ciudad: Ueda - total direcciones: 0
+
+País: 51, Kazakstan, número de ciudades 2, número de direcciones 1
+ciudad: Pavlodar - total direcciones: 1
+ciudad: Zhezqazghan - total direcciones: 0
+
+País: 52, Kenya, número de ciudades 2, número de direcciones 2
+ciudad: Kisumu - total direcciones: 1
+ciudad: Nyeri - total direcciones: 1
+
+País: 53, Kuwait, número de ciudades 1, número de direcciones 1
+ciudad: Jalib al-Shuyukh - total direcciones: 1
+
+País: 54, Latvia, número de ciudades 2, número de direcciones 2
+ciudad: Daugavpils - total direcciones: 1
+ciudad: Liepaja - total direcciones: 1
+
+País: 55, Liechtenstein, número de ciudades 1, número de direcciones 1
+ciudad: Vaduz - total direcciones: 1
+
+País: 56, Lithuania, número de ciudades 1, número de direcciones 0
+ciudad: Vilnius - total direcciones: 0
+
+País: 57, Madagascar, número de ciudades 1, número de direcciones 1
+ciudad: Mahajanga - total direcciones: 1
+
+País: 58, Malawi, número de ciudades 1, número de direcciones 1
+ciudad: Lilongwe - total direcciones: 1
+
+País: 59, Malaysia, número de ciudades 3, número de direcciones 3
+ciudad: Ipoh - total direcciones: 1
+ciudad: Kuching - total direcciones: 1
+ciudad: Sungai Petani - total direcciones: 1
+
+País: 60, Mexico, número de ciudades 30, número de direcciones 21
+ciudad: Allende - total direcciones: 1
+ciudad: Atlixco - total direcciones: 1
+ciudad: Coacalco de Berriozbal - total direcciones: 1
+ciudad: Cuauhtmoc - total direcciones: 1
+ciudad: Cuautla - total direcciones: 1
+ciudad: El Fuerte - total direcciones: 1
+ciudad: Guadalajara - total direcciones: 1
+ciudad: Hidalgo - total direcciones: 1
+ciudad: Huixquilucan - total direcciones: 1
+ciudad: Jurez - total direcciones: 1
+ciudad: Matamoros - total direcciones: 1
+ciudad: Mexicali - total direcciones: 1
+ciudad: Nezahualcyotl - total direcciones: 1
+ciudad: Pachuca de Soto - total direcciones: 1
+ciudad: Salamanca - total direcciones: 1
+ciudad: San Felipe del Progreso - total direcciones: 1
+ciudad: San Juan Bautista Tuxtepec - total direcciones: 1
+ciudad: Torren - total direcciones: 1
+ciudad: Uruapan - total direcciones: 1
+ciudad: Valle de Santiago - total direcciones: 1
+ciudad: Zapopan - total direcciones: 1
+ciudad: Acua - total direcciones: 0
+ciudad: Carmen - total direcciones: 0
+ciudad: Celaya - total direcciones: 0
+ciudad: Coatzacoalcos - total direcciones: 0
+ciudad: Cuernavaca - total direcciones: 0
+ciudad: Huejutla de Reyes - total direcciones: 0
+ciudad: Jos Azueta - total direcciones: 0
+ciudad: La Paz - total direcciones: 0
+ciudad: Monclova - total direcciones: 0
+
+País: 61, Moldova, número de ciudades 1, número de direcciones 1
+ciudad: Chisinau - total direcciones: 1
+
+País: 62, Morocco, número de ciudades 3, número de direcciones 2
+ciudad: Nador - total direcciones: 1
+ciudad: Sal - total direcciones: 1
+ciudad: Beni-Mellal - total direcciones: 0
+
+País: 63, Mozambique, número de ciudades 3, número de direcciones 3
+ciudad: Beira - total direcciones: 1
+ciudad: Naala-Porto - total direcciones: 1
+ciudad: Tete - total direcciones: 1
+
+País: 64, Myanmar, número de ciudades 2, número de direcciones 2
+ciudad: Monywa - total direcciones: 1
+ciudad: Myingyan - total direcciones: 1
+
+País: 65, Nauru, número de ciudades 1, número de direcciones 0
+ciudad: Yangor - total direcciones: 0
+
+País: 66, Nepal, número de ciudades 1, número de direcciones 1
+ciudad: Birgunj - total direcciones: 1
+
+País: 67, Netherlands, número de ciudades 5, número de direcciones 4
+ciudad: Amersfoort - total direcciones: 1
+ciudad: Apeldoorn - total direcciones: 1
+ciudad: Ede - total direcciones: 1
+ciudad: s-Hertogenbosch - total direcciones: 1
+ciudad: Emmen - total direcciones: 0
+
+País: 68, New Zealand, número de ciudades 1, número de direcciones 1
+ciudad: Hamilton - total direcciones: 1
+
+País: 69, Nigeria, número de ciudades 13, número de direcciones 12
+ciudad: Benin City - total direcciones: 1
+ciudad: Deba Habe - total direcciones: 1
+ciudad: Effon-Alaiye - total direcciones: 1
+ciudad: Ife - total direcciones: 1
+ciudad: Ikerre - total direcciones: 1
+ciudad: Ilorin - total direcciones: 1
+ciudad: Kaduna - total direcciones: 1
+ciudad: Ogbomosho - total direcciones: 1
+ciudad: Ondo - total direcciones: 1
+ciudad: Owo - total direcciones: 1
+ciudad: Oyo - total direcciones: 1
+ciudad: Zaria - total direcciones: 1
+ciudad: Sokoto - total direcciones: 0
+
+País: 70, North Korea, número de ciudades 1, número de direcciones 1
+ciudad: Pyongyang - total direcciones: 1
+
+País: 71, Oman, número de ciudades 2, número de direcciones 1
+ciudad: Masqat - total direcciones: 1
+ciudad: Salala - total direcciones: 0
+
+País: 72, Pakistan, número de ciudades 5, número de direcciones 5
+ciudad: Dadu - total direcciones: 1
+ciudad: Mandi Bahauddin - total direcciones: 1
+ciudad: Mardan - total direcciones: 1
+ciudad: Okara - total direcciones: 1
+ciudad: Shikarpur - total direcciones: 1
+
+País: 73, Paraguay, número de ciudades 3, número de direcciones 3
+ciudad: Asuncin - total direcciones: 1
+ciudad: Ciudad del Este - total direcciones: 1
+ciudad: San Lorenzo - total direcciones: 1
+
+País: 74, Peru, número de ciudades 4, número de direcciones 2
+ciudad: Callao - total direcciones: 1
+ciudad: Lima - total direcciones: 1
+ciudad: Hunuco - total direcciones: 0
+ciudad: Sullana - total direcciones: 0
+
+País: 75, Philippines, número de ciudades 20, número de direcciones 16
+ciudad: Baybay - total direcciones: 1
+ciudad: Bayugan - total direcciones: 1
+ciudad: Bislig - total direcciones: 1
+ciudad: Cabuyao - total direcciones: 1
+ciudad: Cavite - total direcciones: 1
+ciudad: Davao - total direcciones: 1
+ciudad: Gingoog - total direcciones: 1
+ciudad: Hagonoy - total direcciones: 1
+ciudad: Imus - total direcciones: 1
+ciudad: Lapu-Lapu - total direcciones: 1
+ciudad: Mandaluyong - total direcciones: 1
+ciudad: Ozamis - total direcciones: 1
+ciudad: Taguig - total direcciones: 1
+ciudad: Tanauan - total direcciones: 1
+ciudad: Tanza - total direcciones: 1
+ciudad: Tuguegarao - total direcciones: 1
+ciudad: Iligan - total direcciones: 0
+ciudad: Santa Rosa - total direcciones: 0
+ciudad: Talavera - total direcciones: 0
+ciudad: Tarlac - total direcciones: 0
+
+País: 76, Poland, número de ciudades 8, número de direcciones 4
+ciudad: Bydgoszcz - total direcciones: 1
+ciudad: Jastrzebie-Zdrj - total direcciones: 1
+ciudad: Kalisz - total direcciones: 1
+ciudad: Tychy - total direcciones: 1
+ciudad: Czestochowa - total direcciones: 0
+ciudad: Lublin - total direcciones: 0
+ciudad: Plock - total direcciones: 0
+ciudad: Wroclaw - total direcciones: 0
+
+País: 77, Puerto Rico, número de ciudades 2, número de direcciones 2
+ciudad: Arecibo - total direcciones: 1
+ciudad: Ponce - total direcciones: 1
+
+País: 78, Romania, número de ciudades 2, número de direcciones 1
+ciudad: Botosani - total direcciones: 1
+ciudad: Bucuresti - total direcciones: 0
+
+País: 79, Runion, número de ciudades 1, número de direcciones 1
+ciudad: Saint-Denis - total direcciones: 1
+
+País: 80, Russian Federation, número de ciudades 28, número de direcciones 25
+ciudad: Atinsk - total direcciones: 1
+ciudad: Balaiha - total direcciones: 1
+ciudad: Dzerzinsk - total direcciones: 1
+ciudad: Elista - total direcciones: 1
+ciudad: Ivanovo - total direcciones: 1
+ciudad: Jaroslavl - total direcciones: 1
+ciudad: Jelets - total direcciones: 1
+ciudad: Kaliningrad - total direcciones: 1
+ciudad: Kirovo-Tepetsk - total direcciones: 1
+ciudad: Kolpino - total direcciones: 1
+ciudad: Korolev - total direcciones: 1
+ciudad: Kurgan - total direcciones: 1
+ciudad: Kursk - total direcciones: 1
+ciudad: Lipetsk - total direcciones: 1
+ciudad: Ljubertsy - total direcciones: 1
+ciudad: Maikop - total direcciones: 1
+ciudad: Moscow - total direcciones: 1
+ciudad: Nabereznyje Telny - total direcciones: 1
+ciudad: Niznekamsk - total direcciones: 1
+ciudad: Novoterkassk - total direcciones: 1
+ciudad: Smolensk - total direcciones: 1
+ciudad: Syktyvkar - total direcciones: 1
+ciudad: Teboksary - total direcciones: 1
+ciudad: Usolje-Sibirskoje - total direcciones: 1
+ciudad: Zeleznogorsk - total direcciones: 1
+ciudad: Kamyin - total direcciones: 0
+ciudad: Pjatigorsk - total direcciones: 0
+ciudad: Serpuhov - total direcciones: 0
+
+País: 81, Saint Vincent and the Grenadines, número de ciudades 1, número de direcciones 1
+ciudad: Kingstown - total direcciones: 1
+
+País: 82, Saudi Arabia, número de ciudades 5, número de direcciones 5
+ciudad: Abha - total direcciones: 1
+ciudad: Jedda - total direcciones: 1
+ciudad: Tabuk - total direcciones: 1
+ciudad: al-Hawiya - total direcciones: 1
+ciudad: al-Qatif - total direcciones: 1
+
+País: 83, Senegal, número de ciudades 1, número de direcciones 1
+ciudad: Ziguinchor - total direcciones: 1
+
+País: 84, Slovakia, número de ciudades 1, número de direcciones 1
+ciudad: Bratislava - total direcciones: 1
+
+País: 85, South Africa, número de ciudades 11, número de direcciones 10
+ciudad: Boksburg - total direcciones: 1
+ciudad: Botshabelo - total direcciones: 1
+ciudad: Johannesburg - total direcciones: 1
+ciudad: Kimberley - total direcciones: 1
+ciudad: Klerksdorp - total direcciones: 1
+ciudad: Newcastle - total direcciones: 1
+ciudad: Paarl - total direcciones: 1
+ciudad: Rustenburg - total direcciones: 1
+ciudad: Soshanguve - total direcciones: 1
+ciudad: Springs - total direcciones: 1
+ciudad: Chatsworth - total direcciones: 0
+
+País: 86, South Korea, número de ciudades 5, número de direcciones 4
+ciudad: Cheju - total direcciones: 1
+ciudad: Kimchon - total direcciones: 1
+ciudad: Naju - total direcciones: 1
+ciudad: Uijongbu - total direcciones: 1
+ciudad: Tonghae - total direcciones: 0
+
+País: 87, Spain, número de ciudades 5, número de direcciones 4
+ciudad: A Corua La Corua - total direcciones: 1
+ciudad: Donostia-San Sebastin - total direcciones: 1
+ciudad: Gijn - total direcciones: 1
+ciudad: Ourense Orense - total direcciones: 1
+ciudad: Santiago de Compostela - total direcciones: 0
+
+País: 88, Sri Lanka, número de ciudades 1, número de direcciones 1
+ciudad: Jaffna - total direcciones: 1
+
+País: 89, Sudan, número de ciudades 2, número de direcciones 2
+ciudad: Omdurman - total direcciones: 1
+ciudad: al-Qadarif - total direcciones: 1
+
+País: 90, Sweden, número de ciudades 1, número de direcciones 1
+ciudad: Malm - total direcciones: 1
+
+País: 91, Switzerland, número de ciudades 3, número de direcciones 2
+ciudad: Basel - total direcciones: 1
+ciudad: Bern - total direcciones: 1
+ciudad: Lausanne - total direcciones: 0
+
+País: 92, Taiwan, número de ciudades 10, número de direcciones 6
+ciudad: Changhwa - total direcciones: 1
+ciudad: Chiayi - total direcciones: 1
+ciudad: Hsichuh - total direcciones: 1
+ciudad: Lungtan - total direcciones: 1
+ciudad: Nantou - total direcciones: 1
+ciudad: Touliu - total direcciones: 1
+ciudad: Chungho - total direcciones: 0
+ciudad: Fengshan - total direcciones: 0
+ciudad: Tanshui - total direcciones: 0
+ciudad: Tsaotun - total direcciones: 0
+
+País: 93, Tanzania, número de ciudades 3, número de direcciones 2
+ciudad: Tabora - total direcciones: 1
+ciudad: Zanzibar - total direcciones: 1
+ciudad: Mwanza - total direcciones: 0
+
+País: 94, Thailand, número de ciudades 3, número de direcciones 3
+ciudad: Nakhon Sawan - total direcciones: 1
+ciudad: Pak Kret - total direcciones: 1
+ciudad: Songkhla - total direcciones: 1
+
+País: 95, Tonga, número de ciudades 1, número de direcciones 1
+ciudad: Nukualofa - total direcciones: 1
+
+País: 96, Tunisia, número de ciudades 1, número de direcciones 1
+ciudad: Sousse - total direcciones: 1
+
+País: 97, Turkey, número de ciudades 15, número de direcciones 9
+ciudad: Adana - total direcciones: 1
+ciudad: Balikesir - total direcciones: 1
+ciudad: Batman - total direcciones: 1
+ciudad: Inegl - total direcciones: 1
+ciudad: Kilis - total direcciones: 1
+ciudad: Ktahya - total direcciones: 1
+ciudad: Osmaniye - total direcciones: 1
+ciudad: Tarsus - total direcciones: 1
+ciudad: Usak - total direcciones: 1
+ciudad: Denizli - total direcciones: 0
+ciudad: Eskisehir - total direcciones: 0
+ciudad: Gaziantep - total direcciones: 0
+ciudad: Sivas - total direcciones: 0
+ciudad: Sultanbeyli - total direcciones: 0
+ciudad: Tokat - total direcciones: 0
+
+País: 98, Turkmenistan, número de ciudades 1, número de direcciones 1
+ciudad: Ashgabat - total direcciones: 1
+
+País: 99, Tuvalu, número de ciudades 1, número de direcciones 1
+ciudad: Funafuti - total direcciones: 1
+
+País: 100, Ukraine, número de ciudades 6, número de direcciones 4
+ciudad: Kamjanets-Podilskyi - total direcciones: 1
+ciudad: Mukateve - total direcciones: 1
+ciudad: Simferopol - total direcciones: 1
+ciudad: Sumy - total direcciones: 1
+ciudad: Konotop - total direcciones: 0
+ciudad: ostka - total direcciones: 0
+
+País: 101, United Arab Emirates, número de ciudades 3, número de direcciones 3
+ciudad: Abu Dhabi - total direcciones: 1
+ciudad: Sharja - total direcciones: 1
+ciudad: al-Ayn - total direcciones: 1
+
+País: 102, United Kingdom, número de ciudades 8, número de direcciones 4
+ciudad: Bradford - total direcciones: 1
+ciudad: Dundee - total direcciones: 1
+ciudad: London - total direcciones: 1
+ciudad: Southend-on-Sea - total direcciones: 1
+ciudad: Southampton - total direcciones: 0
+ciudad: Southport - total direcciones: 0
+ciudad: Stockport - total direcciones: 0
+ciudad: York - total direcciones: 0
+
+País: 103, United States, número de ciudades 35, número de direcciones 30
+ciudad: Arlington - total direcciones: 1
+ciudad: Augusta-Richmond County - total direcciones: 1
+ciudad: Aurora - total direcciones: 1
+ciudad: Bellevue - total direcciones: 1
+ciudad: Brockton - total direcciones: 1
+ciudad: Citrus Heights - total direcciones: 1
+ciudad: Clarksville - total direcciones: 1
+ciudad: Compton - total direcciones: 1
+ciudad: Dallas - total direcciones: 1
+ciudad: Dayton - total direcciones: 1
+ciudad: El Monte - total direcciones: 1
+ciudad: Fontana - total direcciones: 1
+ciudad: Grand Prairie - total direcciones: 1
+ciudad: Greensboro - total direcciones: 1
+ciudad: Kansas City - total direcciones: 1
+ciudad: Lancaster - total direcciones: 1
+ciudad: Laredo - total direcciones: 1
+ciudad: Lincoln - total direcciones: 1
+ciudad: Manchester - total direcciones: 1
+ciudad: Memphis - total direcciones: 1
+ciudad: Peoria - total direcciones: 1
+ciudad: Roanoke - total direcciones: 1
+ciudad: Rockford - total direcciones: 1
+ciudad: Saint Louis - total direcciones: 1
+ciudad: Salinas - total direcciones: 1
+ciudad: San Bernardino - total direcciones: 1
+ciudad: Sterling Heights - total direcciones: 1
+ciudad: Sunnyvale - total direcciones: 1
+ciudad: Tallahassee - total direcciones: 1
+ciudad: Warren - total direcciones: 1
+ciudad: Akron - total direcciones: 0
+ciudad: Cape Coral - total direcciones: 0
+ciudad: Garden Grove - total direcciones: 0
+ciudad: Garland - total direcciones: 0
+ciudad: Joliet - total direcciones: 0
+
+País: 104, Venezuela, número de ciudades 7, número de direcciones 5
+ciudad: Caracas - total direcciones: 1
+ciudad: Cuman - total direcciones: 1
+ciudad: Maracabo - total direcciones: 1
+ciudad: Ocumare del Tuy - total direcciones: 1
+ciudad: Valle de la Pascua - total direcciones: 1
+ciudad: Barcelona - total direcciones: 0
+ciudad: Valencia - total direcciones: 0
+
+País: 105, Vietnam, número de ciudades 6, número de direcciones 3
+ciudad: Haiphong - total direcciones: 1
+ciudad: Hanoi - total direcciones: 1
+ciudad: Nam Dinh - total direcciones: 1
+ciudad: Cam Ranh - total direcciones: 0
+ciudad: Nha Trang - total direcciones: 0
+ciudad: Vinh - total direcciones: 0
+
+País: 106, Virgin Islands, número de ciudades 1, número de direcciones 1
+ciudad: Charlotte Amalie - total direcciones: 1
+
+País: 107, Yemen, número de ciudades 4, número de direcciones 4
+ciudad: Aden - total direcciones: 1
+ciudad: Hodeida - total direcciones: 1
+ciudad: Sanaa - total direcciones: 1
+ciudad: Taizz - total direcciones: 1
+
+País: 108, Yugoslavia, número de ciudades 2, número de direcciones 1
+ciudad: Kragujevac - total direcciones: 1
+ciudad: Novi Sad - total direcciones: 0
+
+País: 109, Zambia, número de ciudades 1, número de direcciones 1
+ciudad: Kitwe - total direcciones: 1
+
