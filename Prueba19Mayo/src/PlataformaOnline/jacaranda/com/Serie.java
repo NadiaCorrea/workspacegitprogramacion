@@ -2,7 +2,6 @@ package PlataformaOnline.jacaranda.com;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 
 /*
@@ -23,7 +22,8 @@ public class Serie {
 	 * @param nombreSerie
 	 * @param anno
 	 * @param tema
-	 * @throws SerieException: si el año es anterior a 1900 se lanzará una exception
+	 * @throws SerieException: si el año es anterior a 1900 se lanzará una
+	 *                         exception
 	 */
 	public Serie(String nombreSerie, int anno, Tema tema) throws SerieException {
 		super();
@@ -34,28 +34,20 @@ public class Serie {
 	}
 
 	/**
-	 * Añade una nueva temporada. Se le pasará el nombre de la nueva temporada y se
-	 * añadirá al final. Debe comprobar que no existe un temporada con ese nombre en
-	 * cuyo caso saltará la excepción.
+	 * Añade una nueva temporada. Se le pasará el nombre de la nueva temporada y
+	 * se añadirá al final. Debe comprobar que no existe un temporada con ese
+	 * nombre en cuyo caso saltará la excepción.
 	 * 
 	 * @param nombreTemporada
 	 * @throws SerieException
 	 */
 	public void annadirTemporada(String nombreTemporada) throws SerieException {
+		Temporada temNueva = new Temporada(nombreTemporada);
 
-		Iterator<Temporada> iterador = temporadas.iterator();
-		Temporada iTemporada;
-		Temporada nuevaTem;
-
-		while (iterador.hasNext()) {
-			iTemporada = iterador.next();
-
-			if (iTemporada.getNombreTemporada().equalsIgnoreCase(nombreTemporada)) {
-				throw new SerieException("La temporada ya existe.");
-			} else {
-				nuevaTem = new Temporada(nombreTemporada);
-				temporadas.add(nuevaTem);
-			}
+		if (temporadas.contains(temNueva)) {
+			throw new SerieException("La temporada ya existe.");
+		} else {
+			temporadas.add(temNueva);
 		}
 
 	}
@@ -97,8 +89,8 @@ public class Serie {
 
 	/**
 	 * Devuelve un listado de las temporadas de una serie ordenadas de mayor a menor
-	 * por nota media. De cada temporada se mostrará el nombre, número de capítulos
-	 * y nota media
+	 * por nota media. De cada temporada se mostrará el nombre, número de
+	 * capítulos y nota media
 	 * 
 	 * @return
 	 */
@@ -113,8 +105,8 @@ public class Serie {
 
 	/**
 	 * Devuelve un listado de las temporadas de una serie ordenadas de menor a mayor
-	 * por número de capítulos. De cada temporada se mostrará el nombre, número de
-	 * capítulos y nota media.
+	 * por número de capítulos. De cada temporada se mostrará el nombre, número
+	 * de capítulos y nota media.
 	 * 
 	 * @return
 	 */

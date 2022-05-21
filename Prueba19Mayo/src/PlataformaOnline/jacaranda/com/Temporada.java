@@ -6,9 +6,9 @@ import java.util.LinkedList;
 public class Temporada {
 
 	private String nombreTemporada; // Nombre de las temporada
-	private LinkedList<String> capitulos; // Lista donde etán los nombres de los capítulos de la temporada
+	private LinkedList<String> capitulos; // Lista donde est�n los nombres de los capítulos de la temporada
 	private int sumaOpiniones; // Suma de todas las opiniones que se han realizado de la temporada
-	private int numeroOpiniones; // Número de opiniones que se han realizado de la temporada
+	private int numeroOpiniones; // N�mero de opiniones que se han realizado de la temporada
 
 	/**
 	 * Constructor de una temporada. Se crea sin ningún capítulo.
@@ -26,8 +26,8 @@ public class Temporada {
 
 	/**
 	 * Método que añade un capítulo a la temporada. Se añade al final de los
-	 * capítulos existente. No hay ningún control por lo que puede pasar que existan
-	 * capítulos con el mismo nombre
+	 * capítulos existente. No hay ningún control por lo que puede pasar que
+	 * existan capítulos con el mismo nombre
 	 * 
 	 * @param capitulo: nombre del capítulo a añadir
 	 */
@@ -36,9 +36,9 @@ public class Temporada {
 	}
 
 	/**
-	 * Elimna un capítulo de la temporada. Devuelve true si el capítulo estaba y se
-	 * ha borrado, y devuelve false si el capítulo no estába en la lista y por lo
-	 * tanto no se ha podido borrar.
+	 * Elimna un capítulo de la temporada. Devuelve true si el capítulo estaba y
+	 * se ha borrado, y devuelve false si el capítulo no estába en la lista y por
+	 * lo tanto no se ha podido borrar.
 	 * 
 	 * @param capitulo: nombre del capítulo a borrar
 	 * 
@@ -120,7 +120,7 @@ public class Temporada {
 		}
 
 		if (result.equals("")) {
-			throw new SerieException("No se ha encontrado ningún capitulo que contenga esa palabra.");
+			throw new SerieException("No se ha encontrado ning�n capitulo que contenga esa palabra.");
 		}
 
 		return result;
@@ -137,7 +137,15 @@ public class Temporada {
 	public String toString() {
 		String info;
 
-		info = nombreTemporada + " Número de capitulos " + capitulos.size() + " Nota media " + getNotaMedia();
+		info = nombreTemporada + " N�mero de capitulos " + capitulos.size() + " Nota media " + getNotaMedia();
+		return info;
+
+	}
+
+	public String toStringFichero() {
+		String info;
+
+		info = nombreTemporada + "," + capitulos.size() + "," + getSumaOpiniones() + "," + getNumeroOpiniones();
 		return info;
 
 	}
