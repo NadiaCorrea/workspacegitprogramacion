@@ -1,5 +1,7 @@
 package PlataformaOnline.jacaranda.com;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 
@@ -15,7 +17,7 @@ public class Series {
 	}
 
 	/**
-	 * Añade una serie a la lista de series. Si existe una serie con el mismo nombre
+	 * A�ade una serie a la lista de series. Si existe una serie con el mismo nombre
 	 * lanza una excpetion
 	 * 
 	 * @param serie
@@ -30,7 +32,7 @@ public class Series {
 	}
 
 	/**
-	 * Añade una temporada a la Serie cuyo nombre se le pasa por argumento, si no
+	 * A�ade una temporada a la Serie cuyo nombre se le pasa por argumento, si no
 	 * existe la Serie lanza una exception
 	 * 
 	 * @param serie
@@ -76,8 +78,8 @@ public class Series {
 	}
 
 	/**
-	 * Devuelve el número de temporadas que tiene la serie que se pasa por parámetro
-	 * Si no existe la serie saltará la excepción.
+	 * Devuelve el n�mero de temporadas que tiene la serie que se pasa por
+	 * parámetro Si no existe la serie saltar� la excepci�n.
 	 * 
 	 * @param nombreSerie
 	 * @return
@@ -85,8 +87,15 @@ public class Series {
 	 */
 
 	public int numeroDeTemporadasDeUnaSerie(String nombreSerie) throws SerieException {
+		int result = 0;
+		Serie iSerie = this.mapSeries.get(nombreSerie);
 
-		return 0;
+		if (iSerie == null) {
+			throw new SerieException("No existe la serie.");
+		} else {
+			result = iSerie.numeroTemporadas();
+		}
+		return result;
 	}
 
 	/**
@@ -98,25 +107,25 @@ public class Series {
 	 * @throws SerieException
 	 */
 	public void modificarTema(String nombreSerie, Tema nuevoTema) throws SerieException {
-		Serie valor = null;
+		Serie valor;
 
-		for (String serie : mapSeries.keySet()) {
-
-			if (serie.contains(nombreSerie)) {
-				valor = mapSeries.get(serie);
+		if (mapSeries.containsKey(nombreSerie)) {
+			valor = mapSeries.get(nombreSerie);
+			if (valor.getTema().equals(nuevoTema)) {
+				throw new SerieException("La serie ya ten�a ese tema.");
+			} else {
 				valor.setTema(nuevoTema);
 			}
+		} else {
+			throw new SerieException("No existe la serie");
 		}
 
-		if (valor == null) {
-			throw new SerieException("No se ha encontrado la serie.");
-		}
 	}
 
 	/**
-	 * Devolverá un listado ordenado de forma creciente por el año de la serie. Para
-	 * cada serie se mostrará su nombre, año y número de temporadas. Si no hay
-	 * ninguna serie de ese tema saltará la excepción.
+	 * Devolverá un listado ordenado de forma creciente por el año de la serie.
+	 * Para cada serie se mostrará su nombre, año y número de temporadas. Si no
+	 * hay ninguna serie de ese tema saltará la excepción.
 	 * 
 	 * @param tema
 	 * @return
@@ -124,20 +133,30 @@ public class Series {
 	 */
 	public String listadoOrdenadoSeriesDeUnTema(Tema tema) throws SerieException {
 
+		ArrayList<Serie> listaSeries = new ArrayList<>();
 		StringBuilder result = new StringBuilder();
 
-		Iterator<String> iterator = mapSeries.keySet().iterator();
-		while (iterator.hasNext()) {
-			String clave = iterator.next();
-			Serie iserie = mapSeries.get(clave);
-
-			if (iserie.getTema().equals(tema)) {
-				result.append(iserie.toString() + "\n");
+		for (Serie series : this.mapSeries.values()) {
+			if (series.getTema().equals(tema)) {
+				listaSeries.add(series);
 			}
+		}
 
+		Collections.sort(listaSeries, new CompararPorAno());
+
+		Iterator<Serie> iterador = listaSeries.iterator();
+		Serie iSerie;
+		while (iterador.hasNext()) {
+			iSerie = iterador.next();
+
+			result.append(iSerie.getNombreSerie() + ", " + iSerie.getAnno() + ", " + iSerie.numeroTemporadas() + "\n");
 		}
 
 		return result.toString();
+	}
+
+	public HashMap<String, Serie> getMapSeries() {
+		return mapSeries;
 	}
 
 }

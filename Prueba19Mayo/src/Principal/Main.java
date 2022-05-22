@@ -3,6 +3,8 @@ package Principal;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 import PlataformaOnline.jacaranda.com.Serie;
@@ -13,11 +15,10 @@ import PlataformaOnline.jacaranda.com.Temporada;
 
 public class Main {
 	public static Scanner teclado = new Scanner(System.in);
+	public static Series series = new Series();
 
 	public static void main(String[] args) {
 
-		Series series = new Series();
-		Temporada temp = new Temporada("hawai");
 		int opc;
 
 		try {
@@ -33,23 +34,9 @@ public class Main {
 			series.annadirCapituloTemporada("This is us", "Empezamos", "Los niÃ±os");
 			series.annadirCapituloTemporada("This is us", "Empezamos", "CAsi el final");
 			series.annadirCapituloTemporada("This is us", "Empezamos", "El final");
-			Serie serie1 = new Serie("friends", 1980, Tema.COMEDIA);
-			serie1.annadirTemporada("1temp");
-
-			temp.annadirCapitulo("this prueba");
-			temp.annadirCapitulo("the prueba");
-			temp.annadirCapitulo("this probar");
-
-			System.out.println(temp.primerCapituloQueContieneEstaPalabara("this"));
-			// System.out.println(temp.primerCapituloQueContieneEstaPalabara("that"));
-
-			temp.anadirCapituloDespues("this prueba2", "the prueba");
-			System.out.println(temp.toString());
-
-			System.out.println();
 
 			menu();
-			opc = leerEntero("Â¿QuÃ© quieres hacer?");
+			opc = leerEntero("¿Qué quieres hacer?");
 
 			do {
 
@@ -62,10 +49,12 @@ public class Main {
 					break;
 				case 3:
 					escribirEnFicheroSeries("ficheros/Series.csv");
+					escribirEnFicheroTemporada("ficheros/Temporada.csv");
+					escribirEnFicheroCapitulos("ficheros/Capitulos.csv");
 					break;
 
 				default:
-					System.out.println("opciÃ³n no vÃ¡lida.");
+					System.out.println("opción no válida.");
 					break;
 				}
 
@@ -78,8 +67,61 @@ public class Main {
 
 	}
 
+	private static void escribirEnFicheroSeries(String nombre) {
+		String cadena;
+		try {
+			FileWriter flujoEscritura = new FileWriter(nombre);
+			PrintWriter filtroEscritura = new PrintWriter(flujoEscritura);
+
+			for (Serie iSerie : series.getMapSeries().values()) {
+				cadena = iSerie.getNombreSerie() + "," + iSerie.getAnno() + "," + iSerie.getTema();
+				filtroEscritura.println(cadena);
+			}
+
+			filtroEscritura.close();
+			flujoEscritura.close();
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+	private static void escribirEnFicheroCapitulos(String string) {
+		// TODO Auto-generated method stub
+
+	}
+
+	private static void escribirEnFicheroTemporada(String nombre) {
+		String cadena;
+		String inombre;
+		ArrayList<Temporada> temporadas;
+		try {
+			FileWriter flujoEscritura = new FileWriter(nombre);
+			PrintWriter filtroEscritura = new PrintWriter(flujoEscritura);
+
+			for (Serie iSerie : series.getMapSeries().values()) {
+				inombre = iSerie.getNombreSerie();
+				temporadas = iSerie.getTemporadas();
+
+				Iterator<Temporada> iterador = temporadas.iterator();
+				Temporada iTemp;
+
+				while (iterador.hasNext()) {
+					iTemp = iterador.next();
+
+					cadena = inombre + "," + iTemp.toStringFichero();
+					filtroEscritura.println(cadena);
+				}
+			}
+
+			filtroEscritura.close();
+			flujoEscritura.close();
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
 	public static void menu() {
-		System.out.println("1. AÃ±adir Series\n " + "2. Buscar Series\n" + "3. Salir.");
+		System.out.println("1. Añadir Series\n " + "2. Buscar Series\n" + "3. Salir.");
 
 	}
 
@@ -88,20 +130,4 @@ public class Main {
 		return Integer.parseInt(teclado.nextLine());
 	}
 
-	private static void escribirEnFicheroSeries(String nombre) {
-		String cadena;
-		try {
-			FileWriter flujoEscritura = new FileWriter(nombre);
-			PrintWriter filtroEscritura = new PrintWriter(flujoEscritura);
-			for (int i = 1; i <= series.size(); i++) {
-
-				cadena = teclado.nextLine();
-				filtroEscritura.println(cadena);
-			}
-			filtroEscritura.close();
-			flujoEscritura.close();
-		} catch (IOException e) {
-			System.out.println(e.getMessage());
-		}
-	}
 }

@@ -218,4 +218,8 @@ public class Serie {
 		return true;
 	}
 
+	public ArrayList<Temporada> getTemporadas() {
+		return temporadas;
+	}
+
 }
