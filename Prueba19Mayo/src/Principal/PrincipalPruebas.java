@@ -5,7 +5,7 @@ import PlataformaOnline.jacaranda.com.Series;
 import PlataformaOnline.jacaranda.com.Tema;
 
 public class PrincipalPruebas {
-
+//pruebas realizadas mientras se realizaban los métodos
 	public static void main(String[] args) {
 
 		try {

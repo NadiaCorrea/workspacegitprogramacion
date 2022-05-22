@@ -10,7 +10,7 @@ public class Series {
 	private HashMap<String, Serie> mapSeries;
 
 	/**
-	 * Crea el objeto que nos servir√° para tener las series
+	 * Crea el objeto que nos servir· para tener las series
 	 */
 	public Series() {
 		mapSeries = new HashMap<String, Serie>();

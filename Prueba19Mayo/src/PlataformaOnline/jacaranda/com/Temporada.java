@@ -11,10 +11,10 @@ public class Temporada {
 	private int numeroOpiniones; // Número de opiniones que se han realizado de la temporada
 
 	/**
-	 * Constructor de una temporada. Se crea sin ningÃºn capÃ­tulo.
+	 * Constructor de una temporada. Se crea sin ningún capítulo.
 	 * 
 	 * @param nombreTemporada: recibe el nombre de la temporada. Obviamente no se ha
-	 *                         realizado ninguna opiniÃ³n sobre la temporada
+	 *                         realizado ninguna opinión sobre la temporada
 	 */
 
 	public Temporada(String nombreTemporada) {

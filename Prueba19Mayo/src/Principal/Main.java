@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 
 import PlataformaOnline.jacaranda.com.Serie;
@@ -19,7 +20,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		int opc;
+		// int opc;
 
 		try {
 
@@ -31,37 +32,27 @@ public class Main {
 			series.annadirTemporada("This is us", "Finalizamos");
 			series.annadirCapituloTemporada("This is us", "Empezamos", "La familia");
 			series.annadirCapituloTemporada("This is us", "Empezamos", "El problema");
-			series.annadirCapituloTemporada("This is us", "Empezamos", "Los niÃ±os");
+			series.annadirCapituloTemporada("This is us", "Empezamos", "Los niños");
 			series.annadirCapituloTemporada("This is us", "Empezamos", "CAsi el final");
 			series.annadirCapituloTemporada("This is us", "Empezamos", "El final");
 
-			menu();
-			opc = leerEntero("¿Qué quieres hacer?");
+			escribirEnFicheroSeries("ficheros/Series.csv");
+			escribirEnFicheroTemporada("ficheros/Temporada.csv");
+			escribirEnFicheroCapitulos("ficheros/Capitulos.csv");
 
-			do {
-
-				switch (opc) {
-				case 1:
-
-					break;
-				case 2:
-
-					break;
-				case 3:
-					escribirEnFicheroSeries("ficheros/Series.csv");
-					escribirEnFicheroTemporada("ficheros/Temporada.csv");
-					escribirEnFicheroCapitulos("ficheros/Capitulos.csv");
-					break;
-
-				default:
-					System.out.println("opción no válida.");
-					break;
-				}
-
-			} while (opc != 3);
+			/*
+			 * menu(); opc = leerEntero("¿Qué quieres hacer?");
+			 * 
+			 * do {
+			 * 
+			 * switch (opc) { case 1: break; case 2: break; case 3: break;
+			 * 
+			 * default: System.out.println("opción no válida."); break; }
+			 * 
+			 * } while (opc != 3);
+			 */
 
 		} catch (SerieException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -85,9 +76,41 @@ public class Main {
 		}
 	}
 
-	private static void escribirEnFicheroCapitulos(String string) {
-		// TODO Auto-generated method stub
+	private static void escribirEnFicheroCapitulos(String nombre) {
+		String cadena;
+		String inombre;
+		ArrayList<Temporada> temporadas;
 
+		try {
+			FileWriter flujoEscritura = new FileWriter(nombre);
+			PrintWriter filtroEscritura = new PrintWriter(flujoEscritura);
+
+			for (Serie iSerie : series.getMapSeries().values()) {
+				inombre = iSerie.getNombreSerie();
+				temporadas = iSerie.getTemporadas();
+
+				Iterator<Temporada> iterador = temporadas.iterator();
+				Temporada iTemp;
+
+				while (iterador.hasNext()) {
+					iTemp = iterador.next();
+
+					List<String> listaCapitulos = iTemp.getCapitulos();
+					Iterator<String> iter = listaCapitulos.iterator();
+					String iCapitulo;
+					while (iter.hasNext()) {
+						iCapitulo = iter.next();
+						cadena = inombre + "," + iTemp.getNombreTemporada() + "," + iCapitulo;
+						filtroEscritura.println(cadena);
+					}
+				}
+			}
+
+			filtroEscritura.close();
+			flujoEscritura.close();
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 	private static void escribirEnFicheroTemporada(String nombre) {
