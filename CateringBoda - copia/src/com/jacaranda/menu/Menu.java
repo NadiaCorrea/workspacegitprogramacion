@@ -170,7 +170,7 @@ public class Menu implements Servible {
 			return true;
 		if (obj == null)
 			return false;
-		if (!(obj instanceof Menu))
+		if (getClass() != obj.getClass())
 			return false;
 		Menu other = (Menu) obj;
 		return Objects.equals(nombre, other.nombre);
