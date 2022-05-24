@@ -10,3 +10,17 @@
   apellidos varchar2(50),
   edad NUMBER(3)
   );
+  
+ 
+ 
+ CREATE TABLE PLATO
+ (
+ maxGruposAlimenticios number(1),
+ codigo number(3),
+ nombre varchar2(100),
+ descripcion varchar2(250),
+ orden number(1),
+ numGrupoAlimenticios number(1),
+ cantidadLactosa  number(2);
+ );
+ 
