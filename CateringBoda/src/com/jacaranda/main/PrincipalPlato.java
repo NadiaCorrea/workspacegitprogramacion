@@ -1,17 +1,13 @@
-package basedatos;
+package com.jacaranda.main;
 
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.Statement;
-import java.util.Scanner;
 
-public class Principal {
-
-	public static Scanner teclado = new Scanner(System.in);
+public class PrincipalPlato {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		try {
 			Connection conexion = DriverManager.getConnection("jdbc:oracle:thin:@//localhost:1521/ORCLCDB.localdomain",
@@ -27,12 +23,11 @@ public class Principal {
 			System.out.println(e.getMessage());
 		}
 
-		// hacer lo de la pag 13 acceso a BD
-
 	}
+
 	/*
-	 * public static void addUser(Connection conexion) { String nif, nombre,
-	 * apellidos; int edad;
+	 * public static void addPlato(Connection conexion) { String nombre, apellidos;
+	 * int orden; double cantidadLactosa;
 	 * 
 	 * System.out.println("Introduce nif: ");
 	 * 
