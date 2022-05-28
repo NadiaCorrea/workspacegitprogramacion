@@ -15,7 +15,4 @@ public class TamanoMunicipioComunidad {
 		return lista;
 	}
 
-	public void setLista(ArrayList<Comunidad> lista) {
-		this.lista = lista;
-	}
 }
