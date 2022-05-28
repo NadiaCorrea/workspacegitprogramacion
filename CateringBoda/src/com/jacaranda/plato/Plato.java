@@ -6,6 +6,7 @@ import java.util.Objects;
 public class Plato implements Comparable<Plato> {
 	private static final int MAX_GRUPOS_ALIMENTICIOS = 3;
 	private int codigo;
+	private static int codigoSiguiente = 1;
 	private String nombre;
 	private String descripcion;
 	private int orden;
@@ -15,7 +16,7 @@ public class Plato implements Comparable<Plato> {
 
 	public Plato(String nombre, int orden, String[] gruposAlimenticios) throws PlatoException {
 		super();
-		setCodigo(0);
+		setCodigo(codigoSiguiente);
 		setNombre(nombre);
 		setOrden(orden);
 		this.descripcion = null;
@@ -28,7 +29,7 @@ public class Plato implements Comparable<Plato> {
 	public Plato(String nombre, String descripcion, int orden, double cantidadLactosa, String[] gruposAlimenticios)
 			throws PlatoException {
 		super();
-		setCodigo(0);
+		setCodigo(codigoSiguiente);
 		setNombre(nombre);
 		setOrden(orden);
 		this.descripcion = descripcion;
@@ -43,6 +44,7 @@ public class Plato implements Comparable<Plato> {
 
 	public void setCodigo(int codigo) {
 		this.codigo = codigo;
+		codigoSiguiente += 1;
 
 	}
 
@@ -127,6 +129,10 @@ public class Plato implements Comparable<Plato> {
 
 	public static int getMaxGruposAlimenticios() {
 		return MAX_GRUPOS_ALIMENTICIOS;
+	}
+
+	public static int getCodigoSiguiente() {
+		return codigoSiguiente;
 	}
 
 	public boolean contieneGrupoAlimenticio(String grupoAlimenticio) {
