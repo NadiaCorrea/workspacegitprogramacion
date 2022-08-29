@@ -49,7 +49,8 @@ select CODPLATO.nextval from dual;
 
 select CODPLATO.currval from dual;
 
-
+SELECT *
+FROM plato
 
 
 
