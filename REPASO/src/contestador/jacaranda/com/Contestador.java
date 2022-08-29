@@ -40,9 +40,18 @@ public class Contestador {
 	public String listenMensaje(int numero) {
 		String result = "";
 		if (numero == 1) {
-			result = "Mensaje 1: " + getMensaje1() + ".";
+			if (getMensaje1().equals("")) {
+				result = "No hay mensaje.";
+			} else {
+				result = "Mensaje 1: " + getMensaje1() + ".";
+			}
+
 		} else if (numero == 2) {
-			result = "Mensaje 2: " + getMensaje2() + ".";
+			if (getMensaje2().equals("")) {
+				result = "No hay mensaje.";
+			} else {
+				result = "Mensaje 2: " + getMensaje2() + ".";
+			}
 		} else {
 			result = "El mensaje seleccionado no existe.";
 		}
